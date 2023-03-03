@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Loader from "./ru/components/ui/loader/loader"
+// import Loader from "./ru/components/ui/loader/loader"
 
 export default function HTML(props) {
   return (
@@ -34,7 +34,7 @@ export default function HTML(props) {
                 zIndex: 10000,
               }}
            >
-           <Loader />
+           {/* <Loader /> */}
         </div>
         <div
           key={`body`}

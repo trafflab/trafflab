@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { navigate } from "gatsby";
-import Loader from "../ru/components/common/loader/loader";
+// import Loader from "../ru/components/common/loader/loader";
 import Helmet from "react-helmet";
 
 const getRedirectLanguage = () => {
@@ -28,23 +28,23 @@ const getRedirectLanguage = () => {
 
 export default function IndexPage() {
 
-  useEffect(() => {
-    let urlLang = 'ru'
-    const savedLang = localStorage.getItem('lang')
+  // useEffect(() => {
+  //   let urlLang = 'ru'
+  //   const savedLang = localStorage.getItem('lang')
 
-    if (savedLang) urlLang = localStorage.getItem('lang')
-    else {
-      urlLang = getRedirectLanguage();
-      localStorage.setItem('lang', urlLang);
-    }
+  //   if (savedLang) urlLang = localStorage.getItem('lang')
+  //   else {
+  //     urlLang = getRedirectLanguage();
+  //     localStorage.setItem('lang', urlLang);
+  //   }
     
-    navigate(`/${urlLang}/`, {replace: true})
+  //   navigate(`/${urlLang}/`, {replace: true})
 
-  }, []);
+  // }, []);
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <meta name="yandex-verification" content="627efef0ddde2878" />
         <meta name="google-site-verification" content="sitqCiT_sBfNtwKP81rRGUpgGUIptgDzy1b6I46xV6E" />
       </Helmet>
@@ -57,7 +57,8 @@ export default function IndexPage() {
         justifyContent: 'center',
         }}>
         <Loader />
-      </div>
+      </div> */}
+      <h1>404</h1>
     </>
   ) 
 };
