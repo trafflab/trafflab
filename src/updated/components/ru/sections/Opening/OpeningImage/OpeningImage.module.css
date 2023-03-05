@@ -58,10 +58,10 @@
 .imageShadow {
   position: absolute;
   width: 94%;
-  height: 35%;
-  bottom: 0;
+  height: 80%;
+  bottom: -1rem;
   right: 0;
-  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 94.27%);
+  background-image: linear-gradient(180deg, rgba(18, 18, 18, 0) 0%, #121212 99.87%);
 }
 
 .coin1 {
