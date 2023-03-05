@@ -1,10 +1,8 @@
 import * as React from "react";
-import IndexPageLayout from '../../updated/components/ru/IndexPageLayout/IndexPageLayout'
-
-import SiteLayout from "../../updated/components/common/SiteLayout";
-
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
+import IndexPage from "../../updated/components/ru/pages/IndexPage";
+import SiteLayout from "../../updated/components/common/SiteLayout";
 
 export default function IndexPageRu({ data }) {
 
@@ -18,7 +16,7 @@ export default function IndexPageRu({ data }) {
         <link rel="alternate" hreflang="en" href="https://trafflab.com/en" />
         <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua" />
       </Helmet>
-      <IndexPageLayout/>
+      <IndexPage />
     </SiteLayout>
   )
 }

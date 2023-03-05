@@ -1,10 +1,10 @@
 import * as React from "react"
 import * as styles from './Opening.module.css';
 
-import OpeningButton from "./OpeningButton/OpeningButton";
+import OpeningButton from "./Button/OpeningButton";
 import { TgButton } from "../../elements";
 
-import OpeningImage from "./OpeningImage/OpeningImage";
+import OpeningImage from "./Image/OpeningImage";
 import { Is480Context } from "../../../../utils/contexts";
 
 export default function Opening({openFormPopupHandler}) {
