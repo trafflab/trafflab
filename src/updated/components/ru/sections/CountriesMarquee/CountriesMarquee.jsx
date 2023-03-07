@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './countries-marquee.module.css';
+import * as styles from './CountriesMarquee.module.css';
 import Marquee from "react-fast-marquee";
 
 export default function CountriesMarquee() {

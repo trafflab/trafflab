@@ -1,42 +1,105 @@
 import * as React from "react"
-import * as styles from './pro.module.css';
-import SectionContentLayout from "../../common/section-content-layout/section-content-layout";
+import * as styles from './Pro.module.css';
+import { useStaticQuery, graphql } from "gatsby";
 import { SplideSlide } from '@splidejs/react-splide';
-import ProCard from "./pro-card/pro-card";
-import SliderLayout from "../../common/slider-layout/slider-layout";
-import {LangContext, Is480Context} from '../../../../utils/contexts';
+
+import { SectionContentLayout } from "../../elements";
+import ProCard from "./Card/ProCard";
+import { Is480Context } from '../../../../utils/contexts';
+
+const prosData = [
+  {
+    photoAlt: 'Trafflab Тамерлан',
+    about: [
+      '7+ лет практического опыта залива гемблинг-трафика',
+      'Спикер международных конференций'
+    ]
+  },
+  {
+    photoAlt: 'Trafflab Аня',
+    about: [
+      'Опыт в гемблинге 5+ лет',
+      'За честный подход к работе: пресекает шейв на корню',
+      'С ней веб-мастера заработали   $10 000 000+'
+    ]
+  },
+  {
+    photoAlt: 'Trafflab Дима',
+    about: [
+      '5+ лет находит общий язык с бурж реклами',
+      'Каждый продукт перепроверяет лично и знает, что конвертит',
+      'Защитил срезанный траф перед рекламодателями на $4 000 000+'
+    ]
+  }
+]
 
 export default function Pro() {
-  const data = React.useContext(LangContext).pro;
   const is480 = React.useContext(Is480Context);
+  const images = useStaticQuery(graphql`
+  query ProQuery {
+    pro_1: file(name: {eq: "pro-1"}) {
+      name
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          webpOptions: {quality: 85}
+          sizes: "(max-width: 480px) 1px, 1000000px"
+          breakpoints: [204, 1080]
+          layout: FULL_WIDTH
+        )
+      }
+    }
 
+    pro_2: file(name: {eq: "pro-2"}) {
+      name
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          webpOptions: {quality: 85}
+          sizes: "(max-width: 480px) 1px, 1000000px"
+          breakpoints: [204, 1080]
+          layout: FULL_WIDTH
+        )
+      }
+    }
+
+    pro_3: file(name: {eq: "pro-3"}) {
+      name
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+          webpOptions: {quality: 85}
+          sizes: "(max-width: 480px) 1px, 1000000px"
+          breakpoints: [204, 1080]
+          layout: FULL_WIDTH
+        )
+      }
+    }
+  }
+  `)
+  console.log(images.pro_2.childImageSharp);
   return (
     <section id='pro' className={styles.pro}>
       <SectionContentLayout
-        titleSecondPart={data.subtitle}
-        text={data.text}
+        titleSecondPart='PRO'
+        text='Trafflab - международная компания. В команде профессионалы в сфере iGaming и EDTech с 7+ летним опытом. Базируемся в Украине, Беларуси, во Франции и на Кипре, а также в некоторых азиатских странах. У нас нет предпочтений по национальному, гражданскому или гендерному признаку. Мы говорим на разных языках, в разных странах, но строим взаимодействие со всеми партнерами по единому принципу: win-win.'
         textStyle={{width: '1150rem'}}
       >
         {
           is480 
-            ? <div className={styles.splideContainer}><SliderLayout>
-                {
-                  data.pros.map((prosData, index) => (
-                    <SplideSlide key={index}><ProCard data={prosData} /></SplideSlide>
-                  ))
-                }
-              </SliderLayout></div>
+            ? <div className={styles.splideContainer}>
+              <SectionContentLayout>
+                <SplideSlide><ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/></SplideSlide>
+                <SplideSlide><ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/></SplideSlide>
+                <SplideSlide><ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/></SplideSlide>  
+              </SectionContentLayout></div>
             : <ul className={styles.list}>
-                {
-                  data.pros.map((prosData, index) => (
-                    <li key={index}><ProCard data={prosData} /></li>
-                  ))
-                }
+                <ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/>
+                <ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/>
+                <ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/>
               </ul>
         }
-
       </SectionContentLayout>
     </section>
   )
-  
 }

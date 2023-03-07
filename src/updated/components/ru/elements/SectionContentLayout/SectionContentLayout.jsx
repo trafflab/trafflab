@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './section-content-layout.module.css';
+import * as styles from './SectionContentLayout.module.css';
 
 export default function SectionContentLayout({
   children,

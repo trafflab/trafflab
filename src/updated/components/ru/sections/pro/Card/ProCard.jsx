@@ -1,18 +1,17 @@
 import * as React from "react"
-import * as styles from './pro-card.module.css';
-import MediaImage from "../../../ui/media-image/media-image";
+import * as styles from './ProCard.module.css';
+import { SiteImage } from "../../../../common/ui";
 
-export default function ProCard({ data }) {
-
+export default function ProCard({ proData, proImage }) {
   return (
     <article className={styles.card}>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
-          <MediaImage image={data.photo} image_webp={data.photo_webp} alt={data.imageAlt} />
+          <SiteImage image={proImage} alt={proData.imageAlt} />
         </div>
         <ul className={styles.list}>
           {
-            data.about.map((elementData, index) => (
+            proData.about.map((elementData, index) => (
               <li key={index} className={styles.element}><pre className={styles.elementText}>{elementData}</pre></li>
             ))
           }

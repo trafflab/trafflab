@@ -5,14 +5,14 @@ import IndexPageLayout from "../layouts/IndexPageLayout/IndexPageLayout";
 import {
   Statistics,
   WhatWeDo,
-  // CountriesMarquee,
+  Pro,
+  CountriesMarquee,
   // TrafficSources,
   // Ecosystem,
   // Blog,
   // PartnersMarquee,
   // Vacancies,
   // PageForm,
-  // Pro
 } from '../sections';
 import { changeUrl } from "../../../utils/utils";
 
@@ -44,8 +44,8 @@ export default function IndexPage({ blogData }) {
     <IndexPageLayout openNavPopupHandler={openNavPopup}  openFormPopupHandler={openFormPopup}>
       <Statistics />
       <WhatWeDo openFormPopupHandler={openFormPopup}/>
-      {/* <Pro /> */}
-      {/* <CountriesMarquee /> */}
+      <Pro />
+      <CountriesMarquee />
       {/* <PageForm isMiddle /> */}
       {/* <TrafficSources /> */}
       {/* <Ecosystem /> */}

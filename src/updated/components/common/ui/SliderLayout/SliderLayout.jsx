@@ -1,7 +1,7 @@
 import * as React from "react"
-import * as styles from './slider-layout.module.css';
+import * as styles from './SliderLayout.module.css';
 import { Splide, SplideTrack} from '@splidejs/react-splide';
-import ArrowButtonCover from "../../ui/arrow-button-cover/arrow-button-cover";
+import SliderLayoutArrow from "./Arrow/SliderLayoutArrow";
 
 export default function SliderLayout({ children }) {
 
@@ -24,7 +24,7 @@ export default function SliderLayout({ children }) {
 
       <div className={`splide__arrows ${styles.arrowContainer}`}>
         <button className={`splide__arrow splide__arrow--prev ${styles.prevArrow}`}>
-          <ArrowButtonCover direction='left' isSecondary={true} />
+          <SliderLayoutArrow isLeft={true}/>
         </button> 
 
         <SplideTrack>
@@ -32,7 +32,7 @@ export default function SliderLayout({ children }) {
         </SplideTrack>
 
         <button className={`splide__arrow splide__arrow--next ${styles.nextArrow}`}>
-          <ArrowButtonCover direction='right' isSecondary={true} />
+          <SliderLayoutArrow isLeft={false}/>
         </button>
 
       </div>

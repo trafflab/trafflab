@@ -16,6 +16,7 @@
   border-radius: 24rem;
   overflow: hidden;
   z-index: 3;
+  position: relative;
 }
 
 .list {
