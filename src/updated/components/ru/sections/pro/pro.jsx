@@ -3,7 +3,7 @@ import * as styles from './Pro.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { SplideSlide } from '@splidejs/react-splide';
 
-import { SectionContentLayout } from "../../elements";
+import { SliderLayout, SectionContentLayout } from "../../../common";
 import ProCard from "./Card/ProCard";
 import { Is480Context } from '../../../../utils/contexts';
 
@@ -77,7 +77,6 @@ export default function Pro() {
     }
   }
   `)
-  console.log(images.pro_2.childImageSharp);
   return (
     <section id='pro' className={styles.pro}>
       <SectionContentLayout
@@ -88,11 +87,12 @@ export default function Pro() {
         {
           is480 
             ? <div className={styles.splideContainer}>
-              <SectionContentLayout>
-                <SplideSlide><ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/></SplideSlide>
-                <SplideSlide><ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/></SplideSlide>
-                <SplideSlide><ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/></SplideSlide>  
-              </SectionContentLayout></div>
+                <SliderLayout>
+                  <SplideSlide><ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/></SplideSlide>
+                  <SplideSlide><ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/></SplideSlide>
+                  <SplideSlide><ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/></SplideSlide>  
+                </SliderLayout>
+              </div>
             : <ul className={styles.list}>
                 <ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/>
                 <ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/>

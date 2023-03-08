@@ -1,0 +1,21 @@
+.content {
+  width: 1200rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.link {
+  width: 380rem;
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    width: 280rem;
+  }
+
+  .link {
+    width: 100%;
+  }
+}

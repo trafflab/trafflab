@@ -1,22 +1,59 @@
 import * as React from "react"
-import * as styles from './blog.module.css';
-import SectionContentLayout from "../../common/section-content-layout/section-content-layout";
-import BlogCard from "./blog-card/blog-card";
-
-import SliderLayout from "../../common/slider-layout/slider-layout";
+import * as styles from './Blog.module.css';
 import { SplideSlide } from '@splidejs/react-splide';
-import { LangContext, Is480Context } from "../../../../utils/contexts";
-import BasicButton from "../../ui/basic-button/basic-button";
 import { navigate } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 
-export default function Blog({ openArticlePopupHandler, articlesData }) {
-  const data = React.useContext(LangContext).blog;
+import { Is480Context } from "../../../../utils/contexts";
+import { SectionContentLayout, SliderLayout } from "../../../common";
+import { BasicButton } from "../../../common/ui";
+import BlogCard from "../../../common/BlogCard/BlogCard";
+
+export default function Blog({ openArticlePopupHandler }) {
   const is480 = React.useContext(Is480Context);
+  const articlesData = useStaticQuery(graphql`
+  query BlogRuQuery($lang: String = "ru", $type: String = "article") {
+    allMarkdownRemark(
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}}}
+      limit:3
+      ) {
+      edges {
+        node {
+          html
+          frontmatter {
+            lang
+            type
+            date(formatString: "DD.MM.YYYY")
+            customSlug
+            notReadyMessage
+            title
+            image {
+              childImageSharp {
+                gatsbyImageData(quality: 85, layout: CONSTRAINED)
+              }
+            }
+            cardTitle
+            cardText
+            cardImage {
+              childImageSharp {
+                gatsbyImageData(quality: 85, layout: CONSTRAINED)
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+  `).allMarkdownRemark.edges
   return (
     <section id="blog" className={styles.blog}>
       <SectionContentLayout
-        titleSecondPart={data.subtitle}
-        text={data.text}
+        titleSecondPart='блог'
+        text='Актуальные новости, рекомендации по заливу, мануалы, инсайдерская информация из закрытых источников аффилейт-маркетинга. Читай блог TraffLab и будь в курсе всех событий рынка.'
         textStyle={{width: '680rem'}}
         noMarginBottom={true}
       >

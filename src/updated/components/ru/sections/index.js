@@ -4,13 +4,13 @@ import Footer from "./Footer/Footer";
 import Statistics from "./Statistics/Statistics";
 import WhatWeDo from "./WhatWeDo/WhatWeDo";
 import Pro from "./Pro/Pro";
-import CountriesMarquee from "./CountriesMarquee/CountriesMarquee";
-// import TrafficSources from "./traffic-sources/traffic-sources";
-// import Ecosystem from "./ecosystem/ecosystem";
-// import Blog from "./blog/blog";
-// import PartnersMarquee from "./partners-marquee/partners-marquee";
-// import Vacancies from "./vacancies/vacancies";
-// import PageForm from './page-form/page-form';
+import TrafficSources from "./TrafficSources/TrafficSources";
+import PageForm from './PageForm/PageForm';
+import Ecosystem from "./Ecosystem/Ecosystem";
+import Blog from "./Blog/Blog";
+import Vacancies from "./Vacancies/Vacancies";
+
+import BlogPageList from "./BlogPageList/BlogPageList";
 
 export {
   Header,
@@ -19,11 +19,11 @@ export {
   Statistics,
   WhatWeDo,
   Pro,
-  CountriesMarquee,
-  // TrafficSources,
-  // Ecosystem,
-  // Blog,
-  // PartnersMarquee,
-  // Vacancies,
-  // PageForm,
+  TrafficSources,
+  PageForm,
+  Ecosystem,
+  Blog,
+  Vacancies,
+
+  BlogPageList,
 }

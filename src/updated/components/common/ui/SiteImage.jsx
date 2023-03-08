@@ -8,7 +8,7 @@ export default function SiteImage({ image, alt='trafflab', loadingType='lazy' })
       image={getImage(image)}
       objectFit="fill"
       objectPosition={'center'}
-      // style={{width: "100%", height:"100%"}}
+      style={{width: "100%", height:"100%"}}
       alt={alt}
       loading={loadingType}
     />

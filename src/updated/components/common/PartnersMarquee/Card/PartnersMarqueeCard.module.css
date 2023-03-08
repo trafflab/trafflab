@@ -1,0 +1,16 @@
+.listElement {
+  display: flex;
+  align-items: center;
+  margin-right: 90rem;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 480px) {
+  .listElement {
+    display: flex;
+    align-items: center;
+    margin-right: 20rem;
+    font-size: 0.56rem;
+  }
+  
+}

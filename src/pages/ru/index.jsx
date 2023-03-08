@@ -1,10 +1,9 @@
 import * as React from "react";
-import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import IndexPage from "../../updated/components/ru/pages/IndexPage";
-import SiteLayout from "../../updated/components/common/SiteLayout";
+import IndexPageTemplate from "../../updated/components/ru/templates/IndexPageTemplate";
+import { SiteLayout } from "../../updated/components/common";
 
-export default function IndexPageRu({ data }) {
+export default function Index() {
 
   return (
     <SiteLayout pageTitle="TRAFFLAB" siteLang='ru'>
@@ -16,45 +15,7 @@ export default function IndexPageRu({ data }) {
         <link rel="alternate" hreflang="en" href="https://trafflab.com/en" />
         <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua" />
       </Helmet>
-      <IndexPage />
+      <IndexPageTemplate />
     </SiteLayout>
   )
 }
-
-// export const query = graphql`
-//   query IndexPageRuQuery($lang: String = "ru", $type: String = "article") {
-//     allMarkdownRemark(
-//       sort: { order: DESC, fields: [frontmatter___date] }
-//       filter: {frontmatter: {lang: {eq: $lang}, type: {eq: $type}, customSlug: {in: ["top_services_gambling", "best_sources_for_gambling", "igaming_digest_1"]}}}
-//       ) {
-//       edges {
-//         node {
-//           html
-//           frontmatter {
-//             lang
-//             type
-//             date(formatString: "DD.MM.YYYY")
-//             customSlug
-//             notReadyMessage
-//             title
-//             image {
-//               childImageSharp {
-//                 gatsbyImageData(quality: 95, layout: CONSTRAINED)
-//               }
-//             }
-//             cardTitle
-//             cardText
-//             cardImage {
-//               childImageSharp {
-//                 gatsbyImageData(quality: 95, layout: CONSTRAINED)
-//               }
-//             }
-//           }
-//           fields {
-//             slug
-//           }
-//         }
-//       }
-//     }
-//   }
-// `

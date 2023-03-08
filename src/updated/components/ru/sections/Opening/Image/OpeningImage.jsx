@@ -138,7 +138,7 @@ export default function OpeningImage() {
 
   return (
     <div className={styles.imageContainer}>
-      <ADImage image={images.opening.childImageSharp} image480={images.opening_480.childImageSharp} alt=' trafflab lucky cat'/>
+      <ADImage image={images.opening.childImageSharp} image_480={images.opening_480.childImageSharp} alt=' trafflab lucky cat'/>
       <div className={styles.imageShadow} />
       <div className={styles.coin1}><SiteImage image={images.coin_1.childImageSharp}/></div>
       <div className={styles.coin2}><SiteImage image={images.coin_2.childImageSharp}/></div>

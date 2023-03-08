@@ -1,45 +1,33 @@
-// import '../../../styles/global.css';
-// import * as React from "react";
-// import * as styles from './IndexPageLayout.module.css';
+import '../../../../styles/global.css';
+import * as React from "react";
+import * as styles from './PageLayout.module.css';
 
-// import { Header, Opening, Footer  } from "../../sections";
-// import { SuccessMessage, FixedContacts } from '../../elements';
+import { Header, Footer } from "../../sections";
+import { FixedContacts } from '../../elements';
 
-// // import BackgroundItems from "./BackgroundItems/BackgroundItems";
-
-// import { MessagesContext } from '../../../../utils/contexts';
-
-// export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
+export default function PageLayout({ children }) {
   
-//   const [isSuccessMessage, setIsSuccessMessage] = React.useState(false);
-//   const pageRef = React.useRef();
-//   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
-  
-//   const showSuccessMessage = () => {
-//     setIsSuccessMessage(true)
-//     setTimeout(() => setIsSuccessMessage(false), 2000)
-//   } 
+  const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
+  const openNavPopup = () =>  setNavPopupOpen(true);
+  const closeNavPopup = () => setNavPopupOpen(false);
 
-//   return (
-//     <MessagesContext.Provider value={showSuccessMessage}>
-//       <div ref={pageRef} className={styles.page}>
+  const pageRef = React.useRef();
+  const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
+
+  return (
+      <div ref={pageRef} className={styles.page}>
+        <Header openNavPopupHandler={openNavPopup}/>
         
-//         <div className={styles.content}>
-//           <div className={styles.openingContainer}>
-//             <Header openNavPopupHandler={openNavPopupHandler}/>
-//             <Opening openFormPopupHandler={openFormPopupHandler} />
-//             <div className={styles.openingBubble} />
-//           </div>
-//           <main className={styles.main}>
-//             { children }
-//           </main>
-//           <Footer />
+        <div className={styles.content}>
+          <main className={styles.main}>
+            { children }
+          </main>
 
-//           <FixedContacts scrollHandler={smoothScrollToHeader}/>
-//           {/* <BackgroundItems /> */}
-//         </div>
-//         <SuccessMessage isShown={isSuccessMessage} />
-//       </div>
-//     </MessagesContext.Provider>
-//   )
-// }
+          <FixedContacts scrollHandler={smoothScrollToHeader}/>
+          {/* <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/> */}
+        </div>
+
+        <Footer />
+      </div>
+  )
+}

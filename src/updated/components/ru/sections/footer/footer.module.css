@@ -9,7 +9,7 @@
   width: 1200rem;
   display: grid;
   grid-template-columns: max-content 1fr max-content;
-  grid-template-rows: repeat(3, max-content);
+  grid-template-rows: repeat(2, max-content);
   grid-template-areas: 
   'logo nav contacts'
   'logo year contacts';

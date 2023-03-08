@@ -5,11 +5,14 @@ import * as styles from './IndexPageLayout.module.css';
 import { Header, Opening, Footer  } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 // import BackgroundItems from "./BackgroundItems/BackgroundItems";
-
 import { MessagesContext } from '../../../../utils/contexts';
 
-export default function IndexPageLayout({ children, openFormPopupHandler, openNavPopupHandler }) {
-  
+export default function IndexPageLayout({ children, openFormPopupHandler }) {
+
+  const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
+  const openNavPopup = () =>  setNavPopupOpen(true);
+  const closeNavPopup = () => setNavPopupOpen(false);
+
   const [isSuccessMessage, setIsSuccessMessage] = React.useState(false);
   const pageRef = React.useRef();
   const smoothScrollToHeader = () => pageRef.current.scrollIntoView({behavior: 'smooth'});
@@ -25,7 +28,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
         
         <div className={styles.content}>
           <div className={styles.openingContainer}>
-            <Header openNavPopupHandler={openNavPopupHandler}/>
+            <Header openNavPopupHandler={openNavPopup}/>
             <Opening openFormPopupHandler={openFormPopupHandler} />
             <div className={styles.openingBubble} />
           </div>
@@ -35,6 +38,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler, openNa
           <Footer />
 
           <FixedContacts scrollHandler={smoothScrollToHeader}/>
+          {/* <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/> */}
           {/* <BackgroundItems /> */}
         </div>
         <SuccessMessage isShown={isSuccessMessage} />
