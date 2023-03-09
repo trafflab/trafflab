@@ -40,6 +40,20 @@ const ecosystemCardsData = [
   },
 ]
 
+const sliderOptions = {
+  type: 'loop',
+  gap: '30rem',
+  pagination: false,
+  autoWidth: true,
+  drag: 'free',
+  snap: true,
+  breakpoints: {
+    480: {
+      gap: '20rem',
+    },
+  }
+}
+
 export default function Ecosystem() {
 
   return (
@@ -50,7 +64,7 @@ export default function Ecosystem() {
         textStyle={{width: '950rem'}}
       >
         <ul className={styles.list}>
-          <SliderLayout isLoop={true}>
+          <SliderLayout options={sliderOptions}>
             {
               ecosystemCardsData.map((cardData, index) => (
                 <SplideSlide key={index}><EcosystemCard cardClass={cardData.cardClass} linkTo={cardData.linkTo}/></SplideSlide>

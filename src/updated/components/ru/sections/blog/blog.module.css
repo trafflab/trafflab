@@ -16,6 +16,10 @@
   /* width: 100%; */
 }
 
+.listContainer ul li:last-child article {
+  padding-right: 100rem;
+}
+
 .list {
   display: flex;
   width: 100%;

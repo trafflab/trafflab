@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './basic-input.module.css';
+import * as styles from './BasicInput.module.css';
 
 export default function BasicInput({
   placeholder,

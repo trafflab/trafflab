@@ -1,14 +1,18 @@
 import * as React from "react"
 import * as styles from './Opening.module.css';
-
-import OpeningButton from "./Button/OpeningButton";
-import { TgButton } from "../../elements";
-
-import OpeningImage from "./Image/OpeningImage";
 import { Is480Context } from "../../../../utils/contexts";
 
-export default function Opening({openFormPopupHandler}) {
+import OpeningImage from "./Image/OpeningImage";
+import OpeningButton from "./Button/OpeningButton";
+import { TgButton } from "../../elements";
+import { FormPopup } from "../../popups";
+
+export default function Opening() {
+
   const is480 = React.useContext(Is480Context);
+  const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
+  const openFormPopup = () =>  setFormPopupOpen(true);
+  const closeFormPopup = () => setFormPopupOpen(false);
 
   
   return (
@@ -21,12 +25,14 @@ export default function Opening({openFormPopupHandler}) {
           <p className={styles.subtitle2}>Твой максимальный профит с самой прозрачной платформой</p>
           <div className={styles.buttonsContainer}>
             <TgButton text='Я веб-мастер'/>
-            <OpeningButton handler={openFormPopupHandler} text='Я рекламодатель'/>
+            <OpeningButton handler={openFormPopup} text='Я рекламодатель'/>
           </div>
         </div>
 
       </div>
       <OpeningImage />
+
+      <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
     </section>
   )
 }

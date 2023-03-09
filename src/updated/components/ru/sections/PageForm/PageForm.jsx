@@ -60,6 +60,7 @@ export default function PageForm({ isMiddle }) {
 
   }
   `)
+
   return (
     <section className={`${styles.pageForm} ${isMiddle ? styles.isMiddle : {}}`}>
       <div className={styles.content}>
@@ -81,8 +82,7 @@ export default function PageForm({ isMiddle }) {
           <ADImage image={images.page_form.childImageSharp} image_480={images.page_form_480.childImageSharp} />
         </div>
 
-      </div>
-
+      </div>      
     </section>
   )
 }

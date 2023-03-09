@@ -4,6 +4,7 @@ import * as styles from './PageLayout.module.css';
 
 import { Header, Footer } from "../../sections";
 import { FixedContacts } from '../../elements';
+import { NavPopup } from '../../popups';
 
 export default function PageLayout({ children }) {
   
@@ -24,7 +25,7 @@ export default function PageLayout({ children }) {
           </main>
 
           <FixedContacts scrollHandler={smoothScrollToHeader}/>
-          {/* <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/> */}
+          <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
         </div>
 
         <Footer />

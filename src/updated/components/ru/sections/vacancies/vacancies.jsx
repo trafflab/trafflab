@@ -44,6 +44,20 @@ const vacanciesData = [
   },
 ]
 
+const sliderOptions = {
+  type: 'loop',
+  gap: '30rem',
+  pagination: false,
+  autoWidth: true,
+  drag: 'free',
+  snap: true,
+  breakpoints: {
+    480: {
+      gap: '20rem',
+    },
+  }
+}
+
 export default function Vacancies() {
 
   return (
@@ -54,7 +68,7 @@ export default function Vacancies() {
         textStyle={{width: '1150rem'}}
       >
         <ul className={styles.list}>
-          <SliderLayout>
+          <SliderLayout options={sliderOptions}>
             {
               vacanciesData.map((vacancyData, index) => (
                 <SplideSlide key={index}><VacanciesCard data={vacancyData}/></SplideSlide>

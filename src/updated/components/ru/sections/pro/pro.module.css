@@ -22,6 +22,10 @@
   position: relative;
 }
 
+.splideContainer ul li:last-child article {
+  padding-right: 100rem;
+}
+
 @media screen and (max-width: 480px) {
   .pro {
     padding-bottom: 70rem;

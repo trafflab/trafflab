@@ -6,6 +6,7 @@ import { Header, Opening, Footer  } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 // import BackgroundItems from "./BackgroundItems/BackgroundItems";
 import { MessagesContext } from '../../../../utils/contexts';
+import { NavPopup } from '../../popups';
 
 export default function IndexPageLayout({ children, openFormPopupHandler }) {
 
@@ -38,7 +39,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
           <Footer />
 
           <FixedContacts scrollHandler={smoothScrollToHeader}/>
-          {/* <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/> */}
+          <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
           {/* <BackgroundItems /> */}
         </div>
         <SuccessMessage isShown={isSuccessMessage} />

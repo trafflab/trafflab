@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-// import Loader from "./ru/components/ui/loader/loader"
+import { Loader } from "./updated/components/common/ui"
 
 export default function HTML(props) {
   return (
@@ -34,19 +34,19 @@ export default function HTML(props) {
                 zIndex: 10000,
               }}
            >
-           {/* <Loader /> */}
+           <Loader />
         </div>
         <div
           key={`body`}
           id="___gatsby"
           style={{
-            // height: '100%',
-            // overflow: 'auto',
-            // position: 'fixed',
-            // top: 0,
-            // left: 0,
-            // right: 0,
-            // zIndex: 1,
+            height: '100%',
+            overflow: 'auto',
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            zIndex: 1,
             overflow: "auto",
           }}
           dangerouslySetInnerHTML={{ __html: props.body }}

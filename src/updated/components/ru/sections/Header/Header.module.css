@@ -59,7 +59,7 @@
     height: 24rem;
     background-color: transparent;
     background-size: 100% 100%;
-    /* background-image: url(../../../../images/icons/burger.svg); */
+    background-image: url(./burger.svg);
     background-repeat: no-repeat;
     background-position: center;
     border: none;

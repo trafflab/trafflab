@@ -4,13 +4,29 @@ import { SplideSlide } from '@splidejs/react-splide';
 import { navigate } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 
-import { Is480Context } from "../../../../utils/contexts";
 import { SectionContentLayout, SliderLayout } from "../../../common";
 import { BasicButton } from "../../../common/ui";
+import { ArticlePopup } from "../../popups";
 import BlogCard from "../../../common/BlogCard/BlogCard";
+import { changeUrl } from "../../../../utils/utils";
 
-export default function Blog({ openArticlePopupHandler }) {
-  const is480 = React.useContext(Is480Context);
+const SliderOptions = {
+  type: 'slide',
+  gap: '30rem',
+  pagination: false,
+  autoWidth: true,
+  snap: true,
+  drag: false,
+  breakpoints: {
+    480: {
+      gap: '20rem',
+      drag: 'free',
+    },
+  }
+}
+
+export default function Blog() {
+  
   const articlesData = useStaticQuery(graphql`
   query BlogRuQuery($lang: String = "ru", $type: String = "article") {
     allMarkdownRemark(
@@ -48,7 +64,21 @@ export default function Blog({ openArticlePopupHandler }) {
       }
     }
   }
-  `).allMarkdownRemark.edges
+  `).allMarkdownRemark.edges;
+  
+  const [ articlePopupOpen, setArticlePopupOpen ] = React.useState(false);
+  const [ articleData, setArticleData ] = React.useState({});
+
+  const openArticlePopup = (articleData, slug) => {
+    setArticleData(articleData)
+    changeUrl(slug)
+    setArticlePopupOpen(true);
+  }  
+  const closeArticlePopup = () => {
+    setArticlePopupOpen(false);
+    changeUrl(`/ru/`)
+  }
+
   return (
     <section id="blog" className={styles.blog}>
       <SectionContentLayout
@@ -57,29 +87,19 @@ export default function Blog({ openArticlePopupHandler }) {
         textStyle={{width: '680rem'}}
         noMarginBottom={true}
       >
-        {
-          is480
-            ? <div className={styles.listContainer}>
-                <SliderLayout>
-                  {
-                    articlesData.map((articleData, index) => (
-                      <SplideSlide key={index}><BlogCard openHandler={openArticlePopupHandler} data={articleData}/></SplideSlide>
-                    ))
-                  }
-                </SliderLayout>
-              </div>
-            : <ul className={styles.list}>
-                {
-                  articlesData.map((articleData, index) => (
-                    <li key={index}><BlogCard openHandler={openArticlePopupHandler} data={articleData}/></li>
-                  ))
-                }
-              </ul>
-        }
+        <div className={styles.listContainer}>
+          <SliderLayout options={SliderOptions} isArrows={false}>
+            {
+              articlesData.map((articleData, index) => (
+                <SplideSlide key={index}><BlogCard openHandler={openArticlePopup} data={articleData}/></SplideSlide>
+              ))
+            }
+          </SliderLayout>
+        </div>
       </SectionContentLayout>
-      <div className={styles.buttonContainer}>
-          <BasicButton text='Больше статей!' handler={() => navigate('blog')}/>
-      </div>
+      <div className={styles.buttonContainer}><BasicButton text='Больше статей!' handler={() => navigate('blog')}/></div>
+
+      <ArticlePopup data={articleData} isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
     </section>
   )
 }

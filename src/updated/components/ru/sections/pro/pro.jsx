@@ -5,7 +5,6 @@ import { SplideSlide } from '@splidejs/react-splide';
 
 import { SliderLayout, SectionContentLayout } from "../../../common";
 import ProCard from "./Card/ProCard";
-import { Is480Context } from '../../../../utils/contexts';
 
 const prosData = [
   {
@@ -33,8 +32,22 @@ const prosData = [
   }
 ]
 
+const SliderOptions = {
+  type: 'slide',
+  gap: '75rem',
+  pagination: false,
+  autoWidth: true,
+  snap: true,
+  drag: false,
+  breakpoints: {
+    480: {
+      gap: '20rem',
+      drag: 'free',
+    },
+  }
+}
+
 export default function Pro() {
-  const is480 = React.useContext(Is480Context);
   const images = useStaticQuery(graphql`
   query ProQuery {
     pro_1: file(name: {eq: "pro-1"}) {
@@ -84,21 +97,13 @@ export default function Pro() {
         text='Trafflab - международная компания. В команде профессионалы в сфере iGaming и EDTech с 7+ летним опытом. Базируемся в Украине, Беларуси, во Франции и на Кипре, а также в некоторых азиатских странах. У нас нет предпочтений по национальному, гражданскому или гендерному признаку. Мы говорим на разных языках, в разных странах, но строим взаимодействие со всеми партнерами по единому принципу: win-win.'
         textStyle={{width: '1150rem'}}
       >
-        {
-          is480 
-            ? <div className={styles.splideContainer}>
-                <SliderLayout>
-                  <SplideSlide><ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/></SplideSlide>
-                  <SplideSlide><ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/></SplideSlide>
-                  <SplideSlide><ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/></SplideSlide>  
-                </SliderLayout>
-              </div>
-            : <ul className={styles.list}>
-                <ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/>
-                <ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/>
-                <ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/>
-              </ul>
-        }
+        <div className={styles.splideContainer}>
+          <SliderLayout options={SliderOptions} isArrows={false}>
+            <SplideSlide><ProCard proData={prosData[0]} proImage={images.pro_1.childImageSharp}/></SplideSlide>
+            <SplideSlide><ProCard proData={prosData[1]} proImage={images.pro_2.childImageSharp}/></SplideSlide>
+            <SplideSlide><ProCard proData={prosData[2]} proImage={images.pro_3.childImageSharp}/></SplideSlide>  
+          </SliderLayout>
+        </div>
       </SectionContentLayout>
     </section>
   )

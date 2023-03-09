@@ -39,6 +39,14 @@
   visibility: hidden;
 }
 
+.prevArrow[data-arrows=false] {
+  display: none;
+}
+
+.nextArrow[data-arrows=false] {
+  display: none;
+}
+
 @media screen and (max-width: 480px) {
   .arrowContainer {
     width: 300rem;
@@ -56,5 +64,13 @@
   .nextArrow {
     top: calc(50% - 16rem);
     right: 4rem;
+  }
+
+  .prevArrow[data-arrows=false] {
+    display: block;
+  }
+  
+  .nextArrow[data-arrows=false] {
+    display: block;
   }
 }

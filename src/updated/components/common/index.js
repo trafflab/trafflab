@@ -9,5 +9,5 @@ export {
   PartnersMarquee,
   CountriesMarquee,
   SliderLayout,
-  SectionContentLayout
+  SectionContentLayout,
 }
