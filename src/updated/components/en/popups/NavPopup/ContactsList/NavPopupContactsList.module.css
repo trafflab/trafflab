@@ -1,0 +1,8 @@
+.list {
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 280rem;
+  margin-bottom: 24rem;
+}

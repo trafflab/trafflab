@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import IndexPageTemplate from "../../updated/components/ru/templates/IndexPageTemplate";
 import { SiteLayout } from "../../updated/components/common";
 
-export default function Index() {
+export default function IndexPage() {
 
   return (
     <SiteLayout pageTitle="TRAFFLAB" siteLang='ru'>
@@ -17,5 +17,6 @@ export default function Index() {
       </Helmet>
       <IndexPageTemplate />
     </SiteLayout>
+
   )
 }

@@ -26,14 +26,13 @@ html {
   --color-green: #3DCA3F;
   --color-orange: #FD9941;
   
-  /* relative to 1440px */
-  --font-size-large: 64rem; /* 64px */
-  --font-size-big: 44rem; /* 44px */
-  --font-size-middle: 24rem; ; /* 24px */
-  --font-size-small: 18rem; /* 18px */
-  --font-size-body-big: 16rem; /* 16px */
-  --font-size-body-middle: 14rem; /* 14px */
-  --font-size-body-small: 12rem; /* 12px */
+  --font-size-large: 64rem;
+  --font-size-big: 44rem;
+  --font-size-middle: 24rem; ;
+  --font-size-small: 18rem;
+  --font-size-body-big: 16rem;
+  --font-size-body-middle: 14rem;
+  --font-size-body-small: 12rem;
 
   --link-opacity-transition: linear 0.35s opacity;
 }
@@ -62,16 +61,8 @@ body::after {
   left: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  /* background-image:
-    url(../images/form-popup/image.webp); */
 }
 
-@media screen and (max-width: 480px) {
-  body::after {
-    /* background-image:
-      url(../images/form-popup/image480.webp); */
-  }
-}
 
 ul {
   list-style: none;

@@ -5,39 +5,53 @@ module.exports = {
     siteUrl: `https://trafflab.com`
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-sitemap",
-    //   options: {
-    //     query: `
-    //     {
-    //       allMarkdownRemark {
-    //         edges {
-    //           node {
-    //             fields {
-    //               slug
-    //             }
-    //             frontmatter {
-    //               date
-    //             }
-    //           }
-    //         }
-    //       }
-    //     }
-    //     `,
-    //     output: '/',
-    //     resolveSiteUrl: () => 'https://trafflab.com',
-    //     resolvePages: ({ allMarkdownRemark: { edges } }) => {
-    //       return edges.map((page) => ({
-    //         path: page.node.fields.slug,
-    //         date: page.node.frontmatter.date
-    //       }))
-    //     },
-    //     serialize: ({path, date}) => ({
-    //       url: path,
-    //       lastmod: date
-    //     })
-    //   }
-    // },
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          allMarkdownRemark {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  date
+                }
+              }
+            }
+          }
+        }
+        `,
+        output: '/',
+        resolveSiteUrl: () => 'https://trafflab.com',
+        resolvePages: ({ allMarkdownRemark: { edges } }) => {
+          const articlesUrl = edges.map((page) => ({
+            path: page.node.fields.slug,
+            date: page.node.frontmatter.date
+          }))
+          const baseUrls = [
+            "/",
+            "/ru/",
+            "/en/",
+            "/ru/blog/",
+            "/en/blog/",
+          ]
+          baseUrls.forEach(url => {
+            articlesUrl.push({
+              path: url,
+              date: "2022-07-07T16:02:49.948Z",
+            })
+          })
+          return articlesUrl
+        },
+        serialize: ({path, date}) => ({
+          url: path,
+          lastmod: date
+        })
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -111,12 +125,12 @@ module.exports = {
         },
       },
     },
-    // {
-    //   resolve: "gatsby-plugin-netlify-cms",
-    //   options: {
-    //     modulePath: `${__dirname}/src/cms/cms.js`,
-    //   },
-    // },
-    // "gatsby-plugin-netlify", // make sure to keep it last in the array
+    {
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.js`,
+      },
+    },
+    "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };

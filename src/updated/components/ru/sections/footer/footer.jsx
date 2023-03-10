@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './Footer.module.css';
 import { Link } from "gatsby";
 
-import { Logo } from "../../../common/ui";
+import { Logo } from "../../../common";
 import FooterNavList from "./NavList/FooterNavList";
 import FooterContactsList from "./ContactsList/FooterContactsList";
 

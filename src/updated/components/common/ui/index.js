@@ -4,8 +4,8 @@ import CmsImage from "./CmsImage";
 
 import BasicButton from "./BasicButton/BasicButton";
 import BasicInput from "./BasicInput/BasicInput";
-import Logo from "./Logo/logo";
-import Loader from "./loader/loader";
+import Logo from "../Logo/logo";
+import Loader from "./Loader/Loader";
 
 export {
   SiteImage,

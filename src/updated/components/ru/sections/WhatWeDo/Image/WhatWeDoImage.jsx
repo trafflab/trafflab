@@ -8,7 +8,7 @@ import { SiteImage } from "../../../../common/ui";
 
 export default function WhatWeDoImage() {
   const images = useStaticQuery(graphql`
-  query WhatWeDoImageQuery {
+  query WhatWeDoImageRuQuery {
 
     whatWeDo: file(name: {eq: "what-we-do"}) {
       name

@@ -8,7 +8,9 @@ import { BasicButton } from '../../../common/ui';
 import PageLayout from '../../layouts/PageLayout/PageLayout';
 
 export function ArticlePageTemplate({ article, content, path }) {
-
+  React.useEffect(() => {
+    localStorage.setItem('lang', 'ru');
+  }, [])
   return (
     <PageLayout>
 

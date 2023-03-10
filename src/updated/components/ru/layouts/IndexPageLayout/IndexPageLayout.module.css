@@ -53,4 +53,15 @@
   .openingContainer {
     height: 500rem;
   }
+
+
+  .openingBubble {
+    position: absolute;
+    top: 462rem;
+    right: 130rem;
+    width: 47rem;
+    height: 0.1px;
+    background-color: rgb(253, 103, 106);
+    box-shadow: 0rem 0rem 351rem 83rem rgba(253, 103, 106, 1);
+  }
 }

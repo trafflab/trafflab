@@ -21,7 +21,7 @@ export default function HTML(props) {
               id="___loader"
               style={{
                 alignItems: "center",
-                backgroundColor: "#131313",
+                backgroundColor: "#181818",
                 display: "flex",
                 justifyContent: "center",
                 position: "fixed",
@@ -41,8 +41,8 @@ export default function HTML(props) {
           id="___gatsby"
           style={{
             height: '100%',
-            overflow: 'auto',
-            position: 'fixed',
+            width: '100%',
+            position: 'relative',
             top: 0,
             left: 0,
             right: 0,

@@ -39,17 +39,17 @@ exports.createPages = ({ actions, graphql }) => {
             context: { slug: edge.node.fields.slug, },
           })
         } else {
-          // createPage({
-          //   path: edge.node.fields.slug,
-          //   component: require.resolve(`./src/templates/article-page/article-page.js`),
-          //   context: { slug: edge.node.fields.slug, },
-          // })
+          createPage({
+            path: edge.node.fields.slug,
+            component: require.resolve('./src/updated/components/en/templates/ArticlePage/ArticlePageTemplate.jsx'),
+            context: { slug: edge.node.fields.slug, },
+          })
         }
 
       } else {
         createPage({
           path: edge.node.fields.slug,
-          component: require.resolve(`./src/templates/detect-lang-page.js`),
+          component: require.resolve(`./src/updated/components/common/DetectLangPageTemplate.jsx`),
           context: { slug: edge.node.fields.slug, },
         })
       }

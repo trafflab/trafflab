@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './FormPopup.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { MessagesContext } from '../../../../utils/contexts';
-import { sendFormToTg } from "../../../../utils/api";
+import { sendFormToTgRu } from "../../../../utils/api";
 import useForm from "../../../../hooks/use-form";
 import { ADImage } from "../../../common/ui";
 
@@ -43,12 +43,12 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const successMessageHandler = React.useContext(MessagesContext)
 
   const handleSendClick = () => {
-    sendFormToTg(values.product, values.name, values.contact, values.comfyContact)
+    sendFormToTgRu(values.product, values.name, values.contact, values.comfyContact)
       .then(res => {
         if (res.ok) {
           successMessageHandler()
           handleReset()
-          handleReset({name: '', tg: ''})
+          handleReset({product: '', name: '', contact: '', name: '', comfyContact: ''})
           momentWindow.yaCounter89406166.reachGoal('tg_form_click');
 
         }

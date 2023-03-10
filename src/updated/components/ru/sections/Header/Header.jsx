@@ -2,8 +2,7 @@ import * as React from "react"
 import * as styles from './Header.module.css';
 import { Link } from "gatsby";
 
-import { Logo } from "../../../common/ui";
-import { AskQuestion } from "../../elements";
+import { Logo, AskQuestion } from "../../../common"
 import HeaderNavList from "./NavList/HeaderNavList";
 
 export default function Header({ openNavPopupHandler }) {

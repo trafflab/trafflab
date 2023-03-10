@@ -2,7 +2,7 @@
   display: inline-block;
   position: relative;
 
-  --ratio: 0.75;
+  --ratio: 1;
 
   width: calc(var(--ratio) * 80rem);
   height: calc(var(--ratio) * 80rem);

@@ -7,7 +7,9 @@ import { BlogPageList } from '../../sections';
 import { BasicButton } from '../../../common/ui';
 
 export default function BlogPageTemplate({ blogData }) {
-
+  React.useEffect(() => {
+    localStorage.setItem('lang', 'ru');
+  }, [])
   return (
     <PageLayout>
       
