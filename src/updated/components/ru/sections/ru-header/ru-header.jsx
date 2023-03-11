@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './Header.module.css';
+import * as styles from './header.module.css';
 import { Link } from "gatsby";
 
 import { Logo, AskQuestion } from "../../../common"
