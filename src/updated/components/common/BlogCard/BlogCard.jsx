@@ -3,7 +3,7 @@ import * as styles from './BlogCard.module.css';
 import { SiteImage } from "../ui";
 
 export default function BlogCard({ openHandler = () => false, data } ) {
-  const article = data?.node?.frontmatter ? data.node.frontmatter : data
+  const article = data.node.frontmatter
 
   const handleOpenPopup = () => openHandler(
     {

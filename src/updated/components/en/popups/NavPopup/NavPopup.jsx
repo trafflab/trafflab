@@ -20,12 +20,12 @@ export default function NavPopup({isOpen, closeHandler}) {
           
           <nav className={styles.nav}>
             <ul onClick={handelClose} className={styles.list}>
-            <li><a href='/en#sources' className={styles.link}>Sources</a></li>
-            <li><a href='/en#ecosystem' className={styles.link}>Ecosystem</a></li>
-            <li><a href='/en/blog' className={styles.link}>Blog</a></li>
-            <li><a href='/en#partners' className={styles.link}>Partners</a> </li>
-            <li><a href='/en#vacancies' className={styles.link}>Vacancies</a></li>
-            <li><a href='/en#contacts' className={styles.link}>Contacts</a></li>
+            <li><a href='/en#sources'>Sources</a></li>
+            <li><a href='/en#ecosystem'>Ecosystem</a></li>
+            <li><a href='/en/blog'>Blog</a></li>
+            <li><a href='/en#partners'>Partners</a> </li>
+            <li><a href='/en#vacancies'>Vacancies</a></li>
+            <li><a href='/en#contacts'>Contacts</a></li>
             </ul>
           </nav>
           <NavPopupContactsList/>

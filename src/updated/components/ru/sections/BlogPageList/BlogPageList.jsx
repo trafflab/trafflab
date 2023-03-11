@@ -12,7 +12,7 @@ export default function BlogPageList({ articlesData }) {
       <ul className={styles.list}>
         {
           articlesData.map((articleData, index) => (
-            <li key={index} className={styles.listElement}>
+            <li key={index}>
               <BlogPageCard url={articleData.node.fields.slug} data={articleData.node.frontmatter} />
             </li>
           ))

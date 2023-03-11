@@ -48,7 +48,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
         if (res.ok) {
           successMessageHandler()
           handleReset()
-          handleReset({product: '', name: '', contact: '', name: '', comfyContact: ''})
+          handleReset({product: '', name: '', contact: '', comfyContact: ''})
           momentWindow.yaCounter89406166.reachGoal('tg_form_click');
 
         }

@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './TgButton.module.css';
+// import * as styles from './TgButton.module.css';
 import { BasicButton } from "../../../common/ui";
 
 export default function TgButton(props) {

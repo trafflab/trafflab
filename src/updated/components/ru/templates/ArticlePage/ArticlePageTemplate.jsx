@@ -2,9 +2,7 @@ import * as React from 'react'
 import * as styles from './ArticlePageTemplate.module.css';
 import { Link, graphql } from 'gatsby';
 import { Helmet } from 'react-helmet';
-
-import { SiteImage } from '../../../common/ui';
-import { BasicButton } from '../../../common/ui';
+import { SiteImage, BasicButton} from '../../../common/ui';
 import PageLayout from '../../layouts/PageLayout/PageLayout';
 
 export function ArticlePageTemplate({ article, content, path }) {
