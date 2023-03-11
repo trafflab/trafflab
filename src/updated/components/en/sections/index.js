@@ -4,7 +4,7 @@ import Footer from "./en-footer/en-footer"; //
 import Statistics from "./en-statistics/en-statistics"; //
 import Pro from "./en-pro/en-pro"; //
 import Ecosystem from "./en-ecosystem/en-ecosystem"; //
-import Blog from "./en-blog/en-blog"; //
+import Blog from "./blog/blog"; //
 import Vacancies from "./en-vacancies/en-vacancies"; //
 
 import WhatWeDo from "./what-we-do/what-we-do";
