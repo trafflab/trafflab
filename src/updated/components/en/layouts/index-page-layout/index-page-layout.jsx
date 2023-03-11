@@ -2,7 +2,7 @@ import '../../../../styles/global.css';
 import * as React from "react";
 import * as styles from './index-page-layout.module.css';
 
-import { Header, Opening, Footer  } from "../../sections";
+import { Header, Opening, Footer } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 import BackgroundItems from "./background-items/background-items";
 import { MessagesContext } from '../../../../utils/contexts';
