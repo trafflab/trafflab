@@ -12,7 +12,7 @@ const allowedLinks = [
   'http://127.0.0.1:3000',
 ];
 
-export default async function formHandler(req, res){
+export default function formHandler(req, res){
   const { headers, method, body } = req;
   if (allowedLinks.includes(headers.origin)) {
     res.header('Access-Control-Allow-Origin', headers.origin);
@@ -31,12 +31,23 @@ export default async function formHandler(req, res){
     ? `ru%0AВаш продукт - ${body.product}%0AВаше имя - ${body.name}%0AКонтакт для связи - ${body.contact}%0AУдобный канал связи - ${body.comfyContact || "Не указал"}`
     : `eng%0AName - ${body.name}%0ATelegram - @${body.tg}`
 
-  try {
-    const result = await fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
-      method: 'GET'
-    })
-    return res.status(200).json(result)
-  } catch(err) {
-    return res.status(500).json(err)
-  }
+
+  return fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
+    method: 'GET'
+  })
+  .then(res => {
+    if (res.ok) return res.json()
+    return Promise.reject(`FetchError: ${res.status} - ${res.message}`)
+  })
+  .then(data => res.status(200).json(data))
+  .catch(err => res.json(err))
+  // try {
+  //   fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
+  //     method: 'GET'
+  //   })
+    
+  //   return res.status(200).json(result)
+  // } catch(err) {
+  //   return res.status(500).json(err)
+  // }
 };
