@@ -1,13 +1,11 @@
-import TgButton from "./TgButton/TgButton";
-import SuccessMessage from "./SuccessMessage/SuccessMessage";
-import ContactsList from '../sections/Footer/ContactsList/FooterContactsList';
-import FixedContacts from "./FixedContacts/FixedContacts";
-import SectionContentLayout from "./SectionContentLayout/SectionContentLayout";
+import TgButton from "./tg-button/tg-button";
+import SuccessMessage from "./success-message/success-message";
+import FixedContacts from "./fixed-contacts/fixed-contacts";
+import SectionContentLayout from "./section-content-layout/section-content-layout";
 
 export {
   TgButton,
   SuccessMessage,
-  ContactsList,
   FixedContacts,
   SectionContentLayout,
 }

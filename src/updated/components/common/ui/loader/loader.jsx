@@ -1,5 +1,5 @@
 import * as React from "react"
-import * as styles from './Loader.module.css';
+import * as styles from './loader.module.css';
 
 export default function Loader() {
 

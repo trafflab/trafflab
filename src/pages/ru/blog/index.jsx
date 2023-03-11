@@ -1,5 +1,5 @@
 import React from "react";
-import BlogPageTemplate from "../../../updated/components/ru/templates/BlogPage/BlogPageTemplate";
+import BlogPageTemplate from "../../../updated/components/ru/templates/blog-page/blog-page-template";
 import { SiteLayout } from "../../../updated/components/common"; 
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";

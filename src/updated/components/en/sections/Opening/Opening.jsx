@@ -1,8 +1,8 @@
 import * as React from "react"
-import * as styles from './Opening.module.css';
+import * as styles from './opening.module.css';
 
-import OpeningImage from "./Image/OpeningImage";
-import OpeningButton from "./Button/OpeningButton";
+import OpeningImage from "./image/opening-image";
+import OpeningButton from "./button/opening-button";
 import { FormPopup } from "../../popups";
 
 export default function Opening() {

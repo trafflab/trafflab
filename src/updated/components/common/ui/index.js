@@ -1,10 +1,10 @@
-import SiteImage from "./SiteImage";
-import ADImage from "./ADImage";
-import CmsImage from "./CmsImage";
+import SiteImage from "./site-image";
+import ADImage from "./ad-image";
+import CmsImage from "./cms-image";
 
-import BasicButton from "./BasicButton/BasicButton";
-import BasicInput from "./BasicInput/BasicInput";
-import Loader from "./Loader/Loader";
+import BasicButton from "./basic-button/basic-button";
+import BasicInput from "./basic-input/basic-input";
+import Loader from "./loader/loader";
 
 export {
   SiteImage,

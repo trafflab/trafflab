@@ -1,10 +1,12 @@
-import SiteLayout from "./SiteLayout";
-import PartnersMarquee from "./PartnersMarquee/PartnersMarquee";
-import CountriesMarquee from "./CountriesMarquee/CountriesMarquee";
-import SliderLayout from "./SliderLayout/SliderLayout";
-import SectionContentLayout from "./SectionContentLayout/SectionContentLayout";
-import AskQuestion from "./AskQuestion/AskQuestion";
-import Logo from "./Logo/Logo";
+import SiteLayout from "./site-layout";
+import PartnersMarquee from "./partners-marquee/partners-marquee";
+import CountriesMarquee from "./countries-marquee/countries-marquee";
+import SliderLayout from "./slider-layout/slider-layout";
+import SectionContentLayout from "./section-content-layout/section-content-layout";
+import AskQuestion from "./ask-question/ask-question";
+import Logo from "./logo/logo";
+import BlogCard from "./blog-card/blog-card";
+import BlogPageCard from "./blog-page-card/blog-page-card";
 
 export {
   SiteLayout,
@@ -13,5 +15,7 @@ export {
   SliderLayout,
   SectionContentLayout,
   AskQuestion,
-  Logo
+  Logo,
+  BlogCard,
+  BlogPageCard
 }

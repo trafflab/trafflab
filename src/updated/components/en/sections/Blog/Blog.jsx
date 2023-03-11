@@ -1,13 +1,12 @@
 import * as React from "react"
-import * as styles from './Blog.module.css';
+import * as styles from './blog.module.css';
 import { SplideSlide } from '@splidejs/react-splide';
 import { navigate } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 
-import { SectionContentLayout, SliderLayout } from "../../../common";
+import { SectionContentLayout, SliderLayout, BlogCard } from "../../../common";
 import { BasicButton } from "../../../common/ui";
 import { ArticlePopup } from "../../popups";
-import BlogCard from "../../../common/BlogCard/BlogCard";
 import { changeUrl } from "../../../../utils/utils";
 
 const SliderOptions = {

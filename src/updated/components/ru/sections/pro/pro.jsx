@@ -1,10 +1,10 @@
 import * as React from "react"
-import * as styles from './Pro.module.css';
+import * as styles from './pro.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { SplideSlide } from '@splidejs/react-splide';
 
 import { SliderLayout, SectionContentLayout } from "../../../common";
-import ProCard from "./Card/ProCard";
+import ProCard from "./card/pro-card";
 
 const prosData = [
   {

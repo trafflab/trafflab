@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
-import IndexPageTemplate from "../../updated/components/en/templates/IndexPageTemplate";
+import IndexPageTemplate from "../../updated/components/en/templates/index-page-template";
 import { SiteLayout } from "../../updated/components/common";
 
 export default function IndexPage() {

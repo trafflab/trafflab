@@ -1,6 +1,6 @@
-import ArticlePopup from "./ArticlePopup/ArticlePopup";
-import FormPopup from "./FormPopup/FormPopup";
-import NavPopup from "./NavPopup/NavPopup";
+import ArticlePopup from "./article-popup/article-popup";
+import FormPopup from "./form-popup/form-popup";
+import NavPopup from "./nav-popup/nav-popup";
 
 export {
   ArticlePopup,

@@ -35,13 +35,13 @@ exports.createPages = ({ actions, graphql }) => {
         if (edge.node.frontmatter.lang === 'ru') {
           createPage({
             path: edge.node.fields.slug,
-            component: require.resolve('./src/updated/components/ru/templates/ArticlePage/ArticlePageTemplate.jsx'),
+            component: require.resolve('./src/updated/components/ru/templates/article-page/article-page-template.jsx'),
             context: { slug: edge.node.fields.slug, },
           })
         } else {
           createPage({
             path: edge.node.fields.slug,
-            component: require.resolve('./src/updated/components/en/templates/ArticlePage/ArticlePageTemplate.jsx'),
+            component: require.resolve('./src/updated/components/en/templates/article-page/article-page-template.jsx'),
             context: { slug: edge.node.fields.slug, },
           })
         }
@@ -49,7 +49,7 @@ exports.createPages = ({ actions, graphql }) => {
       } else {
         createPage({
           path: edge.node.fields.slug,
-          component: require.resolve(`./src/updated/components/common/DetectLangPageTemplate.jsx`),
+          component: require.resolve(`./src/updated/components/common/detect-lang-page-template.jsx`),
           context: { slug: edge.node.fields.slug, },
         })
       }

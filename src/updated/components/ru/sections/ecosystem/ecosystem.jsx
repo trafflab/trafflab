@@ -1,9 +1,9 @@
 import * as React from "react"
-import * as styles from './Ecosystem.module.css';
+import * as styles from './ecosystem.module.css';
 import { SplideSlide } from '@splidejs/react-splide';
 
 import { SliderLayout, SectionContentLayout } from "../../../common";
-import EcosystemCard from "./Card/EcosystemCard";
+import EcosystemCard from "./card/ecosystem-card";
 
 const ecosystemCardsData = [
   {

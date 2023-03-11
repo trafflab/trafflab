@@ -1,10 +1,10 @@
 import * as React from "react"
-import * as styles from './Footer.module.css';
+import * as styles from './footer.module.css';
 import { Link } from "gatsby";
 
 import { Logo } from "../../../common";
-import FooterNavList from "./NavList/FooterNavList";
-import FooterContactsList from "./ContactsList/FooterContactsList";
+import FooterNavList from "./nav-list/footer-nav-list";
+import FooterContactsList from "./contacts-list/footer-contacts-list";
 
 export default function Footer() {
 

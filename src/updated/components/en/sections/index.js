@@ -1,16 +1,16 @@
-import Header from "./Header/Header";
-import Opening from "./Opening/Opening";
-import Footer from "./Footer/Footer";
-import Statistics from "./Statistics/Statistics";
-import WhatWeDo from "./WhatWeDo/WhatWeDo";
-import Pro from "./Pro/Pro";
-import TrafficSources from "./TrafficSources/TrafficSources";
-import PageForm from './PageForm/PageForm';
-import Ecosystem from "./Ecosystem/Ecosystem";
-import Blog from "./Blog/Blog";
-import Vacancies from "./Vacancies/Vacancies";
+import Header from "./header/header";
+import Opening from "./opening/opening";
+import Footer from "./footer/footer";
+import Statistics from "./statistics/statistics";
+import WhatWeDo from "./what-we-do/what-we-do";
+import Pro from "./pro/pro";
+import TrafficSources from "./traffic-sources/traffic-sources";
+import PageForm from './page-form/page-form';
+import Ecosystem from "./ecosystem/ecosystem";
+import Blog from "./blog/blog";
+import Vacancies from "./vacancies/vacancies";
 
-import BlogPageList from "./BlogPageList/BlogPageList";
+import BlogPageList from "./blog-page-list/blog-page-list";
 
 export {
   Header,

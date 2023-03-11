@@ -3,7 +3,7 @@ import * as styles from './Header.module.css';
 import { Link } from "gatsby";
 
 import { Logo, AskQuestion } from "../../../common"
-import HeaderNavList from "./NavList/HeaderNavList";
+import HeaderNavList from "./nav-list/header-nav-list";
 
 export default function Header({ openNavPopupHandler }) {
 

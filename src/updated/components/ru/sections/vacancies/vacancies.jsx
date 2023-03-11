@@ -1,9 +1,9 @@
 import * as React from "react"
-import * as styles from './Vacancies.module.css';
+import * as styles from './vacancies.module.css';
 import { SplideSlide } from '@splidejs/react-splide';
 
 import { SliderLayout, SectionContentLayout } from "../../../common";
-import VacanciesCard from "./Card/VacanciesCard";
+import VacanciesCard from "./card/vacancies-card";
 
 const vacanciesData = [
   {

@@ -1,9 +1,9 @@
 import * as React from "react"
-import * as styles from './Opening.module.css';
+import * as styles from './opening.module.css';
 import { Is480Context } from "../../../../utils/contexts";
 
-import OpeningImage from "./Image/OpeningImage";
-import OpeningButton from "./Button/OpeningButton";
+import OpeningImage from "./image/opening-image";
+import OpeningButton from "./button/opening-button";
 import { TgButton } from "../../elements";
 import { FormPopup } from "../../popups";
 
