@@ -1,5 +1,5 @@
-import Header from "./ru-header/ru-header";
-import Opening from "./ru-opening/ru-opening";
+import Header from "./header/header";
+import Opening from "./opening/opening";
 import Footer from "./footer/footer";
 import Statistics from "./statistics/statistics";
 import WhatWeDo from "./what-we-do/what-we-do";
