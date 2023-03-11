@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './NavPopup.module.css';
 import PopupLayout from "../PopupLayout/PopupLayout";
 import NavPopupContactsList from "./ContactsList/NavPopupContactsList";
-import { Logo } from "../../../common/ui";
+import { Logo } from "../../../common";
 
 export default function NavPopup({isOpen, closeHandler}) {
 

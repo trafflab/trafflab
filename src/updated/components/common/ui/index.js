@@ -4,7 +4,6 @@ import CmsImage from "./CmsImage";
 
 import BasicButton from "./BasicButton/BasicButton";
 import BasicInput from "./BasicInput/BasicInput";
-import Logo from "../Logo/Logo";
 import Loader from "./Loader/Loader";
 
 export {
@@ -13,6 +12,5 @@ export {
   CmsImage,
   BasicButton,
   BasicInput,
-  Logo,
   Loader,
 }
