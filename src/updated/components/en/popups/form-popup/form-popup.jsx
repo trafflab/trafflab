@@ -43,17 +43,29 @@ export default function FormPopup({ closeHandler, isOpen }) {
   const successMessageHandler = React.useContext(MessagesContext)
 
   const handleSendClick = () => {
-    sendFormToTgEn(values.name, values.tg)
-      .then(res => {
-        if (res.ok) {
-          successMessageHandler()
-          handleReset()
-          handleReset({name: '', tg: ''})
-          momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-
-        }
+    if (!values.value && !values.tg) return;
+    fetch('/api/form', {
+      method: 'POST',
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        siteLang: 'en',
+        name: values.name,
+        tg: values.tg,
       })
+    })
+    .then(res => {
+      if (res.ok) {
+        successMessageHandler()
+        handleReset()
+        handleReset({name: '', tg: ''})
+        momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+      }
+    })
+    .catch(err => console.error(err))
   }
+  
   React.useEffect(() => {
     setMomentWindow(window)
   }, [])

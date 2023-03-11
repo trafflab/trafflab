@@ -42,17 +42,43 @@ export default function FormPopup({ closeHandler, isOpen }) {
 
   const successMessageHandler = React.useContext(MessagesContext)
 
-  const handleSendClick = () => {
-    sendFormToTgRu(values.product, values.name, values.contact, values.comfyContact)
-      .then(res => {
-        if (res.ok) {
-          successMessageHandler()
-          handleReset()
-          handleReset({product: '', name: '', contact: '', comfyContact: ''})
-          momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+  // const handleSendClick = () => {
+  //   sendFormToTgRu(values.product, values.name, values.contact, values.comfyContact)
+  //     .then(res => {
+  //       if (res.ok) {
+  //         successMessageHandler()
+  //         handleReset()
+  //         handleReset({product: '', name: '', contact: '', comfyContact: ''})
+  //         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
 
-        }
+  //       }
+  //     })
+  // }
+
+  const handleSendClick = () => {
+    if (!values.product && !values.name && !values.contact) return;
+    fetch('/api/form', {
+      method: 'POST',
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify({
+        siteLang: 'ru',
+        product: values.product,
+        name: values.name,
+        contact: values.contact,
+        comfyContact: values.comfyContact,
       })
+    })
+    .then(res => {
+      if (res.ok) {
+        successMessageHandler()
+        handleReset()
+        handleReset({product: '', name: '', contact: '', comfyContact: ''})
+        momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+      }
+    })
+    .catch(err => console.error(err))
   }
   React.useEffect(() => {
     setMomentWindow(window)
@@ -101,8 +127,6 @@ export default function FormPopup({ closeHandler, isOpen }) {
               placeholder='Удобный канал связи'
               value={values.comfyContact}
               onChange={handleChange}
-              minLength={1}
-              isRequired={true}
             />
           </div>
           <div className={styles.buttonContainer}>
