@@ -39,7 +39,11 @@ export default async function  formHandler(req, res){
   const fetchedData = await fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
     method: 'GET'
   })
-  res.statusCode = 200
-  res.end(JSON.stringify(fetchedData))
-  
+  if (fetchedData.ok) {
+    res.statusCode = 200
+    res.end('ok')
+  } else {
+    res.statusCode = 500
+    res.end('tg-error')
+  }
 };

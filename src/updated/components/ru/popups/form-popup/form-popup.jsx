@@ -73,10 +73,11 @@ export default function FormPopup({ closeHandler, isOpen }) {
     .then(res => {
       if (res.ok) {
         successMessageHandler()
-        handleReset()
         handleReset({product: '', name: '', contact: '', comfyContact: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-      }
+        closeHandler()
+      } else return Promise.reject(`error ${res.status}`)
+      
     })
     .catch(err => console.error(err))
   }
