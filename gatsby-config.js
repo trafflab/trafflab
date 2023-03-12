@@ -63,6 +63,7 @@ module.exports = {
       }
     },
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-netlify",
     {
       // keep as first gatsby-source-filesystem plugin for gatsby image support
       resolve: "gatsby-source-filesystem",
