@@ -1,4 +1,5 @@
 import fetch from "node-fetch"
+// const fetch = require('node-fetch');
 
 const allowedLinks = [
   'http://trafflab-test.netlify.app',
@@ -50,5 +51,5 @@ export default function formHandler(req, res){
     res.statusCode = 500
     res.end(`${err}`)
   })
-  return res.end()
+  res.end()
 };
