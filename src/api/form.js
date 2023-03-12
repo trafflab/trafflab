@@ -1,5 +1,4 @@
 import fetch from "node-fetch"
-// const fetch = require('node-fetch');
 
 const allowedLinks = [
   'http://trafflab-test.netlify.app',
@@ -13,7 +12,7 @@ const allowedLinks = [
   'http://127.0.0.1:3000',
 ];
 
-export default function formHandler(req, res){
+export default async function  formHandler(req, res){
   const origin = req.headers['origin']
   if (allowedLinks.includes(origin)) {
     res.setHeader('Access-Control-Allow-Origin', origin)
@@ -37,19 +36,10 @@ export default function formHandler(req, res){
     : `eng%0AName - ${body.name}%0ATelegram - @${body.tg}`
 
 
-  fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
+  const fetchedData = await fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
     method: 'GET'
   })
-  .then(res => {
-    if (res.ok) {
-      res.statusCode = 200
-      res.end("ok")
-    }
-    throw new Error(`FetchError: ${res.status} - ${res.message}`)
-  })
-  .catch(err => {
-    res.statusCode = 500
-    res.end(`${err}`)
-  })
-  res.end()
+  res.statusCode = 200
+  res.end(JSON.stringify(fetchedData))
+  
 };
