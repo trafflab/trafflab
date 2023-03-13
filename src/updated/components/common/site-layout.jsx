@@ -23,7 +23,7 @@ export default function SiteLayout({ children, siteLang, pageTitle = 'Trafflab' 
           <title>{pageTitle}</title>
         </Helmet>
         {children}
-        <YMInitializer accounts={[89406166]} options={{webvisor: true}} version="2" />
+        <YMInitializer accounts={[89406166]} options={{webvisor: false}} version="2" />
       </Is480Context.Provider>
   )
 };
