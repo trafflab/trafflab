@@ -1,9 +1,9 @@
 import * as React from "react"
 import * as styles from './what-we-do.module.css';
+import { FormsContexts } from "../../../../utils/contexts";
 import WhatWeDoCard from "./card/what-we-do-card";
 import WhatWeDoImage from "./image/what-we-do-image";
-import { TgButton } from "../../elements";
-
+import { BasicButton } from "../../../common/ui";
 import {
   phoneIcon,
   calendarIcon,
@@ -15,6 +15,7 @@ import {
 } from '../../../../images/icons'
 
 export default function WhatWeDo() {
+  const { openWebFormPopup } = React.useContext(FormsContexts);
 
   return (
     <section className={styles.whatWeDo}>
@@ -32,7 +33,7 @@ export default function WhatWeDo() {
             <WhatWeDoCard icon={redCalendarIcon} text='Hold up to 14 days' />
           </ul>
           <div className={styles.buttonContainer}>
-            <TgButton text='Join!'/>
+            <BasicButton handler={openWebFormPopup} text='Join!'/>
           </div>
         </div>
       </div>

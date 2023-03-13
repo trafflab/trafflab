@@ -1,17 +1,16 @@
 import * as React from "react"
-import * as styles from './form-popup.module.css';
+import * as styles from './form-popup-web.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { MessagesContext } from '../../../../utils/contexts';
-import { sendFormToTgEn } from "../../../../utils/api";
 import useForm from "../../../../hooks/use-form";
 import { ADImage } from "../../../common/ui";
 
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";
 
-export default function FormPopup({ closeHandler, isOpen }) {
+export default function FormPopupWeb({ closeHandler, isOpen }) {
   const images = useStaticQuery(graphql`
-  query FormPopupEnQuery {
+  query FormPopupWebEnQuery {
     form_popup: file(name: {eq: "form-popup"}) {
       name
       childImageSharp {
@@ -51,6 +50,7 @@ export default function FormPopup({ closeHandler, isOpen }) {
       },
       body: JSON.stringify({
         siteLang: 'en',
+        type: 'web',
         name: values.name,
         tg: values.tg,
       })

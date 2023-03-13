@@ -1,9 +1,9 @@
 import ArticlePopup from "./article-popup/article-popup";
-import FormPopup from "./form-popup/form-popup";
+import FormPopupWeb from "./form-popup-web/form-popup-web";
 import NavPopup from "./nav-popup/nav-popup";
 
 export {
   ArticlePopup,
-  FormPopup,
+  FormPopupWeb,
   NavPopup,
 }

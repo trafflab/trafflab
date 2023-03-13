@@ -1,19 +1,17 @@
 import * as React from "react"
 import * as styles from './opening.module.css';
-import { Is480Context } from "../../../../utils/contexts";
+import { Is480Context, FormsContexts } from "../../../../utils/contexts";
 
 import OpeningImage from "./image/opening-image";
 import OpeningButton from "./button/opening-button";
 import { TgButton } from "../../elements";
-import { FormPopup } from "../../popups";
+// import { FormPopup } from "../../popups";
+import { BasicButton } from "../../../common/ui";
 
 export default function Opening() {
 
   const is480 = React.useContext(Is480Context);
-  const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
-  const openFormPopup = () =>  setFormPopupOpen(true);
-  const closeFormPopup = () => setFormPopupOpen(false);
-
+  const { openAdvFormPopup, openWebFormPopup } = React.useContext(FormsContexts);
   
   return (
     <section id='opening' className={styles.opening}>
@@ -24,15 +22,15 @@ export default function Opening() {
           <p className={styles.subtitle1}>CPA - сеть</p>
           <p className={styles.subtitle2}>Твой максимальный профит с самой прозрачной платформой</p>
           <div className={styles.buttonsContainer}>
-            <TgButton text='Я веб-мастер'/>
-            <OpeningButton handler={openFormPopup} text='Я рекламодатель'/>
+            <BasicButton handler={openWebFormPopup} text='Я веб-мастер'/>
+            <OpeningButton handler={openAdvFormPopup} text='Я рекламодатель'/>
           </div>
         </div>
 
       </div>
       <OpeningImage />
 
-      <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
+      {/* <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/> */}
     </section>
   )
 }

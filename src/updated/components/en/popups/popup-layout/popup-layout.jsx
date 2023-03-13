@@ -4,11 +4,12 @@ import useDelayUnmountState from '../../../../hooks/use-delay-unmount-state';
 import ReactDOM from "react-dom";
 
 const portalRoot = typeof document !== 'undefined' ? document.getElementById('___portal') : null
+const delay = 200
 
 export default function PopupLayout({children, isOpen, closeHandler}) {
   
-  const shouldMount = useDelayUnmountState(isOpen, 350);
-  const animation = isOpen ? {animation: 'openAniamtion 0.35s ease-out'} : {animation: 'closeAniamtion 0.35s ease-out forwards'}
+  const shouldMount = useDelayUnmountState(isOpen, delay);
+  const animation = isOpen ? {animation: `openAniamtion ${delay}ms ease-out`} : {animation: `closeAniamtion ${delay}ms ease-out forwards`}
 
   const overlayClose = (evt) => {
     if (evt.target.classList.contains(styles.popupLayout)) closeHandler()

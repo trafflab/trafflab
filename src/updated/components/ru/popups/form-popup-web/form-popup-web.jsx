@@ -1,17 +1,16 @@
 import * as React from "react"
-import * as styles from './form-popup.module.css';
+import * as styles from './form-popup-web.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { MessagesContext } from '../../../../utils/contexts';
-import { sendFormToTgRu } from "../../../../utils/api";
 import useForm from "../../../../hooks/use-form";
 import { ADImage } from "../../../common/ui";
 
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";
 
-export default function FormPopup({ closeHandler, isOpen }) {
+export default function FormPopupWeb({ closeHandler, isOpen }) {
   const images = useStaticQuery(graphql`
-  query FormPopupQuery {
+  query FormPopupWebRuQuery {
     form_popup: file(name: {eq: "form-popup"}) {
       name
       childImageSharp {
@@ -42,21 +41,8 @@ export default function FormPopup({ closeHandler, isOpen }) {
 
   const successMessageHandler = React.useContext(MessagesContext)
 
-  // const handleSendClick = () => {
-  //   sendFormToTgRu(values.product, values.name, values.contact, values.comfyContact)
-  //     .then(res => {
-  //       if (res.ok) {
-  //         successMessageHandler()
-  //         handleReset()
-  //         handleReset({product: '', name: '', contact: '', comfyContact: ''})
-  //         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-
-  //       }
-  //     })
-  // }
-
   const handleSendClick = () => {
-    if (!values.product && !values.name && !values.contact) return;
+    if (!values.value && !values.tg) return;
     fetch('/api/form', {
       method: 'POST',
       headers: {
@@ -64,26 +50,24 @@ export default function FormPopup({ closeHandler, isOpen }) {
       },
       body: JSON.stringify({
         siteLang: 'ru',
-        product: values.product,
+        type: 'web',
         name: values.name,
-        contact: values.contact,
-        comfyContact: values.comfyContact,
+        tg: values.tg,
       })
     })
     .then(res => {
       if (res.ok) {
         successMessageHandler()
-        handleReset({product: '', name: '', contact: '', comfyContact: ''})
+        handleReset({name: '', tg: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
         closeHandler()
       } else return Promise.reject(`error ${res.status}`)
-      
     })
     .catch(err => console.error(err))
   }
+  
   React.useEffect(() => {
     setMomentWindow(window)
-    values.phone = ''
   }, [])
 
   return (
@@ -100,34 +84,20 @@ export default function FormPopup({ closeHandler, isOpen }) {
         <form className={styles.form}>
           <div className={styles.inputsContainer}>
             <BasicInput
-              name='product'
-              placeholder='Ваш продукт'
-              value={values.product}
-              onChange={handleChange}
-              minLength={1}
-              isRequired={true}
-            />
-            <BasicInput
               name='name'
-              placeholder='Ваше имя'
+              placeholder='Имя'
               value={values.name}
               onChange={handleChange}
               minLength={1}
               isRequired={true}
             />
-            <BasicInput
-              name='contact'
-              placeholder='Контакт для связи'
-              value={values.contact}
+             <BasicInput
+              name='tg'
+              placeholder='Телеграм'
+              value={values.tg}
               onChange={handleChange}
               minLength={1}
               isRequired={true}
-            />
-            <BasicInput
-              name='comfyContact'
-              placeholder='Удобный канал связи'
-              value={values.comfyContact}
-              onChange={handleChange}
             />
           </div>
           <div className={styles.buttonContainer}>

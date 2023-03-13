@@ -1,15 +1,12 @@
 import * as React from "react"
 import * as styles from './opening.module.css';
-
+import { FormsContexts } from "../../../../utils/contexts";
 import OpeningImage from "./image/opening-image";
 import OpeningButton from "./button/opening-button";
-import { FormPopup } from "../../popups";
 
 export default function Opening() {
-  const [ formPopupOpen, setFormPopupOpen ] = React.useState(false);
-  const openFormPopup = () =>  setFormPopupOpen(true);
-  const closeFormPopup = () => setFormPopupOpen(false);
-  
+  const { openWebFormPopup } = React.useContext(FormsContexts);
+
   return (
     <section id='opening' className={styles.opening}>
       <div className={styles.content}>
@@ -18,14 +15,12 @@ export default function Opening() {
           <h1 className={styles.title}>Profitable ecosystem</h1>
           <p className={styles.subtitle2}>for affiliates of any level</p>
           <div className={styles.buttonsContainer}>
-            <OpeningButton handler={openFormPopup} text='Become a partner'/>
+            <OpeningButton handler={openWebFormPopup} text='Become a partner'/>
           </div>
         </div>
 
       </div>
       <OpeningImage />
-
-      <FormPopup isOpen={formPopupOpen} closeHandler={closeFormPopup}/>
     </section>
   )
 }

@@ -5,8 +5,8 @@ import * as styles from './index-page-layout.module.css';
 import { Header, Opening, Footer  } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 import BackgroundItems from "./background-items/background-items";
-import { MessagesContext } from '../../../../utils/contexts';
-import { NavPopup } from '../../popups';
+import { MessagesContext, FormsContexts } from '../../../../utils/contexts';
+import { NavPopup, FormPopupAdv, FormPopupWeb} from '../../popups';
 
 export default function IndexPageLayout({ children, openFormPopupHandler }) {
 
@@ -21,31 +21,46 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
   const showSuccessMessage = () => {
     setIsSuccessMessage(true)
     setTimeout(() => setIsSuccessMessage(false), 2000)
-  } 
+  }
+
+  const [ webFormPopupOpen, setWebFormPopupOpen ] = React.useState(false);
+  const openWebFormPopup = () =>  setWebFormPopupOpen(true);
+  const closeWebFormPopup = () => setWebFormPopupOpen(false);
+
+  const [ advFormPopupOpen, setAdvFormPopupOpen ] = React.useState(false);
+  const openAdvFormPopup = () =>  setAdvFormPopupOpen(true);
+  const closeAdvFormPopup = () => setAdvFormPopupOpen(false);
 
   return (
-    <MessagesContext.Provider value={showSuccessMessage}>
-      <div ref={pageRef} className={styles.page}>
-        
-        <div className={styles.content}>
-          <div className={styles.openingContainer}>
-            <Header openNavPopupHandler={openNavPopup}/>
-            <Opening openFormPopupHandler={openFormPopupHandler} />
-            <div className={styles.openingBubble} />
+    <FormsContexts.Provider value={{
+      openAdvFormPopup,
+      openWebFormPopup,
+    }}>
+      <MessagesContext.Provider value={showSuccessMessage}>
+        <div ref={pageRef} className={styles.page}>
+          
+          <div className={styles.content}>
+            <div className={styles.openingContainer}>
+              <Header openNavPopupHandler={openNavPopup}/>
+              <Opening />
+              <div className={styles.openingBubble} />
+            </div>
+            <main className={styles.main}>
+              { children }
+            </main>
+            <Footer />
+
+            <FixedContacts scrollHandler={smoothScrollToHeader}/>
+            <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
           </div>
-          <main className={styles.main}>
-            { children }
-          </main>
-          <Footer />
+          
+          <SuccessMessage isShown={isSuccessMessage} />
+          <BackgroundItems />
 
-          <FixedContacts scrollHandler={smoothScrollToHeader}/>
-          <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
+          <FormPopupWeb isOpen={webFormPopupOpen} closeHandler={closeWebFormPopup}/>
+          <FormPopupAdv isOpen={advFormPopupOpen} closeHandler={closeAdvFormPopup}/>
         </div>
-        
-        <SuccessMessage isShown={isSuccessMessage} />
-        <BackgroundItems />
-
-      </div>
-    </MessagesContext.Provider>
+      </MessagesContext.Provider>
+    </FormsContexts.Provider>
   )
 }

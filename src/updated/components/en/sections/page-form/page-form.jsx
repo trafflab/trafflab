@@ -1,10 +1,8 @@
 import * as React from "react"
 import * as styles from './page-form.module.css';
 import { useStaticQuery, graphql } from "gatsby";
-
-import { SiteImage, ADImage } from "../../../common/ui";
-import { TgButton } from "../../elements";
-
+import { FormsContexts } from "../../../../utils/contexts";
+import { SiteImage, ADImage, BasicButton } from "../../../common/ui";
 export default function PageForm({ isMiddle }) {
   const images = useStaticQuery(graphql`
   query PageFormEnQuery {
@@ -60,6 +58,7 @@ export default function PageForm({ isMiddle }) {
 
   }
   `)
+  const { openWebFormPopup } = React.useContext(FormsContexts)
 
   return (
     <section className={`${styles.pageForm} ${isMiddle ? styles.isMiddle : {}}`}>
@@ -75,7 +74,7 @@ export default function PageForm({ isMiddle }) {
           </div>
 
           <p className={styles.text}>Оставьте заявку и менеджер свяжется с вами в ближайшее время</p>
-          <div className={styles.buttonContainer}><TgButton text='Стать партнером'/></div>
+          <div className={styles.buttonContainer}><BasicButton handler={openWebFormPopup} text='Стать партнером'/></div>
         </div>
 
         <div className={styles.imageContainer}>
