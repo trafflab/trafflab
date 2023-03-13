@@ -3,7 +3,7 @@ import * as styles from './form-popup-web.module.css';
 import { useStaticQuery, graphql } from "gatsby";
 import { MessagesContext } from '../../../../utils/contexts';
 import useForm from "../../../../hooks/use-form";
-import { ADImage } from "../../../common/ui";
+import { ADImage, SiteImage } from "../../../common/ui";
 
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";

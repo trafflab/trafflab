@@ -16,7 +16,7 @@ export default function HTML(props) {
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        <div
+        {/* <div
               key={`loader`}
               id="___loader"
               style={{
@@ -35,7 +35,7 @@ export default function HTML(props) {
               }}
            >
            <Loader />
-        </div>
+        </div> */}
         <div
           key={`body`}
           id="___gatsby"
