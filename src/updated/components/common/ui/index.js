@@ -1,5 +1,5 @@
 import SiteImage from "./site-image";
-import ADImage from "./ad-image";
+import ADImage from "./ad-image/ad-image";
 import CmsImage from "./cms-image";
 
 import BasicButton from "./basic-button/basic-button";
