@@ -1,7 +1,7 @@
 import * as React from "react"
 import * as styles from './blog.module.css';
 import { SplideSlide } from '@splidejs/react-splide';
-import { navigate } from "gatsby";
+import { Link } from "gatsby";
 import { useStaticQuery, graphql } from "gatsby";
 
 import { SectionContentLayout, SliderLayout, BlogCard } from "../../../common";
@@ -96,7 +96,9 @@ export default function Blog() {
           </SliderLayout>
         </div>
       </SectionContentLayout>
-      <div className={styles.buttonContainer}><BasicButton text='More articles!' handler={() => navigate('blog')}/></div>
+      <div className={styles.buttonContainer}>
+        <Link to='blog'><BasicButton text='More articles!' handler={() => false}/></Link>
+      </div>
 
       <ArticlePopup data={articleData} isOpen={articlePopupOpen} closeHandler={closeArticlePopup} />
     </section>

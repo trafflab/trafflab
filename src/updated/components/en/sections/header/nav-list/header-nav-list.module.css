@@ -20,6 +20,10 @@
   font-weight: 300;
 }
 
+.activeLink {
+  color: red;
+}
+
 .link:hover {
   opacity: 0.8;
 }

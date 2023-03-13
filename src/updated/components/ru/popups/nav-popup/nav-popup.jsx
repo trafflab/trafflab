@@ -1,5 +1,6 @@
 import * as React from "react"
 import * as styles from './nav-popup.module.css';
+import { Link } from "gatsby";
 import PopupLayout from "../popup-layout/popup-layout";
 import NavPopupContactsList from "./contacts-list/nav-popup-contacts-list";
 import { Logo } from "../../../common";
@@ -21,7 +22,7 @@ export default function NavPopup({ isOpen, closeHandler, linkPrefix='' }) {
           <nav className={styles.nav}>
             <ul onClick={handelClose} className={styles.list}>
               <li><a href={`${linkPrefix}#ecosystem`}>Экосистема</a></li>
-              <li><a href="/ru/blog">Блог</a></li>
+              <li><Link href="/ru/blog">Блог</Link></li>
               <li><a href={`${linkPrefix}#vacancies`}>Вакансии</a></li>
               <li><a href={`${linkPrefix}#contacts`}>Контакты</a></li>
             </ul>
