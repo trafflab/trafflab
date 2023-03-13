@@ -1,13 +1,13 @@
 import * as React from "react"
 import * as styles from './footer-nav-list.module.css';
 
-export default function FooterNavList() {
+export default function FooterNavList({ linkPrefix }) {
   return (
     <nav className={styles.nav}>
       <ul className={styles.list}>
-        <li className={styles.listElement}><a href='/ru#ecosystem' className={styles.link}>Экосистема</a></li>
-        <li className={styles.listElement}><a href='/ru/blog' className={styles.link}>Блог</a></li>
-        <li className={styles.listElement}><a href='/ru#vacancies' className={styles.link}>Вакансии</a></li>
+        <li><a href={`${linkPrefix}#ecosystem`} className={styles.link}>Экосистема</a></li>
+        <li><a href='/ru/blog' className={styles.link}>Блог</a></li>
+        <li><a href={`${linkPrefix}#vacancies`} className={styles.link}>Вакансии</a></li>
       </ul>
     </nav>
   )

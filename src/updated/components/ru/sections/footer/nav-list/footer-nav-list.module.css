@@ -32,14 +32,10 @@
     align-items: center;
     flex-wrap: wrap;
   }
-
-  .listElement {
-    margin: 0 8rem 8rem
-  }
-
+  
   .link {
-    
     font-size: var(--font-size-body-small);
     line-height: 1.35;
+    margin: 0 8rem 8rem
   }
 }

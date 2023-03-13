@@ -4,7 +4,7 @@ import PopupLayout from "../popup-layout/popup-layout";
 import NavPopupContactsList from "./contacts-list/nav-popup-contacts-list";
 import { Logo } from "../../../common";
 
-export default function NavPopup({isOpen, closeHandler}) {
+export default function NavPopup({ isOpen, closeHandler, linkPrefix='' }) {
 
   const handelClose = (evt) => {
     if (evt.target.nodeName === 'A') closeHandler()
@@ -20,12 +20,12 @@ export default function NavPopup({isOpen, closeHandler}) {
           
           <nav className={styles.nav}>
             <ul onClick={handelClose} className={styles.list}>
-            <li><a href='/en#sources'>Sources</a></li>
-            <li><a href='/en#ecosystem'>Ecosystem</a></li>
+            <li><a href={`${linkPrefix}#sources`}>Sources</a></li>
+            <li><a href={`${linkPrefix}#ecosystem`}>Ecosystem</a></li>
             <li><a href='/en/blog'>Blog</a></li>
-            <li><a href='/en#partners'>Partners</a> </li>
-            <li><a href='/en#vacancies'>Vacancies</a></li>
-            <li><a href='/en#contacts'>Contacts</a></li>
+            <li><a href={`${linkPrefix}#partners`}>Partners</a> </li>
+            <li><a href={`${linkPrefix}#vacancies`}>Vacancies</a></li>
+            <li><a href={`${linkPrefix}#contacts`}>Contacts</a></li>
             </ul>
           </nav>
           <NavPopupContactsList/>

@@ -6,7 +6,7 @@ import { Logo } from "../../../common";
 import FooterNavList from "./nav-list/footer-nav-list";
 import FooterContactsList from "./contacts-list/footer-contacts-list";
 
-export default function Footer() {
+export default function Footer({ linkPrefix='' }) {
 
   const [year, setYear] = React.useState("20..");
   React.useEffect(() => {
@@ -18,7 +18,7 @@ export default function Footer() {
       <div className={styles.content}>
 
         <div className={styles.logoContainer}><Link to={`/ru/`}><Logo /></Link></div>
-        <div className={styles.navContainer}><FooterNavList isFooter={true}/></div>
+        <div className={styles.navContainer}><FooterNavList linkPrefix={linkPrefix}/></div>
         <p className={styles.year}>{year} © TraffLab. Все права защищены.</p>
 
         <div className={styles.contactsContainer}>

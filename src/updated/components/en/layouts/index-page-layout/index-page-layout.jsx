@@ -45,7 +45,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
             <main className={styles.main}>
               { children }
             </main>
-            <Footer />
+            <Footer/>
 
             <FixedContacts scrollHandler={smoothScrollToHeader}/>
             <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>

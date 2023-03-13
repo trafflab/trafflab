@@ -17,7 +17,7 @@ export default function PageLayout({ children }) {
 
   return (
       <div ref={pageRef} className={styles.page}>
-        <Header openNavPopupHandler={openNavPopup}/>
+        <Header openNavPopupHandler={openNavPopup} linkPrefix='/ru'/>
         
         <div className={styles.content}>
           <main className={styles.main}>
@@ -25,10 +25,10 @@ export default function PageLayout({ children }) {
           </main>
 
           <FixedContacts scrollHandler={smoothScrollToHeader}/>
-          <NavPopup isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
+          <NavPopup linkPrefix='/ru' isOpen={navPopupOpen} closeHandler={closeNavPopup}/>
         </div>
 
-        <Footer />
+        <Footer linkPrefix='/ru' />
       </div>
   )
 }

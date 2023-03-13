@@ -8,7 +8,7 @@ import BackgroundItems from "./background-items/background-items";
 import { MessagesContext, FormsContexts } from '../../../../utils/contexts';
 import { NavPopup, FormPopupAdv, FormPopupWeb} from '../../popups';
 
-export default function IndexPageLayout({ children, openFormPopupHandler }) {
+export default function IndexPageLayout({ children }) {
 
   const [ navPopupOpen, setNavPopupOpen ] = React.useState(false);
   const openNavPopup = () =>  setNavPopupOpen(true);
