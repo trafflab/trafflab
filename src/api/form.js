@@ -33,11 +33,11 @@ export default async function  formHandler(req, res){
   const body = req.body
   const message = body.siteLang === 'ru'
     ? body.type === 'web'
-      ? `ру-веб%0AИмя - ${body.name}%0AТелеграм - @${body.tg}`
+      ? `ру-веб%0AИмя - ${body.name}%0AТелеграм - ${body.tg}`
       : `ru-рекл%0AВаш продукт - ${body.product}%0AВаше имя - ${body.name}%0AКонтакт для связи - ${body.contact}%0AУдобный канал связи - ${body.comfyContact || "Не указал"}`
     : body.type === 'web'
-      ? `eng-web%0AName - ${body.name}%0ATelegram - @${body.tg}`
-      : `eng-adv%0AName - ${body.name}%0ATelegram - @${body.tg}`
+      ? `eng-web%0AName - ${body.name}%0ATelegram - ${body.tg}`
+      : `eng-adv%0AName - ${body.name}%0ATelegram - ${body.tg}`
 
 
   const fetchedData = await fetch(`https://api.telegram.org/bot${process.env.TG_BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&parse_mode=html&text=${message}`, {
