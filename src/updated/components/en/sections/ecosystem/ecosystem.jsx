@@ -12,7 +12,7 @@ const ecosystemCardsData = [
   },
   {
     cardClass: 'edCard',
-    linkTo: 'https://traffacademy.com/?utm_source=main_land',
+    linkTo: 'https://trafflab.academy',
   },
   {
     cardClass: 'appsCard',
