@@ -27,7 +27,7 @@ export default function IndexPageTemplate() {
       <CountriesMarquee />
       <PageForm isMiddle />
       <TrafficSources />
-      <Ecosystem />
+      {/* <Ecosystem /> */}
       <Blog/>
       <PartnersMarquee />
       <Vacancies />

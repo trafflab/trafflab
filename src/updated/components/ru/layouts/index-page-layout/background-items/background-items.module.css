@@ -34,7 +34,7 @@
 }
 /* 4 */
 .backgroundItems div[id=backNet]:nth-child(4) {
-  top: 6370rem;
+  top: 6417rem;
 }
 
 
@@ -55,11 +55,11 @@
 }
 /* 3 */
 .backgroundItems div[id=backLine]:nth-child(7) {
-  top: 5187rem;
+  top: 4497rem;
 }
 /* 4 */
 .backgroundItems div[id=backLine]:nth-child(8) {
-  top: 6029rem;
+  top: 5735rem;
 }
 
 
@@ -85,7 +85,7 @@
 }
 /* 3 */
 .backgroundItems div[id=backBubble]:nth-child(11) {
-  top: 3969rem;
+  top: 4183rem;
   right: 427rem;
   background-color: rgba(203, 156, 253, 1);
   box-shadow: 0rem 0rem 265rem 178rem rgba(203, 156, 253, 0.46);
@@ -106,7 +106,7 @@
 }
 /* 6 */
 .backgroundItems div[id=backBubble]:nth-child(14) {
-  top: 6746rem;
+  top: 6611rem;
   right: 0;
   background-color: rgb(253, 103, 106);
   box-shadow: 0rem 0rem 200rem 211rem rgba(253, 103, 106, 0.30);
@@ -147,7 +147,7 @@
   }
   /* 4 */
   .backgroundItems div[id=backLine]:nth-child(8) {
-    top: 5453rem;
+    top: 4951rem;
   }
     
 

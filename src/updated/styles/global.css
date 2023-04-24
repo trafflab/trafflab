@@ -9,6 +9,7 @@
 html {
   font-size: calc(1vw / 14.4);
   scroll-behavior: smooth;
+  background-color: #181818;
 }
 @media screen and (max-width: 480px) {
   html {

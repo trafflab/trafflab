@@ -30,7 +30,7 @@ export default function PageForm({ isMiddle }) {
       }
     }
 
-    text_image: file(name: {eq: "page-form-text-ru"}) {
+    text_image: file(name: {eq: "page-form-text-en"}) {
       name
       childImageSharp {
         gatsbyImageData(
@@ -43,7 +43,7 @@ export default function PageForm({ isMiddle }) {
       }
     }
 
-    text_image_last: file(name: {eq: "page-form-text-ru-last"}) {
+    text_image_last: file(name: {eq: "page-form-text-en-last"}) {
       name
       childImageSharp {
         gatsbyImageData(
@@ -73,8 +73,8 @@ export default function PageForm({ isMiddle }) {
             }
           </div>
 
-          <p className={styles.text}>Оставьте заявку и менеджер свяжется с вами в ближайшее время</p>
-          <div className={styles.buttonContainer}><BasicButton handler={openWebFormPopup} text='Стать партнером'/></div>
+          <p className={styles.text}>Leave a request and the manager will contact you soon</p>
+          <div className={styles.buttonContainer}><BasicButton handler={openWebFormPopup} text='Become a partner'/></div>
         </div>
 
         <div className={styles.imageContainer}>

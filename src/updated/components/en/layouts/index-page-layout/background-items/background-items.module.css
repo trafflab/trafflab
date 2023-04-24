@@ -26,11 +26,11 @@
 }
 /* 2 */
 .backgroundItems div[id=backNet]:nth-child(2) {
-  top: 3326rem;
+  top: 2730rem;
 }
 /* 3 */
 .backgroundItems div[id=backNet]:nth-child(3) {
-  top: 4549rem;
+  top: 3910rem;
 }
 /* 4 */
 /* .backgroundItems div[id=backNet]:nth-child(4) {
@@ -56,7 +56,7 @@
 }
 /* 3 */
 .backgroundItems div[id=backLine]:nth-child(6) {
-  top: 4229rem;
+  top: 3610rem;
 }
 /* 4 */
 /* .backgroundItems div[id=backLine]:nth-child(8) {
@@ -79,28 +79,28 @@
 }
 /* 2 */
 .backgroundItems div[id=backBubble]:nth-child(8) {
-  top: 3003rem;
+  top: 2383rem;
   right: 0;
   background-color: rgb(253, 103, 106);
-  box-shadow: 0rem 0rem 240rem 200rem rgba(253, 103, 106, 0.37);
+  box-shadow: 0rem 0rem 240rem 150rem rgba(253, 103, 106, 0.37);
 }
 /* 3 */
 .backgroundItems div[id=backBubble]:nth-child(9) {
-  top: 3969rem;
+  top: 3351rem;
   right: 427rem;
   background-color: rgba(203, 156, 253, 1);
-  box-shadow: 0rem 0rem 265rem 178rem rgba(203, 156, 253, 0.46);
+  box-shadow: 0rem 0rem 200rem 140rem rgba(203, 156, 253, 0.46);
 }
 /* 4 */
 .backgroundItems div[id=backBubble]:nth-child(10) {
-  top: 5061rem;
+  top: 4321rem;
   right: 247rem;
   background-color: rgba(203, 156, 253, 1);
   box-shadow: 0rem 0rem 173rem 109rem rgba(203, 156, 253, 0.46);
 }
 /* 5 */
 .backgroundItems div[id=backBubble]:nth-child(11) {
-  top: 5422rem;
+  top: 4834rem;
   left: 0;
   background-color: rgb(253, 103, 106);
   box-shadow: 0rem 0rem 252rem 143rem rgba(253, 103, 106, 0.4);
@@ -140,11 +140,11 @@
   }
   /* 2 */
   .backgroundItems div[id=backLine]:nth-child(5) {
-    top: 2859rem;
+    top: 2352rem;
   }
   /* 3 */
   .backgroundItems div[id=backLine]:nth-child(6) {
-    top: 3561rem;
+    top: 3050rem;
   }
   /* 4 */
   /* .backgroundItems div[id=backLine]:nth-child(8) {
@@ -175,14 +175,14 @@
   }
   /* 4 */
   .backgroundItems div[id=backBubble]:nth-child(10) {
-    top: 3796rem;
+    top: 3564rem;
     right: 0rem;
     background-color: rgba(203, 156, 253, 1);
     box-shadow: 0rem 0rem 173rem 109rem rgba(203, 156, 253, 0.36);
   }
   /* 5 */
   .backgroundItems div[id=backBubble]:nth-child(11) {
-    top: 4380rem;
+    top: 4171rem;
     left: 0;
     background-color: rgb(253, 103, 106);
     box-shadow: 0rem 0rem 252rem 100rem rgba(253, 103, 106, 0.4);

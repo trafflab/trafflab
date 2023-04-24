@@ -1,5 +1,5 @@
 import SiteLayout from "./site-layout";
-import PartnersMarquee from "./partners-marquee/partners-marquee";
+import PartnersMarquee from "../ru/sections/partners-marquee/partners-marquee";
 import CountriesMarquee from "./countries-marquee/countries-marquee";
 import SliderLayout from "./slider-layout/slider-layout";
 import SectionContentLayout from "./section-content-layout/section-content-layout";

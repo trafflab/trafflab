@@ -65,3 +65,9 @@
     box-shadow: 0rem 0rem 351rem 83rem rgba(253, 103, 106, 1);
   }
 }
+
+@media screen and (min-width: 1500px) {
+  .openingBubble {
+    box-shadow: 0rem 0rem 363rem 220rem rgba(253, 103, 106, 0.5);
+  }
+}

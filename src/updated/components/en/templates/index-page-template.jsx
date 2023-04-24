@@ -24,7 +24,7 @@ export default function IndexPageTemplate() {
       <CountriesMarquee />
       <TrafficSources />
       <WhatWeDo/>
-      <Ecosystem />
+      {/* <Ecosystem /> */}
       <Blog/>
       <PartnersMarquee />
       <Vacancies />
