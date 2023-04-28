@@ -8,6 +8,8 @@ import { ADImage } from "../../../common/ui";
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";
 
+import { Recaptcha } from "../../../common";
+
 export default function FormPopupWeb({ closeHandler, isOpen }) {
   const images = useStaticQuery(graphql`
   query FormPopupWebEnQuery {
@@ -108,6 +110,7 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
             />
             <p className={styles.agreement}>I agree to the personal data processing</p>
           </div>
+          <Recaptcha />
         </form>
 
       </div>
