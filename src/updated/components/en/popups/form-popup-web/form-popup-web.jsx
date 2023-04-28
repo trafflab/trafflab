@@ -40,11 +40,11 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   `)
   const {values, handleChange, isValid, handleReset} = useForm()
   const [momentWindow, setMomentWindow] = React.useState({});
-
+  
   const successMessageHandler = React.useContext(MessagesContext)
 
-  const handleSendClick = () => {
-    if (!values.value && !values.tg) return;
+  const handleSendForm = () => {
+    if (!values.name && !values.tg) return;
     fetch('/api/form', {
       method: 'POST',
       headers: {
@@ -71,6 +71,10 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   React.useEffect(() => {
     setMomentWindow(window)
   }, [])
+
+
+  const [recaptchaWindow, setRecaptchaWindow] = React.useState(false);
+
 
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
@@ -106,11 +110,14 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
             <BasicButton
               text='Send'
               isActive={isValid}
-              handler={handleSendClick}
+              handler={() => setRecaptchaWindow(true)}
             />
             <p className={styles.agreement}>I agree to the personal data processing</p>
           </div>
-          <Recaptcha />
+          <Recaptcha
+            isOpen={recaptchaWindow}
+            handler={handleSendForm}
+          />
         </form>
 
       </div>

@@ -4,6 +4,9 @@ const allowedLinks = [
   'http://trafflab-test.netlify.app',
   'https://trafflab-test.netlify.app',
 
+  'https://dexsportworldcup.online',
+  'http://dexsportworldcup.online',
+
   'http://trafflab.com',
   'https://trafflab.com',
 
