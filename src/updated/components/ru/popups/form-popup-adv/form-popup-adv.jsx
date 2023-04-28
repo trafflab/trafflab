@@ -66,6 +66,7 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({product: '', name: '', contact: '', comfyContact: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+        setRecaptchaWindow(false);
         closeHandler()
       } else return Promise.reject(`error ${res.status}`)
       
