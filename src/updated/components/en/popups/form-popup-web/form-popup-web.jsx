@@ -40,7 +40,8 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   `)
   const {values, handleChange, isValid, handleReset} = useForm()
   const [momentWindow, setMomentWindow] = React.useState({});
-  
+  const [recaptchaWindow, setRecaptchaWindow] = React.useState(false);
+
   const successMessageHandler = React.useContext(MessagesContext)
 
   const handleSendForm = () => {
@@ -62,7 +63,8 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({name: '', tg: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-        closeHandler()
+        setRecaptchaWindow(false);
+        closeHandler();
       } else return Promise.reject(`error ${res.status}`)
     })
     .catch(err => console.error(err))
@@ -71,9 +73,6 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   React.useEffect(() => {
     setMomentWindow(window)
   }, [])
-
-
-  const [recaptchaWindow, setRecaptchaWindow] = React.useState(false);
 
 
   return (
@@ -114,12 +113,13 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
             />
             <p className={styles.agreement}>I agree to the personal data processing</p>
           </div>
-          <Recaptcha
-            isOpen={recaptchaWindow}
-            handler={handleSendForm}
-          />
-        </form>
 
+        </form>
+        <Recaptcha
+          isOpen={recaptchaWindow}
+          handler={handleSendForm}
+          hl='en'
+        />
       </div>
     </PopupLayout>
   )

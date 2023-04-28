@@ -1,5 +1,4 @@
-.container {
-  /* transform: scale(1); */
+.cover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -15,6 +14,112 @@
   z-index: -1;
 }
 
-.container[data-is-open=true] {
+.cover[data-is-open=true] {
   z-index: 1;
+}
+
+@media screen and (min-width: 300px) {
+  .container {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+  .container {
+    transform: scale(1);
+  }
+}
+
+
+@media screen and (min-width: 480px) {
+  .container {
+    transform: scale(0.6);
+  }
+}
+
+
+@media screen and (min-width: 600px) {
+  .container {
+    transform: scale(0.7);
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .container {
+    transform: scale(0.8);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    transform: scale(0.9);
+  }
+}
+
+
+@media screen and (min-width: 900px) {
+  .container {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    transform: scale(1.2);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .container {
+    transform: scale(1.3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    transform: scale(1.5);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    transform: scale(1.6);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .container {
+    transform: scale(1.7);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .container {
+    transform: scale(1.8);
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .container {
+    transform: scale(1.9);
+  }
+}
+
+@media screen and (min-width: 2400px) {
+  .container {
+    transform: scale(2);
+  }
 }

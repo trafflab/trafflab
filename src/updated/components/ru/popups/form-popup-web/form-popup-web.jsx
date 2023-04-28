@@ -8,6 +8,8 @@ import { ADImage, SiteImage } from "../../../common/ui";
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";
 
+import { Recaptcha } from "../../../common";
+
 export default function FormPopupWeb({ closeHandler, isOpen }) {
   const images = useStaticQuery(graphql`
   query FormPopupWebRuQuery {
@@ -38,10 +40,11 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   `)
   const {values, handleChange, isValid, handleReset} = useForm()
   const [momentWindow, setMomentWindow] = React.useState({});
+  const [recaptchaWindow, setRecaptchaWindow] = React.useState(false);
 
   const successMessageHandler = React.useContext(MessagesContext)
 
-  const handleSendClick = () => {
+  const handleSendForm = () => {
     if (!values.value && !values.tg) return;
     fetch('/api/form', {
       method: 'POST',
@@ -104,12 +107,16 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
             <BasicButton
               text='Отправить'
               isActive={isValid}
-              handler={handleSendClick}
+              handler={() => setRecaptchaWindow(true)}
             />
             <p className={styles.agreement}>Я согласен на обработку персональных данных</p>
           </div>
         </form>
-
+        <Recaptcha
+          isOpen={recaptchaWindow}
+          handler={handleSendForm}
+          hl='RU'
+        />
       </div>
     </PopupLayout>
   )
