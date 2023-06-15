@@ -9,7 +9,7 @@ headTitle: Подкасты про маркетинг
 headDescription: Подкасты про маркетинг
 image: /img/подкасты-про-маркетинг.png
 cardTitle: Подкасты про маркетинг
-cardText: Подкасты про маркетинг
+cardText: Используй свободное время с максимальной пользой
 cardImage: /img/frame-72яч.png
 ---
 ## **Adindex Podcasts Adindex** 
