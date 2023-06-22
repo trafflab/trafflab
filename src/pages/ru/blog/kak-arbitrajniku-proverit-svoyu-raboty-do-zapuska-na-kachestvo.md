@@ -1,6 +1,6 @@
 ---
-title: Как арбитражнику проверить свою работу до запуска на качество?
-customSlug: kak-arbitrajniku-proverit-svoyu-raboty-do-zapuska-na-kachestvo
+title: Как арбитражнику проверить свою работу на качество до запуска?
+customSlug: kak-arbitrajniku-proverit-svoyu-raboty-na-kachestvo-do-zapuska
 lang: ru
 type: article
 date: 2023-06-22T14:26:49.631Z
