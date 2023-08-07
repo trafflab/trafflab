@@ -7,3 +7,8 @@
   YARN_FLAGS = "--no-ignore-optional"
 [[plugins]]
   package = "@netlify/plugin-gatsby"
+[[redirects]]
+  from = "/*"
+  to = "https://www.trafflab.io/:splat"
+  status = 301
+  force = true
