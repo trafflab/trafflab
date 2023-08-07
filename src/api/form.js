@@ -10,6 +10,9 @@ const allowedLinks = [
   'http://trafflab.com',
   'https://trafflab.com',
 
+  'http://trafflab.io',
+  'https://trafflab.io',
+
   'http://localhost:8000',
   'http://localhost:9000',
   'http://127.0.0.1:3000',

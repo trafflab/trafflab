@@ -13,10 +13,10 @@ export function ArticlePageTemplate({ article, content, path }) {
     <PageLayout>
 
       <Helmet>
-        <title>{article.headTitle} | Trafflab.com</title>
+        <title>{article.headTitle} | Trafflab.io</title>
         <meta name='description' content={article.headDescription}/>
         <meta name='keywords' content={article.headKeywords}/>
-        <link rel="canonical" href={`https://trafflab.com${path}`} />
+        <link rel="canonical" href={`https://trafflab.io${path}`} />
       </Helmet>
 
       <div className={styles.main}>

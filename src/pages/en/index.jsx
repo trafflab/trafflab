@@ -10,10 +10,10 @@ export default function IndexPage() {
       <Helmet>
         <meta name='description' content="for affiliates of any level"/>
         <meta name='keywords' content="Trafflab, affiliates, ecosystem, аффилейт-маркетинг"/>
-        <link rel="canonical" href="https://trafflab.com/en" />
-        <link rel="alternate" hreflang="ru" href="https://trafflab.com/ru" />
-        <link rel="alternate" hreflang="en" href="https://trafflab.com/en" />
-        <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua" />
+        <link rel="canonical" href="https://trafflab.io/en" />
+        <link rel="alternate" hreflang="ru" href="https://trafflab.io/ru" />
+        <link rel="alternate" hreflang="en" href="https://trafflab.io/en" />
+        <link rel="alternate" hreflang="uk" href="https://trafflab.io/ua" />
       </Helmet>
       <IndexPageTemplate />
     </SiteLayout>

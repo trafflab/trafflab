@@ -11,10 +11,10 @@ export default function BlogPage({ data }) {
       <Helmet>
         <meta name='description' content="Latest news, recommendations for traffic flows, manuals, insider information from private sources of affiliate marketing. Read the TraffLab blog and stay up to date with all market developments."/>
         <meta name='keywords' content="Trafflab, blog, affiliate marketing, ecosystem, traffic flows, news, manuals, private sources"/>
-        <link rel="canonical" href="https://trafflab.com/en" />
-        <link rel="alternate" hreflang="ru" href="https://trafflab.com/ru/blog" />
-        <link rel="alternate" hreflang="en" href="https://trafflab.com/en/blog" />
-        <link rel="alternate" hreflang="uk" href="https://trafflab.com/ua/blog" />
+        <link rel="canonical" href="https://trafflab.io/en" />
+        <link rel="alternate" hreflang="ru" href="https://trafflab.io/ru/blog" />
+        <link rel="alternate" hreflang="en" href="https://trafflab.io/en/blog" />
+        <link rel="alternate" hreflang="uk" href="https://trafflab.io/ua/blog" />
       </Helmet>
       <BlogPageTemplate blogData={data.allMarkdownRemark.edges} />
     </SiteLayout>

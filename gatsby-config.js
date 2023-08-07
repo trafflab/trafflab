@@ -5,7 +5,7 @@ module.exports = {
   siteMetadata: {
     title: "Trafflab",
     description: "Trafflab",
-    siteUrl: `https://trafflab.com`
+    siteUrl: `https://trafflab.io`
   },
   plugins: [
     {
@@ -28,7 +28,7 @@ module.exports = {
         }
         `,
         output: '/',
-        resolveSiteUrl: () => 'https://trafflab.com',
+        resolveSiteUrl: () => 'https://trafflab.io',
         resolvePages: ({ allMarkdownRemark: { edges } }) => {
           const articlesUrl = edges.map((page) => ({
             path: page.node.fields.slug,
@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://trafflab.com',
-        sitemap: 'https://trafflab.com/sitemap-0.xml',
+        host: 'https://trafflab.io',
+        sitemap: 'https://trafflab.io/sitemap-0.xml',
       }
     },
     "gatsby-plugin-react-helmet",
