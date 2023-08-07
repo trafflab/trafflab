@@ -13,7 +13,7 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <script>
+        <Script>
           {
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,7 +26,7 @@ export default function HTML(props) {
           }
           {fbq('init', '286389130744907')}
           {fbq('track', 'PageView')}
-        </script>
+        </Script>
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
