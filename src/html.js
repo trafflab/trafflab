@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { Loader } from "./updated/components/common/ui"
+import { Script } from "gatsby"
 
 export default function HTML(props) {
   return (
