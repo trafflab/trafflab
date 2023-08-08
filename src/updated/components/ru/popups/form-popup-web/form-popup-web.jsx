@@ -63,6 +63,11 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({name: '', tg: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+        if (typeof window !== "undefined") {
+          if (window.fbq != null) {
+            window.fbq('track', 'Lead', {type: "web"});
+          }
+        }
         setRecaptchaWindow(false);
         closeHandler()
       } else return Promise.reject(`error ${res.status}`)
