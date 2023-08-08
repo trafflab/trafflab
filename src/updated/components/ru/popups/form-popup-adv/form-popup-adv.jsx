@@ -66,11 +66,6 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({product: '', name: '', contact: '', comfyContact: ''})
         momentWindow.yaCounter89406166.reachGoal('tg_form_click');
-        if (typeof window !== "undefined") {
-          if (window.fbq != null) {
-            window.fbq('track', 'Lead', {type: "adv"});
-          }
-        }
         closeHandler()
       } else return Promise.reject(`error ${res.status}`)
       
@@ -85,6 +80,15 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
       <div className={styles.formPopup}>
+      <script
+        dangerouslySetInnerHTML={{ __html: `
+        if (typeof window !== "undefined") {
+          if (window.fbq != null) {
+            window.fbq('track', 'Lead', {type: "adv"});
+          }
+        }
+        `}}
+        ></script>
         <button type='button' onClick={closeHandler} className={styles.closeButton} />
 
         <div className={styles.imageContainer}>
