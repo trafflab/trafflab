@@ -80,15 +80,6 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
       <div className={styles.formPopup}>
-      <script
-        dangerouslySetInnerHTML={{ __html: `
-        if (typeof window !== "undefined") {
-          if (window.fbq != null) {
-            window.fbq('track', 'Lead', {type: "adv"});
-          }
-        }
-        `}}
-        ></script>
         <button type='button' onClick={closeHandler} className={styles.closeButton} />
 
         <div className={styles.imageContainer}>

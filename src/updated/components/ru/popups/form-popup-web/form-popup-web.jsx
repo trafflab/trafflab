@@ -76,15 +76,6 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
       <div className={styles.formPopup}>
-        <script
-        dangerouslySetInnerHTML={{ __html: `
-        if (typeof window !== "undefined") {
-          if (window.fbq != null) {
-            window.fbq('track', 'Lead', {type: "web"});
-          }
-        }
-        `}}
-        ></script>
         <button type='button' onClick={closeHandler} className={styles.closeButton} />
         <div className={styles.imageContainer}>
           <ADImage image={images.form_popup.childImageSharp} image_480={images.form_popup_480.childImageSharp}/>
