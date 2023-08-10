@@ -129,6 +129,7 @@ module.exports = {
           "G-V57QB4EL5D",
         ],
         pluginConfig: {
+          send_page_view: true,
           head: true,
           respectDNT: false,
         },
