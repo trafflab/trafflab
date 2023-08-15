@@ -39,8 +39,7 @@ export default function IndexPage() {
   return (
     <>
       <Helmet>
-        <meta name="yandex-verification" content="627efef0ddde2878" />
-        <meta name="google-site-verification" content="sitqCiT_sBfNtwKP81rRGUpgGUIptgDzy1b6I46xV6E" />
+        <meta name="yandex-verification" content="a5c1bf84551f7a25" />
       </Helmet>
       <div style={{
         height: '100vh',
