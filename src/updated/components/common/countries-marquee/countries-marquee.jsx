@@ -33,12 +33,6 @@ export default function CountriesMarquee() {
             <li className={styles.listElement}>
               <div className={styles.dot} />
             </li>
-            <li className={styles.listElement}>
-              <p className={styles.countryName}>Indonesia</p>
-            </li>
-            <li className={styles.listElement}>
-              <div className={styles.dot} />
-            </li>
           </ul>
         </Marquee>
       </div>
