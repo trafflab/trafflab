@@ -4,7 +4,7 @@ customSlug: top-25-neirosetei-dlya-tvoyei-raboty
 lang: ru
 type: article
 date: 2023-09-06T09:52:16.640Z
-headKeywords: нейросети, маркетинг, виде, аудио, креатив
+headKeywords: нейросети, маркетинг, видео, аудио, креатив
 headTitle: Топ-25 нейросетей для твоей работы
 headDescription: Топ-25 нейросетей для твоей работы
 image: /img/тг.png
