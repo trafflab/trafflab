@@ -62,7 +62,7 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
       if (res.ok) {
         successMessageHandler()
         handleReset({name: '', tg: ''})
-        momentWindow.yaCounter89406166.reachGoal('tg_form_click');
+        momentWindow.yaCounter308880837.reachGoal('tg_form_click');
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
             window.fbq('track', 'Lead', {type: "web"});
