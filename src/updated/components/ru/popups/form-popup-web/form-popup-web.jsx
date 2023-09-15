@@ -7,7 +7,7 @@ import { ADImage, SiteImage } from "../../../common/ui";
 
 import PopupLayout from "../popup-layout/popup-layout";
 import { BasicButton, BasicInput} from "../../../common/ui";
-
+import ym from 'react-yandex-metrika';
 import { Recaptcha } from "../../../common";
 
 export default function FormPopupWeb({ closeHandler, isOpen }) {
@@ -62,7 +62,8 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
       if (res.ok) {
         successMessageHandler()
         handleReset({name: '', tg: ''})
-        momentWindow.yaCounter308880837.reachGoal('tg_form_click');
+        //momentWindow.yaCounter308880837.reachGoal('tg_form_click');
+        ym(308880837, 'reachGoal', 'tg_form_click');
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
             window.fbq('track', 'Lead', {type: "web"});
