@@ -66,17 +66,19 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({product: '', name: '', contact: '', comfyContact: ''})
         //momentWindow.yaCounter308880837.reachGoal('tg_form_click');
-        ym('reachGoal', 'tg_form_click');
+        
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
             window.fbq('track', 'Lead', {type: "adv"});
           }
-        }
-        if (typeof window !== "undefined") {
           if (window.gtag != null) {
-            window.gtag('event', 'Lead', {type: "adv"});
+            window.gtag('event', 'generate_lead', {type: "adv"});
+          }
+          if (window.ym != null) {
+            window.ym('reachGoal', 'tg_form_click');
           }
         }
+
         setRecaptchaWindow(false);
         closeHandler()
       } else return Promise.reject(`error ${res.status}`)

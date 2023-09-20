@@ -68,7 +68,7 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
             window.fbq('track', 'Lead', {type: "web"});
           }
           if (window.gtag != null) {
-            window.gtag('event', 'Lead', {type: "web"});
+            window.gtag('event', 'generate_lead', {type: "web"});
           }
           if (window.ym != null) {
             window.ym('reachGoal', 'tg_form_click');
