@@ -70,7 +70,7 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
           if (window.gtag != null) {
             window.gtag('event', 'generate_lead', {type: "web"});
           }
-          window.ym('reachGoal', 'tg_form_click');
+          ym('reachGoal', 'tg_form_click');
         }
         setRecaptchaWindow(false);
         closeHandler()
