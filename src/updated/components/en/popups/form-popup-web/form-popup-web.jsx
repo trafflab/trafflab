@@ -63,7 +63,17 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
         successMessageHandler()
         handleReset({name: '', tg: ''})
         //momentWindow.yaCounter308880837.reachGoal('tg_form_click');
-        ym(308880837, 'reachGoal', 'tg_form_click');
+        if (typeof window !== "undefined") {
+          if (window.fbq != null) {
+            window.fbq('track', 'Lead', {type: "web"});
+          }
+          if (window.gtag != null) {
+            window.gtag('event', 'Lead', {type: "web"});
+          }
+          if (window.ym != null) {
+            window.ym('reachGoal', 'tg_form_click');
+          }
+        }
         setRecaptchaWindow(false);
         closeHandler();
       } else return Promise.reject(`error ${res.status}`)
