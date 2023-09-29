@@ -70,7 +70,7 @@
 
 .textContainer ul {
   /* line-height: 1; */
-  list-style-type: disc;
+  list-style: disc;
 }
 
 .textContainer a {
