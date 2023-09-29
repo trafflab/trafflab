@@ -70,8 +70,10 @@
 
 .textContainer ul {
   /* line-height: 1; */
-  list-style: disc;
+  list-style: georgian inside;
+  list-style-type: decimal;
 }
+
 
 .textContainer a {
   color: var(--color-gray-2);
