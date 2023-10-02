@@ -9,6 +9,7 @@ export default function NavPopup({ isOpen, closeHandler, linkPrefix='' }) {
 
   const handelClose = (evt) => {
     if (evt.target.nodeName === 'A') closeHandler()
+    console.log(evt.target.nodeName)
   }
   return (
     <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>

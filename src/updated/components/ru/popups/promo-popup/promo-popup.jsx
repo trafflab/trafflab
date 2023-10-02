@@ -1,30 +1,42 @@
 import * as React from "react"
 import * as styles from './promo-popup.module.css';
 import PopupLayout from "../popup-layout/popup-layout";
-import { SiteImage } from "../../../common/ui";
-import { Loader } from "../../../common/ui";
+import FormPopupWeb  from "../form-popup-web/form-popup-web";
+import { BasicButton} from "../../../common/ui";
 
-export default function PromoPopup({isOpen, data, closeHandler}) {
+export default function PromoPopup({isOpen, closeHandler}) {
 
-  // if (!data?.title) return null
-  return (
-    <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
-      <div className={styles.PromoPopup}>
-        <button onClick={closeHandler} className={styles.closeButton} />
-        {
-          !data?.title 
-          ? <Loader/>
-          : data.notReadyMessage 
-            ? <h3 className={styles.title}>{data.notReadyMessage}</h3>
-            : <div className={styles.content}>
-                <div className={styles.imageContainer}><SiteImage image={data.image} /></div>
-                <h3 className={styles.title}>{data.title}</h3>
-                <div className={styles.textContainer} dangerouslySetInnerHTML={{__html: data.text}} />
-                <p className={styles.date}>{data.date}</p>
-              </div>
-        }
-      </div>
+    const text = `Внимание, конкурс для новых партнеров TRAFFLAB!
+          С 1 октября стартует наш конкурс, условия максимально просты:
+          • Регистрация в нашей партнерской сети.
+          • Отлить капу по одному из наших офферов на ваш выбор
+          Мы уже подготовили офферы, готовые приносить вам прибыль!
+          Не упустите шанс выиграть приятный презент от TRAFFLAB! Результаты объявим в конце месяца`
+    // if (!data?.title) return null
+    const [isForm, setForm] = React.useState(false);
 
+    return (
+        <PopupLayout isOpen={isOpen} closeHandler={closeHandler}>
+        <div className={styles.promoPopup}>
+            <button onClick={closeHandler} className={styles.closeButton} />
+            
+                <div className={styles.content}>
+                    <div className={styles.textContainer}>
+                        {text}
+                    </div>
+                
+                
+                <button
+                className={styles.button}  
+                disabled={false}
+                onClick={() => {setForm(true);}}
+                type='button'
+                >
+                    {'ЗАБРАТЬ ПРИЗ'}
+                </button>
+            </div>
+        </div>
+      <FormPopupWeb isOpen={isForm} closeHandler={()=>{setForm(false);closeHandler();}}></FormPopupWeb>
     </PopupLayout>
 
   )

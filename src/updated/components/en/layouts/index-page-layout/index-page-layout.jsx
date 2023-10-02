@@ -6,7 +6,7 @@ import { Header, Opening, Footer } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 import BackgroundItems from "./background-items/background-items";
 import { MessagesContext, FormsContexts } from '../../../../utils/contexts';
-import { NavPopup, FormPopupWeb } from '../../popups';
+import { NavPopup, FormPopupWeb} from '../../popups';
 
 export default function IndexPageLayout({ children, openFormPopupHandler }) {
 
@@ -55,6 +55,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
           <BackgroundItems />
 
           <FormPopupWeb isOpen={webFormPopupOpen} closeHandler={closeWebFormPopup} />
+          
         </div>
       </MessagesContext.Provider>
     </FormsContexts.Provider>

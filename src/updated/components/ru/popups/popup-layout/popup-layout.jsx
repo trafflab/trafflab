@@ -12,6 +12,7 @@ export default function PopupLayout({children, isOpen, closeHandler}) {
   const animation = isOpen ? {animation: `openAniamtion ${delay}ms ease-out`} : {animation: `closeAniamtion ${delay}ms ease-out forwards`}
 
   const overlayClose = (evt) => {
+    console.log(evt.target.classList)
     if (evt.target.classList.contains(styles.popupLayout)) closeHandler()
   }
   React.useEffect(() => {
