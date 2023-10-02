@@ -6,13 +6,12 @@ import { BasicButton} from "../../../common/ui";
 
 export default function PromoPopup({isOpen, closeHandler}) {
 
-    const text = `Внимание, конкурс для новых партнеров TRAFFLAB!
-          С 1 октября стартует наш конкурс, условия максимально просты:
+    const text_first = `С 1 октября стартует наш конкурс, условия максимально просты:
           • Регистрация в нашей партнерской сети.
-          • Отлить капу по одному из наших офферов на ваш выбор
-          Мы уже подготовили офферы, готовые приносить вам прибыль!
-          Не упустите шанс выиграть приятный презент от TRAFFLAB! Результаты объявим в конце месяца`
-    // if (!data?.title) return null
+          • Отлить капу по одному из наших офферов на ваш выбор`
+    const text_second = `Мы уже подготовили офферы, готовые приносить вам прибыль!
+    Не упустите шанс выиграть приятный презент от TRAFFLAB! Результаты объявим в конце месяца`
+          // if (!data?.title) return null
     const [isForm, setForm] = React.useState(false);
 
     return (
@@ -21,8 +20,13 @@ export default function PromoPopup({isOpen, closeHandler}) {
             <button onClick={closeHandler} className={styles.closeButton} />
             
                 <div className={styles.content}>
+                    <div className={styles.textContainer}>    
+                        <h3>{'Внимание, конкурс для новых партнеров TRAFFLAB!'}</h3>
+                        {'\n'}
+                        {text_first}
+                    </div>
                     <div className={styles.textContainer}>
-                        {text}
+                        {text_second}
                     </div>
                 
                 
