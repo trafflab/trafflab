@@ -35,10 +35,9 @@ export default function IndexPageLayout({ children }) {
   const openPromoPopup = () =>  setpromoPopupOpen(true);
   const closePromoPopup = () => setpromoPopupOpen(false);
 
-  const promoShown = localStorage.getItem('promo-shown')
+  const promoShown = typeof window !== 'undefined'?localStorage.getItem('promo-shown'):null
 
   React.useEffect(()=>{
-    console.log(promoShown)
       const foo = !promoShown ? localStorage.setItem('promo-shown', 'yes') : null
     },
   [])
