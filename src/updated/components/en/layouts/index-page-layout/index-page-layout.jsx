@@ -28,16 +28,18 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
   const openWebFormPopup = () =>  setWebFormPopupOpen(true);
   const closeWebFormPopup = () => setWebFormPopupOpen(false);
 
-  const [ promoPopupOpen, setpromoPopupOpen ] = React.useState(true);
+  const [ promoPopupOpen, setpromoPopupOpen ] = React.useState(false);
   const openPromoPopup = () =>  setpromoPopupOpen(true);
   const closePromoPopup = () => setpromoPopupOpen(false);
 
-  const promoShown = typeof window !== 'undefined'?localStorage.getItem('promo-shown'):null
-
   React.useEffect(()=>{
-      const foo = !promoShown ? localStorage.setItem('promo-shown', 'yes') : null
-    },
-  [])
+    const promoShown = localStorage.getItem('promo-shown')
+    if(promoShown == 'yes') closePromoPopup() 
+    else{ 
+      localStorage.setItem('promo-shown', 'yes')
+      openPromoPopup()
+    }
+  },[])
   
   return (
     <FormsContexts.Provider value={{
@@ -63,7 +65,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
           
           <SuccessMessage isShown={isSuccessMessage} />
           <BackgroundItems />
-          {!promoShown ? <PromoPopup isOpen={promoPopupOpen} closeHandler={closePromoPopup}/> : null}
+          <PromoPopup isOpen={promoPopupOpen} closeHandler={closePromoPopup}/>
           <FormPopupWeb isOpen={webFormPopupOpen} closeHandler={closeWebFormPopup} />
         </div>
       </MessagesContext.Provider>
