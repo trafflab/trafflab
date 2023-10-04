@@ -51,7 +51,7 @@
 }
 
 .textContainer ul {
-  /* line-height: 1; */
+  list-style-type: disc;
 }
 
 .textContainer a {

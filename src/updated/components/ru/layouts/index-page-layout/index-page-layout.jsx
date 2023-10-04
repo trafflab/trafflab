@@ -35,6 +35,14 @@ export default function IndexPageLayout({ children }) {
   const openPromoPopup = () =>  setpromoPopupOpen(true);
   const closePromoPopup = () => setpromoPopupOpen(false);
 
+  const promoShown = localStorage.getItem('promo-shown')
+
+  React.useEffect(()=>{
+    console.log(promoShown)
+      const foo = !promoShown ? localStorage.setItem('promo-shown', 'yes') : null
+    },
+  [])
+
   return (
     <FormsContexts.Provider value={{
       openAdvFormPopup,
@@ -60,8 +68,8 @@ export default function IndexPageLayout({ children }) {
           
           <SuccessMessage isShown={isSuccessMessage} />
           <BackgroundItems />
+          {!promoShown ? <PromoPopup isOpen={promoPopupOpen} closeHandler={closePromoPopup}/> : null}
           
-          <PromoPopup isOpen={promoPopupOpen} closeHandler={closePromoPopup}/>
           <FormPopupWeb isOpen={webFormPopupOpen} closeHandler={closeWebFormPopup}/>
           <FormPopupAdv isOpen={advFormPopupOpen} closeHandler={closeAdvFormPopup}/>
         </div>

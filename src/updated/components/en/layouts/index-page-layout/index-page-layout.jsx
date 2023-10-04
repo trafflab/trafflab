@@ -6,7 +6,7 @@ import { Header, Opening, Footer } from "../../sections";
 import { SuccessMessage, FixedContacts } from '../../elements';
 import BackgroundItems from "./background-items/background-items";
 import { MessagesContext, FormsContexts } from '../../../../utils/contexts';
-import { NavPopup, FormPopupWeb } from '../../popups';
+import { NavPopup, FormPopupWeb, PromoPopup} from '../../popups';
 
 export default function IndexPageLayout({ children, openFormPopupHandler }) {
 
@@ -28,7 +28,18 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
   const openWebFormPopup = () =>  setWebFormPopupOpen(true);
   const closeWebFormPopup = () => setWebFormPopupOpen(false);
 
+  const [ promoPopupOpen, setpromoPopupOpen ] = React.useState(true);
+  const openPromoPopup = () =>  setpromoPopupOpen(true);
+  const closePromoPopup = () => setpromoPopupOpen(false);
 
+  const promoShown = localStorage.getItem('promo-shown')
+
+  React.useEffect(()=>{
+    console.log(promoShown)
+      const foo = !promoShown ? localStorage.setItem('promo-shown', 'yes') : null
+    },
+  [])
+  
   return (
     <FormsContexts.Provider value={{
       openWebFormPopup,
@@ -53,7 +64,7 @@ export default function IndexPageLayout({ children, openFormPopupHandler }) {
           
           <SuccessMessage isShown={isSuccessMessage} />
           <BackgroundItems />
-
+          {!promoShown ? <PromoPopup isOpen={promoPopupOpen} closeHandler={closePromoPopup}/> : null}
           <FormPopupWeb isOpen={webFormPopupOpen} closeHandler={closeWebFormPopup} />
         </div>
       </MessagesContext.Provider>
