@@ -1,6 +1,6 @@
 ---
 title: "Будущее цифрового маркетинга в igaming: тренды и прогнозы на следующие 5 лет"
-customSlug: budushee-cifrovogo-marketinga-v-igaming-trendy-i-prognozy-na-sleduyushie-5-let
+customSlug: budushee-cifrovogo-marketinga-v-igaming
 lang: ru
 type: article
 date: 2023-10-12T13:47:21.785Z
