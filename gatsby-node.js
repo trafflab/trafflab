@@ -17,6 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
             }
             frontmatter {
               lang
+              customSlug
             }
           }
         }
@@ -34,9 +35,11 @@ exports.createPages = ({ actions, graphql }) => {
 
         if (edge.node.frontmatter.lang === 'ru') {
           createPage({
-            path: edge.node.fields.slug,
+            // path: edge.node.fields.slug,
+            path: "/ru/blog/"+edge.node.frontmatter.customSlug,
             component: require.resolve('./src/updated/components/ru/templates/article-page/article-page-template.jsx'),
             context: { slug: edge.node.fields.slug, },
+            // context: { slug: "localhost:9000/ru/blog/"+edge.node.frontmatter.customSlug, },
           })
         } else {
           createPage({
@@ -63,6 +66,9 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
+    if (node.frontmatter.customSlug  === 'kak_lit_traffik_na_geo_meksika'){
+      console.log(value)
+    }
     createNodeField({
       name: `slug`,
       node,
