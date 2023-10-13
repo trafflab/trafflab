@@ -1,6 +1,6 @@
 ---
 title: super mega test
-customSlug: super-test-1488
+customSlug: super-test-1488-228
 lang: ru
 type: article
 date: 2023-10-12T03:03:03.241Z
