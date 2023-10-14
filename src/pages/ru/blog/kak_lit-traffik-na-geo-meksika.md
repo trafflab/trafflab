@@ -1,6 +1,6 @@
 ---
 title: "Как лить трафик на ГЕО: Мексика"
-customSlug: kak-lit-traffik-na-geo-meksika
+customSlug: kak_lit_traffik_na_geo_meksika
 lang: ru
 type: article
 date: 2023-09-22T15:36:00.000Z
