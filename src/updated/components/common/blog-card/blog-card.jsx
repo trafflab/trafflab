@@ -2,7 +2,7 @@ import * as React from "react"
 import * as styles from './blog-card.module.css';
 import { SiteImage } from "../ui";
 
-export default function BlogCard({ openHandler = () => false, data } ) {
+export default function BlogCard({ openHandler = () => false, data }) {
   const article = data.node.frontmatter
 
   const handleOpenPopup = () => openHandler(
@@ -13,7 +13,7 @@ export default function BlogCard({ openHandler = () => false, data } ) {
       notReadyMessage: article.notReadyMessage,
       date: article.date
     },
-    data.node.fields.slug,
+    `/${article.lang}/blog/`+article.customSlug,
   )
   return (
     <article className={styles.card}>

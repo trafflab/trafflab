@@ -13,7 +13,7 @@ export default function BlogPageList({ articlesData }) {
         {
           articlesData.map((articleData, index) => (
             <li key={index}>
-              <BlogPageCard url={articleData.node.fields.slug} data={articleData.node.frontmatter} />
+              <BlogPageCard url={"/en/blog/"+articleData.node.frontmatter.customSlug} data={articleData.node.frontmatter} />
             </li>
           ))
         }

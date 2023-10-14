@@ -43,7 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
           })
         } else {
           createPage({
-            path: edge.node.fields.slug,
+            path: "/en/blog/"+edge.node.frontmatter.customSlug,
             component: require.resolve('./src/updated/components/en/templates/article-page/article-page-template.jsx'),
             context: { slug: edge.node.fields.slug, },
           })
