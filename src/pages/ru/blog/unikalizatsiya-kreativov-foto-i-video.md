@@ -1,5 +1,5 @@
 ---
-title: Уникализация кретивов
+title: Уникализация креативов
 customSlug: unikalizatsiya-kreativov-foto-i-video
 lang: ru
 type: article
