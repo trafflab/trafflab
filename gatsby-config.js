@@ -101,6 +101,8 @@ module.exports = {
               // maintainCase: true,
               // removeAccents: true,
               // isIconAfterHeader: true,
+              icon: false,
+              maintainCase: true,
               elements: [`h2`],
             },
           },
