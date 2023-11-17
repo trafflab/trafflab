@@ -93,6 +93,14 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              icon: false,
+              maintainCase: true,
+              elements: [`h2`],
+            },
+          },
+          {
             resolve: "gatsby-remark-relative-images",
             options: {
               name: "uploads",
