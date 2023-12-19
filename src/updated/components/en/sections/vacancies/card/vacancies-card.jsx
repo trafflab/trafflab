@@ -13,7 +13,7 @@ export default function VacanciesCard({data: {status, speciality, experience, ab
         </div>
         <p className={styles.about}>{about}</p>
       </div>
-      <a href='https://t.me/private_hr' target="_blank" className={styles.readMore}>Read more</a>
+      <a href='https://t.me/trafflab_HR' target="_blank" className={styles.readMore}>Read more</a>
     </article>
   )
 }
