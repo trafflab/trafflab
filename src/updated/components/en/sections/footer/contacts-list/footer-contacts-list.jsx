@@ -14,7 +14,7 @@ import {
 export default function FooterContactsList() {
   return (
     <ul className={styles.list}>
-      <ContactsListIconLink icon={tgIcon} linkTo='https://bit.ly/3mpoPpz'/>
+      <ContactsListIconLink icon={tgIcon} linkTo='https://bit.ly/3U6Dvub'/>
       <ContactsListIconLink icon={fbIcon} linkTo='https://bit.ly/3MzbKow'/>
       <ContactsListIconLink icon={linkedinIcon} linkTo='https://bit.ly/3mlddUS'/>
       <ContactsListIconLink icon={ytIcon} linkTo='https://bit.ly/3Mhb3A9'/>
