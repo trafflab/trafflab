@@ -11,7 +11,7 @@ const statisticsData = [
     statDisc: 'аффилиатов',
   },
   {
-    stat: '800+',
+    stat: '500+',
     statDisc: 'рекламодателей',
   },
   {
