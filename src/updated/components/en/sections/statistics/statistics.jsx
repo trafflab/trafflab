@@ -7,7 +7,7 @@ const statisticsData = [
     statDisc: 'гео',
   },
   {
-    stat: '600+ ',
+    stat: '4000+',
     statDisc: 'аффилиатов',
   },
   {
