@@ -1,6 +1,6 @@
 ---
 title: "От прокрастинации к продуктивности: идеи для работы в арбитраже трафика"
-customSlug: ще-зкщлкфstinacii-k-produktivnosti
+customSlug: ot-prokrastinacii-k-produktivnosti
 lang: ru
 type: article
 date: 2024-05-28T10:22:51.869Z
