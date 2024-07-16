@@ -1,14 +1,14 @@
 ---
-title: "Google Adsense: что это, как интегрировать на сайт и использовать?"
+title: "Google AdSense: что это, как интегрировать на сайт и использовать?"
 customSlug: google-adsense-hto-eto-kak-integrirovat-na-sait-i-ispolzovat
 lang: ru
 type: article
 date: 2024-07-16T13:13:49.968Z
 headKeywords: google adsense, реклама, оптимизация, таргет, арбитраж
-headTitle: Google Adsense
+headTitle: Google AdSense
 headDescription: Что это, как интегрировать на сайт и использовать?
 image: /img/google-adsense-арбитраж-трафика.jpg
-cardTitle: Google Adsense
+cardTitle: Google AdSense
 cardText: Что это, как интегрировать на сайт и использовать?
 cardImage: /img/google-adsense.jpg
 ---
