@@ -54,7 +54,7 @@ Finally, conclude with a call to action.
 
 ## What to Consider Before Creating Creatives:
 
-1. Study your target audience (TA): Consider their GEO, age, payment preferences, etc. Websites like Trafflab.io can provide insights into various GEOs like Kazakhstan, Czech Republic, France, USA, Mexico, and many others. (Insert Links!!!)
+1. Study your target audience (TA): Consider their GEO, age, payment preferences, etc. Websites like [Trafflab.io](https://trafflab.io/ru/blog) can provide insights into various GEOs like Kazakhstan, Czech Republic, France, USA, Mexico, and many others. 
 2. Study the traffic source: For instance, creatives for Facebook and TikTok should differ, even when promoting the same offer. TikTok thrives on trends, music, characters, and animations, while Facebook favors banners without music or excessive animation. Users often browse videos on mute, so subtitles are crucial. Adapt to the audience and approach of each platform.
 3. Read the offer information: Besides permitted and prohibited traffic sources, there might be specific approaches to avoid.
 
