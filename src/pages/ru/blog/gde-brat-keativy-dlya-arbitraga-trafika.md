@@ -62,7 +62,7 @@ cardImage: /img/креативы-арбитраж-трафика.jpg
 
 1. Изучите целевую аудиторию (ЦА)
 
-Для этого необходимо учитывать ГЕО, возраст, платежки и тп. На сайте Trafflab.io вы найдете советы по многим ГЕО: Казахстан, Чехия, Франция, США, Мексика и многие другие. (Ссылки вставить❗️❗️❗️)
+Для этого необходимо учитывать ГЕО, возраст, платежки и тп. На сайте [Trafflab](https://trafflab.io/ru/) вы найдете советы по многим ГЕО: [Казахстан](https://trafflab.io/ru/blog/kak-lit-na-geo-kazahstan/), [Чехия](https://trafflab.io/ru/blog/kak-lit-trafik-na-geo-chechiya/), [Франция](https://trafflab.io/ru/blog/kak-lit-trafik-na-geo-france/), [США](https://trafflab.io/ru/blog/kak-lit-trafik-na-geo-usa/), [Мексика](https://trafflab.io/ru/blog/kak-lit-traffik-na-geo-meksika/) и многие другие. 
 
 2. Изучите источник трафика
 
