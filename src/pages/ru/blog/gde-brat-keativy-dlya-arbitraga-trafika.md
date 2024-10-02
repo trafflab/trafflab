@@ -76,7 +76,7 @@ cardImage: /img/креативы-арбитраж-трафика.jpg
 
 ## Где брать креативы
 
-1. Самый очевидный способ, который первым делом приходит на ум. На просторах интернета вы найдете множество способов, как это сделать. О том, как не улететь в бан и уникализировать действительно качественно, вы можете узнать \[здесь](<1. <https://trafflab.io/ru/blog/unikalizatsiya-kreativov-foto-i-video/>>), мы также собрали более 15 сайтов/ботов, с помощью которых у вас уйдет не более 3х минут, чтобы это сделать.
+1. Самый очевидный способ, который первым делом приходит на ум. На просторах интернета вы найдете множество способов, как это сделать. О том, как не улететь в бан и уникализировать действительно качественно, вы можете узнать [здесь](https://trafflab.io/ru/blog/unikalizatsiya-kreativov-foto-i-video/), мы также собрали более 15 сайтов/ботов, с помощью которых у вас уйдет не более 3х минут, чтобы это сделать.
 2. **Бесплатные креативы от арбитражных дизайнеров**
 
 В Telegram вы найдете множество чатов и каналов, где дизайнеры делятся своими работами, просят оценить качество и дают советы. В таких чатах часто встречаются рекламные материалы, которые можно использовать при запуске рекламных кампаний.
@@ -97,7 +97,7 @@ cardImage: /img/креативы-арбитраж-трафика.jpg
 
 Еще один канал, где дизайнер предлагает креативы для гемблинга. Более 160 чистых креативов доступны бесплатно. Вы также можете заказать чистый креатив или его адаптацию всего за 7 долларов.
 
-* FBM KREO
+* [FBM CREO](https://trafflab.io/ru/blog/kak-emocii-v-gemblovyh-kreativah-pomogayut-konversii/)
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfuSVsK9Rn6q2GA7kngs1PxUWFDXmGWevSyB6tWS5_-oHV2VwpB3RSdlf8HNudr2CI_jZxQfX5PIdLmvTgmBa37zCB_j8aV96xlbJXvBFn-0VlmtCFefESZYKJVFJYGVc6WI-N8IYuvmiY0cbuAIw?key=EXntWiMx2rYMkCn6X-91lA)![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfeyD060-PYfLJUeZT9VfKJWMGtOF62g5EMgwV4scs7gWNKOWFXESII3cgMePQt3q4hTM8EWCVIIOF8hgtq3uoI2ch8UbgsT4VP_sZ4s5ppJaPo93HipB40LngmGYWF0c26ZNb5oE8KdFtiq7Gpqg?key=EXntWiMx2rYMkCn6X-91lA)
 
