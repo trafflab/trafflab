@@ -14,7 +14,7 @@ cardTitle: How to choose a payment processor?
 cardText: To help you navigate the variety of options when choosing a payment
   system, we've compiled some recommendations on what to consider and which
   services are best to partner with.
-cardImage: /img/платежка-сайт-мелк.jpg
+cardImage: /img/111.jpg
 ---
 Payment cards for advertising on international platforms are one of the key tools for affiliate marketers, and it's impossible to operate without them. The high demand for such cards is understandable, as is the wide range of services offering them. To help you navigate the variety of options when choosing a payment system, we've compiled some recommendations on what to consider and which services are best to partner with.
 
