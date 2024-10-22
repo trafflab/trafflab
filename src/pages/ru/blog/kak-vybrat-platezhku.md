@@ -1,6 +1,6 @@
 ---
 title: Как выбрать платежку?
-customSlug: Как-выбрать-платежку
+customSlug: kak-veybrat-platezhku
 date: 2024-10-18T11:51:58.112Z
 headKeywords: платежка, рекомендации, сервис, арбитраж трафика
 headTitle: Как выбрать платежку?
