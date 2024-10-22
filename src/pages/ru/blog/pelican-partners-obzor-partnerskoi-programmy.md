@@ -74,12 +74,19 @@ UAC Apps (Android, iOS)
 
 * Выплата за лид составляет 40$ для PPC и 30$ для других источников трафика.
 * Поддерживаемые источники трафика:
-* * PPC Brand, PPC Cross, PPC General
-  * SEO Brand, SEO Cross, SEO General
-  * Facebook Apps (Android, iOS, PWA)
-  * Inapp (Android, iOS)
-  * Pinterest, Snapchat, Telegram Ads, TikTok Apps (Android, iOS), Twitter
-  * UAC Apps (Android, iOS)
+
+PPC Brand, PPC Cross, PPC General
+
+SEO Brand, SEO Cross, SEO General
+
+Facebook Apps (Android, iOS, PWA)
+
+Inapp (Android, iOS)
+
+Pinterest, Snapchat, Telegram Ads, TikTok Apps (Android, iOS), Twitter
+
+UAC Apps (Android, iOS)
+
 * Минимальный депозит на оффере — 2 AZN (азербайджанских маната).
 * Программа лояльности Aslan Casino представлена разветвленной бонусной политикой. У казино имеются промо-акции как для новых, так и для существующих игроков. На данный момент можно воспользоваться 3 предложениями: Бездепозитный бонус, Бонус на депозит, Кэшбэк бонус.
 * 100% населения Азербайджана интересуются каждый месяц Aslan Casino
