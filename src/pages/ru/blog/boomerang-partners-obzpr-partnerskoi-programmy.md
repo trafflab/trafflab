@@ -1,10 +1,14 @@
 ---
 title: "Boomerang partners: обзор партнерской программы"
-customSlug: boomerang-partners-obzpr-partnerskoi-programmy
+customSlug: boomerang-partners-obzor-partnerskoi-programmy
 lang: ru
 type: article
 date: 2024-11-06T23:36:09.109Z
-headKeywords: boomerang, партнерская программа, беттинг, гемблинг, казино
+headKeywords: boomerang, партнерская программа, беттинг, гемблинг, казино,
+  boomerang partners, boomerang casino, boomerang bet, boomerang casino, online
+  boomerang sportsbook, boomerang slots, mr pacho casino, mr pacho, betibet,
+  betibet casino, betibet sport, bingobonga, bingobonga casino, bonus bingobonga
+  casinos, zotabet casino, zotabet, lamabet, billybets casino, billybets
 headTitle: "Boomerang partners: обзор партнерской программы"
 headDescription: Если вы ищете надежного партнера для заработка в арбитраже,
   Boomerang Partners — это отличная возможность с проверенной репутацией,
