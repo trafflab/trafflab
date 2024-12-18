@@ -15,7 +15,7 @@ headDescription: Проверенная и эффективная платфор
 image: /img/royal-сайт.jpg
 cardTitle: "Royal Partners: обзор партнерской программы с топовыми брендами
   Monro, Volna Casino,  Rox, Lex"
-cardText: " обзор партнерской программы с топовыми брендами Monro, Volna
+cardText: " Обзор партнерской программы с топовыми брендами Monro, Volna
   Casino,  Rox, Lex"
 cardImage: /img/royal-сайт-мелк.jpg
 ---
