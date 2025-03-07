@@ -1,11 +1,11 @@
 import * as React from "react"
 import * as styles from './opening-image.module.css';
-import { SiteImage, ADImage } from "../../../../common/ui";
+import { ADImage, SiteImage } from "../../../../common/ui";
 import { useStaticQuery, graphql } from "gatsby";
 
 export default function OpeningImage() {
   const images = useStaticQuery(graphql`
-  query OpeningImageEnQuery {
+  query OpeningImageQuery {
     opening: file(name: {eq: "opening"}) {
       name
       childImageSharp {

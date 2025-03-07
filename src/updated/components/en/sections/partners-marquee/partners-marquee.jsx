@@ -19,7 +19,7 @@ const partnersLogoDimensions = [
 
 export default function PartnersMarquee() {
   const images = useStaticQuery(graphql`
-  query PartnersMarqueeEnQuery {
+  query PartnersMarqueeRuQuery {
     partner_logo_0: file(name: {eq: "partner-logo-0"}) {
       name
       childImageSharp {
@@ -125,7 +125,7 @@ export default function PartnersMarquee() {
     <section id='partners' className={styles.partenrsMarquee}>
       <div className={styles.content}>
 
-        <h2 className={styles.title}>Partners</h2>
+        <h2 className={styles.title}>Партнеры</h2>
         <Marquee gradient={false} direction="right">
           <ul className={styles.list}>
             <PartnersMarqueeCard image={images.partner_logo_0.childImageSharp} dimensions={partnersLogoDimensions[0]} />

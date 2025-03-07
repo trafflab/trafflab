@@ -4,7 +4,7 @@ import useDelayUnmountState from '../../../../hooks/use-delay-unmount-state';
 import ReactDOM from "react-dom";
 
 const portalRoot = typeof document !== 'undefined' ? document.getElementById('___portal') : null
-const delay = 200
+const delay = 200;
 
 export default function PopupLayout({children, isOpen, closeHandler}) {
   

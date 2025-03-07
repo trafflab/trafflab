@@ -45,20 +45,29 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 
 	const successMessageHandler = React.useContext(MessagesContext);
 
+	const DISABLE_RECAPTCHA = true; // Установите в false, когда нужно вернуть капчу
+
+	const isDevelopment = () => {
+		return (
+			process.env.NODE_ENV === 'development' ||
+			window.location.hostname === 'localhost' ||
+			window.location.hostname === '127.0.0.1'
+		);
+	};
+
 	const handleSendForm = () => {
-		if (!values.name || !values.contact) return;
+		if (!values.product || !values.name || !values.contact) return;
 		fetch('/api/form', {
 			method: 'POST',
 			headers: {
 				'content-type': 'application/json',
 			},
 			body: JSON.stringify({
-				siteLang: 'ru',
+				siteLang: 'en',
 				type: 'advertiser',
 				product: values.product,
 				name: values.name,
 				contact: values.contact,
-				comfyContact: values.comfyContact,
 			}),
 		})
 			.then(res => {
@@ -68,7 +77,6 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 						product: '',
 						name: '',
 						contact: '',
-						comfyContact: '',
 					});
 					//momentWindow.yaCounter308880837.reachGoal('tg_form_click');
 
@@ -90,6 +98,7 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 			})
 			.catch(err => console.error(err));
 	};
+
 	React.useEffect(() => {
 		setMomentWindow(window);
 		values.phone = '';
@@ -112,11 +121,11 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 				</div>
 				<div className={styles.titleContainer}>
 					<p className={styles.title}>
-						One step to Become the best with the best
+						One step to become the best with the best
 					</p>
 					<p className={styles.subtitle}>
-						Submit a request for consultation — a manager will
-						contact you as soon as possible!
+						Leave a request for a consultation — a manager will
+						contact you shortly!
 					</p>
 				</div>
 
@@ -124,27 +133,51 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 					className={styles.form}
 					onSubmit={e => {
 						e.preventDefault();
-						setRecaptchaWindow(true);
+						if (DISABLE_RECAPTCHA || isDevelopment()) {
+							handleSendForm();
+						} else {
+							setRecaptchaWindow(true);
+						}
 					}}
 				>
 					<div className={styles.inputsContainer}>
-						<label className={styles.label} htmlFor='name'>
-							Your name
-						</label>
-						<BasicInput
-							name='name'
-							placeholder='Name'
-							value={values.name}
-							onChange={handleChange}
-							minLength={1}
-							isRequired={true}
-						/>
+						<div className={styles.inputRow}>
+							<div className={styles.inputColumn}>
+								<label
+									className={styles.label}
+									htmlFor='product'
+								>
+									Your product
+								</label>
+								<BasicInput
+									name='product'
+									placeholder='Trafflab CPA'
+									value={values.product}
+									onChange={handleChange}
+									minLength={1}
+									isRequired={true}
+								/>
+							</div>
+							<div className={styles.inputColumn}>
+								<label className={styles.label} htmlFor='name'>
+									Your name
+								</label>
+								<BasicInput
+									name='name'
+									placeholder='John'
+									value={values.name}
+									onChange={handleChange}
+									minLength={1}
+									isRequired={true}
+								/>
+							</div>
+						</div>
 						<label className={styles.label} htmlFor='contact'>
-							Telegram
+							Contact information
 						</label>
 						<BasicInput
 							name='contact'
-							placeholder='Telegram'
+							placeholder='+1 234 567 8900 / john@example.com'
 							value={values.contact}
 							onChange={handleChange}
 							minLength={1}
@@ -155,7 +188,8 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 								type='checkbox'
 								id='agreement'
 								name='agreement'
-								checked={values.agreement}
+								checked={values.agreement || false}
+								onChange={handleChange}
 								required
 							/>
 							<label

@@ -12,7 +12,7 @@ export default function FixedContacts({scrollHandler, clickHandler}) {
         <button onClick={scrollHandler} className={styles.upButton}>
           <div className={styles.circledIcon} />
         </button>  
-        <span onClick={clickHandler} className={styles.upText}>Up</span>
+        <span onClick={clickHandler} className={styles.upText}>Наверх</span>
       </div>
     </div>
   )

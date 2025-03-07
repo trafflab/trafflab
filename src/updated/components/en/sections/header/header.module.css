@@ -1,71 +1,164 @@
 .header {
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  padding: 25rem 0 25rem;
-  z-index: 2;
-  position: relative;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	padding: 25rem 0 25rem;
+	z-index: 2;
+	position: relative;
 }
 
 .content {
-  width: 1200rem;
-  display: grid;
-  grid-template-columns: max-content 678rem max-content;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-between;
+	width: 1260rem;
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	gap: 36rem;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .navContainer {
-  width: 80%;
-}
-
-.burgerContainer {
-  
+	width: 100%;
 }
 
 .burgerButton {
-  display: none;
+	display: none;
 }
 
-
 @media screen and (max-width: 480px) {
+	.header {
+		padding: 15rem 0 15rem;
+	}
 
-  .header {
-    padding: 20rem 0 30rem;
-  }
+	.content {
+		width: 300rem;
+		grid-template-columns: max-content max-content;
+		justify-content: space-between;
+		gap: 0;
+		padding: 0 10rem;
+	}
 
-  .content {
-    width: 280rem;
-    grid-template-columns: max-content max-content;
-    justify-content: space-between;
-    gap: 0;
-  }
+	.navContainer {
+		display: none;
+	}
 
-  .navContainer {
-    display: none;
-  }
+	.burgerContainer {
+		margin-left: 0;
+		display: flex;
+		align-items: center;
+	}
 
-  .burgerContainer {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-  }
+	.burgerButton {
+		display: block;
+		width: 20rem;
+		height: 20rem;
+		background: var(--Dark-Gray, #232326);
+		background-image: url(./burger.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 1px solid #5a5a6166;
 
-  .burgerButton {
-    display: block;
-    width: 24rem;
-    height: 24rem;
-    background-color: transparent;
-    background-size: 100% 100%;
-    background-image: url(./burger.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 10rem;
-  }
+		border-radius: 8rem;
+		outline: none;
+		padding: 14rem;
+		margin: 0;
+		margin-left: 10rem;
+		cursor: pointer;
+		transition: transform 0.2s ease;
+	}
+
+	.burgerButton:hover {
+		transform: scale(1.1);
+	}
+}
+
+/* Main container */
+.askQuestion {
+	position: relative;
+	display: flex;
+	gap: 10rem;
+}
+
+/* Text elements */
+.workTime {
+	position: relative;
+	font-family: var(--font-basic);
+	font-size: var(--font-size-middle);
+	font-weight: 700;
+	color: var(--color-white);
+}
+
+.textContainer {
+	display: flex;
+	gap: 10rem;
+}
+
+/* Button styles - common properties */
+.askButton,
+.loginButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: max-content;
+	padding: 10rem;
+	font-family: var(--font-additional);
+	font-size: var(--font-size-body-big);
+	color: var(--color-white);
+	text-align: center;
+	text-decoration: none;
+	border-radius: 10rem;
+	box-shadow: 0px 0px 5px 0px #00000040;
+}
+
+/* Ask button specific styles */
+.askButton {
+	background-color: var(--color-red-1);
+	border: 2rem solid var(--color-red-1);
+	transition: var(--link-opacity-transition);
+}
+
+.askButton:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+/* Login button specific styles */
+.loginButton {
+	font-weight: 700;
+	letter-spacing: -0.01em;
+	border: 2rem solid var(--x-1-light-gray-40, #5a5a6166);
+}
+
+/* Language list container */
+.langListContainer {
+	position: relative;
+	border: 2rem solid var(--x-1-light-gray-40, #5a5a6166);
+	padding: 10rem;
+	border-radius: 10rem;
+}
+
+/* Mobile styles */
+@media screen and (max-width: 480px) {
+	.askQuestion {
+		gap: 10rem;
+		align-items: center;
+	}
+
+	.workTime {
+		display: none;
+	}
+
+	.askButton {
+		position: relative;
+		top: 0;
+		right: 0;
+		font-size: 10rem;
+		margin-bottom: -1rem;
+		padding: 5rem;
+	}
+
+	.langListContainer {
+		display: none;
+	}
 }

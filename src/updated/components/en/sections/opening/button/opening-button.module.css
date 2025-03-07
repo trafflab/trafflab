@@ -7,17 +7,18 @@
   margin: 0;
   padding: 0;
 
-  background-color: var(--color-red-1);
+  background-color: transparent;
   transition: background-color 0.35s ease-out;
-
+  border: 1rem solid var(--color-red-1);
   font-family: var(--font-basic);
   font-size: var(--font-size-body-big);
   color: var(--color-white);
   font-weight: 700;
+  backdrop-filter: blur(70rem)
 }
 
 .button:hover {
-  background-color: var(--color-red-2);
+  background-color: var(--color-red-1);
   cursor: pointer;
 }
 

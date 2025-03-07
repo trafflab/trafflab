@@ -1,110 +1,291 @@
 .opening {
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  height: 100%;
-  z-index: 2;
-  overflow: hidden;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	height: 100%;
+	z-index: 2;
+	overflow: hidden;
 }
 
 .content {
-  width: 1200rem;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+	width: 1260rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .textContainer {
-  position: relative;
-  z-index: 4;
-  font-family: var(--font-basic);
+	position: relative;
+	z-index: 4;
+	font-family: var(--font-basic);
 }
 
 .title {
-  font-size: 64rem;
-  color: var(--color-white);
-  font-weight: 700;
-  font-family: 'HeliosExt';
-  width: 570rem;
-  line-height: 1.15;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 190rem;
+	color: var(--color-white);
+	font-weight: 700;
+	font-family: var(--font-basic);
+	line-height: 176rem;
+}
+
+.subtitleContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .subtitle1 {
-  color: var(--color-white);
-  font-size: 44rem;
-  font-weight: 700;
-  width: 530rem;
-  margin-bottom: 0rem;
-  line-height: 1.55;
+	color: #ff6666;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 190rem;
+	font-weight: 700;
+	line-height: 176rem;
+	margin-bottom: 60rem;
 }
 
 .subtitle2 {
-  color: var(--color-gray-2);
-  font-size: 22rem;
-  font-weight: 300;
-  width: 530rem;
-  margin-bottom: 32rem;
-  line-height: 1.55;
+	max-width: 583rem;
+	color: white;
+	font-family: var(--font-additional);
+	font-size: 20rem;
+	font-weight: 500;
+	line-height: 30rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	z-index: 4;
 }
 
 .buttonsContainer {
-  width: min-content;
-  display: grid;
-  gap: 20rem;
-  grid-template-columns: 1fr 1fr;
-  width: 490rem;
+	width: min-content;
+	display: grid;
+	gap: 20rem;
+	grid-template-columns: 1fr 1fr;
+	width: 490rem;
 }
 
+.textContainer {
+	position: relative;
+}
+
+.trafflabCat {
+	position: absolute;
+	bottom: -165rem;
+	left: 75rem;
+	mix-blend-mode: overlay;
+	width: 520rem;
+	height: 520rem;
+}
+
+.trafflabPic {
+	width: 500rem;
+	height: 470rem;
+	position: absolute;
+	bottom: -10rem;
+	right: 100rem;
+	mix-blend-mode: overlay;
+}
+
+.buttonAdvContainer {
+	position: absolute;
+	z-index: 10;
+	background-color: var(--color-white);
+	border-radius: 20rem;
+	top: 100rem;
+	left: 100rem;
+	padding: 6rem;
+	transform: rotate(-10deg);
+}
+
+.buttonAdv {
+	padding: 30rem;
+	background-color: transparent;
+	border-radius: 15rem;
+	border: 5rem solid black;
+	font-family: var(--font-additional);
+	font-size: 20rem;
+	font-weight: 700;
+	line-height: 31rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.buttonAdv:hover {
+	background-color: black;
+	color: var(--color-white);
+}
+
+.buttonAdv:hover .arrowAdv path {
+	stroke: #fff;
+}
+
+.arrowAdv {
+	top: 15rem;
+	left: 15rem;
+}
+
+.buttonWebContainer {
+	max-width: 252rem;
+	position: absolute;
+	background-color: #ff6666;
+	box-shadow: 0px 0px 8rem 0px #ff666633, 0px 0px 32rem 8rem #ff666666;
+	padding: 6rem;
+	border-radius: 100%;
+	bottom: 200rem;
+	right: 205rem;
+	z-index: 10;
+	transform: rotate(5deg);
+}
+
+.buttonWeb {
+	position: relative;
+	color: white;
+	padding: 44rem 34rem 34rem 34rem;
+	background-color: transparent;
+	border-radius: 100%;
+	font-family: var(--font-additional);
+	font-size: 20rem;
+	font-weight: 700;
+	line-height: 31rem;
+	letter-spacing: -0.01em;
+	text-align: center;
+	border: 5rem solid white;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.arrowWeb {
+	top: 20rem;
+	left: 50%;
+	transform: translateX(-50%) rotate(58deg);
+}
+
+.arrowWeb path {
+	stroke: white;
+}
+
+.buttonWeb:hover {
+	color: #ff6666;
+	background-color: white;
+}
+
+.buttonWeb:hover .arrowWeb path {
+	stroke: #ff6666;
+}
 
 @media screen and (max-width: 480px) {
-  .content {
-    width: 280rem;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .title {
-    font-size: var(--font-size-middle);
-    width: max-content;
-    line-height: 1.41;
-    margin-bottom: 8rem;
+	.opening {
+		overflow: visible;
+		height: 100%;
+		padding-bottom: 70rem;
+	}
 
-  }
-  .subtitle {
-    font-size: var(--font-size-body-middle);
-    margin-bottom: 24rem;
-    /* width: max-content; */
-  }
+	.content {
+		width: 100%;
+		padding: 20rem 15rem;
+		justify-content: flex-start;
+		align-items: center;
+		flex-direction: column;
+	}
 
-  .textContainer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
+	.textContainer {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		margin-bottom: 20rem;
+		width: 100%;
+	}
 
-  .buttonsContainer {
-    width: min-content;
-    display: grid;
-    gap: 20rem;
-    grid-template-columns: 1fr;
-    width: 290rem;
-  }
+	.title {
+		font-family: var(--font-basic);
+		font-weight: 750;
+		font-size: 57rem;
+		line-height: 54.9rem;
+		letter-spacing: 0%;
+		text-align: center;
+	}
 
-  .subtitle1 {
-    font-size: var(--font-size-body-middle);
-    margin-bottom: 0;
-    width: auto;
-    text-align: center;
-    display: none;
-  }
-  
-  .subtitle2 {
-    font-size: var(--font-size-body-middle);
-    margin-bottom: 18rem;
-    width: auto;
-    text-align: center;
+	.subtitle1 {
+		font-family: var(--font-basic);
+		font-weight: 750;
+		font-size: 60rem;
+		line-height: 54.9rem;
+		letter-spacing: 0%;
+		text-align: center;
+		margin-bottom: 0;
+	}
 
-  }
+	.subtitle2 {
+		font-size: 16rem;
+		line-height: 1.4;
+		margin-bottom: 20rem;
+		width: 100%;
+		text-align: center;
+		max-width: 100%;
+	}
 
+	.buttonsContainer {
+		width: 100%;
+		max-width: 250rem;
+		display: flex;
+		flex-direction: column;
+		gap: 15rem;
+		grid-template-columns: unset;
+	}
+
+	.buttonAdvContainer {
+		top: unset;
+		bottom: -100rem;
+		left: 0;
+	}
+
+	.buttonWebContainer {
+		top: unset;
+		bottom: -165rem;
+		right: 0;
+	}
+
+	.buttonAdv {
+		padding: 20rem;
+		font-size: 16rem;
+	}
+
+	.buttonWeb {
+		padding: 34rem 24rem 24rem 24rem;
+		font-size: 16rem;
+	}
+
+	.arrowWeb {
+		transform: scale(0.5);
+		top: 8rem;
+		width: 30rem;
+		height: 30rem;
+	}
+
+	.arrowAdv {
+		transform: scale(0.5);
+		top: 2rem;
+		left: 2rem;
+		width: 30rem;
+		height: 30rem;
+	}
+
+	.arrowWeb {
+		transform: translateX(-50%) rotate(58deg) scale(0.5);
+	}
+
+	.trafflabCat {
+		max-width: 200rem;
+		max-height: 200rem;
+		bottom: -90rem;
+		left: -60rem;
+	}
+
+	.trafflabPic {
+		display: none;
+	}
 }

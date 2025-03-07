@@ -3,7 +3,7 @@ import * as styles from './styles.module.css';
 
 export default function TrafflabCrm() {
 	return (
-		<div className={styles.trafflabCrm}>
+		<div className={styles.trafflabCrm} id='trafflab-crm'>
 			<div className={styles.container}>
 				<div className={styles.content}>
 					<div>

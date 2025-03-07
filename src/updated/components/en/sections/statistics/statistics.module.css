@@ -1,111 +1,521 @@
 .statistics {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 40rem 0 88rem;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.content {
-  overflow: hidden;
-  display: grid;
-  width: 1200rem;
+.container {
+	max-width: 1260rem;
+	margin: 0 auto;
+	width: 100%;
 }
 
-.list {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.titleBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.listElement {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-right: 1rem var(--color-gray-1) solid;
+.title {
+	text-transform: uppercase;
+	max-width: 865rem;
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 98rem;
+	line-height: 88.2rem;
+	letter-spacing: 0%;
+	text-align: center;
+	margin-bottom: 40rem;
 }
 
-.listElement:last-child {
-  border-right: none
-
+.highlight {
+	color: var(--color-accent);
 }
 
-.stat {
-  font-family: var(--font-basic);
-  font-size: 42rem;
-  color: var(--color-white);
-  line-height: 1.6;
+.text {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: 24rem;
+	line-height: 32rem;
+	letter-spacing: 0%;
+	text-align: center;
 }
 
-.statDisc {
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-gray-2);
-  line-height: 1.6;
+.subtitle {
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 20rem;
+	line-height: 27.32rem;
+	letter-spacing: -1%;
+	text-align: center;
+
+	margin-bottom: 80rem;
 }
 
+.trafficBlock {
+	background: var(--Background-Gray, #1c1c1f);
+	border-radius: 15rem;
+	padding: 20rem;
+	margin-bottom: 20rem;
+	box-shadow: 0 4rem 20rem rgba(0, 0, 0, 0.1);
+}
 
-@media screen and (max-width: 480px) {
-  .statistics {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 40rem 0 90rem;
-  }
-  
-  .content {
-    overflow: hidden;
-    display: grid;
-    width: 290rem;
-  }
-  
-  .list {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: none;
-    row-gap: 25rem;
-    grid-template-areas: 
-    'el1 el2'
-    'el3 el4'
-    'el5 el5';
-  }
+.trafficFlex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10rem;
+}
 
-  .listElement:nth-child(1) {
-    grid-area: el1;
-  }
+.trafficTitle {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+	text-transform: uppercase;
+}
 
-  .listElement:nth-child(2) {
-    grid-area: el2;
-  }
-  .listElement:nth-child(3) {
-    grid-area: el3;
-  }
-  .listElement:nth-child(4) {
-    grid-area: el4;
-  }
-  .listElement:nth-child(5) {
-    grid-area: el5;
-  }
-  
-  .listElement {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-right: 1rem var(--color-gray-1) solid;;
-  }
-  
-  .listElement:nth-child(2n) {
-    border-right: none;
-  }
-  
-  .stat {
-    font-size: 25rem;
-    line-height: 1.6;
-    text-align: center;
-  }
-  
-  .statDisc {
-    font-size: var(--font-size-body-small);
-    line-height: 1.6;
-    text-align: center;
+.trafficStats {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 
-  }
+.trafficNumber {
+	font-family: var(--font-base);
+	font-weight: 750;
+	font-size: 128rem;
+	line-height: 102.4rem;
+	letter-spacing: 0%;
+	color: var(--color-accent);
+}
+
+.trafficDescription {
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.32rem;
+	letter-spacing: -1%;
+
+	color: #afaeb5;
+}
+
+.statsBlock {
+	margin-bottom: 20rem;
+}
+
+.statsGrid {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	gap: 20rem;
+}
+
+.tapeSingle {
+	position: absolute;
+	top: 0;
+	right: -50rem;
+	width: 100%;
+	max-width: 153rem;
+	max-height: 207rem;
+}
+
+.tapeDouble {
+	position: absolute;
+	bottom: -78rem;
+	right: 50%;
+	width: 100%;
+	max-width: 224rem;
+	max-height: 141rem;
+	transform: translate(45%, 0);
+}
+
+.statsFlex {
+	display: flex;
+	align-items: center;
+	gap: 20rem;
+}
+
+.statsGridItem {
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 20rem;
+}
+
+.statsItem {
+	background-color: #1c1c1f;
+	padding: 20rem;
+	border-radius: 15rem;
+	box-shadow: 0 4rem 15rem rgba(0, 0, 0, 0.05);
+}
+
+.statsLabel {
+	text-transform: uppercase;
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+	margin-bottom: 20rem;
+}
+
+.statsDescription {
+	color: #afaeb5;
+
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.86rem;
+	letter-spacing: -1%;
+}
+
+.statsNumber {
+	font-family: var(--font-base);
+	font-weight: 750;
+	font-size: 128rem;
+	line-height: 102.4rem;
+	letter-spacing: 0%;
+
+	color: var(--color-accent);
+}
+
+.statsGridItem .statsNumber {
+	font-weight: 750;
+	font-size: 64rem;
+	line-height: 51.2rem;
+	letter-spacing: 0%;
+}
+
+.graphBlock {
+	position: relative;
+	background-color: #1c1c1c;
+	border-radius: 15rem;
+	padding: 20rem;
+	box-shadow: 0 4rem 20rem rgba(0, 0, 0, 0.1);
+}
+
+.graphTitle {
+	max-width: 421rem;
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+	text-transform: uppercase;
+
+	color: var(--color-white);
+}
+
+.chart {
+	position: absolute;
+	bottom: 150rem;
+	left: 0;
+	width: 70%;
+	height: 240rem;
+	background-color: transparent;
+	z-index: 1;
+}
+
+.chartMobile {
+	display: none;
+}
+
+.graphContainer {
+	display: grid;
+	grid-template-rows: repeat(6, 41rem);
+	position: relative;
+	height: 400rem;
+}
+
+.graphDecorationLine {
+	border-bottom: 1px solid #2d2d31;
+}
+
+.graphDecorationAccent {
+	position: relative;
+	border-top: 1px solid var(--color-white);
+	border-bottom: 1px solid #2d2d31;
+	background: linear-gradient(
+		180deg,
+		rgba(255, 255, 255, 0.05) 0%,
+		rgba(255, 255, 255, 0) 40%
+	);
+}
+
+.graphDecorationAccentTitle {
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translate(0, -50%);
+	width: max-content;
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 14rem;
+	line-height: 21.7rem;
+	letter-spacing: -1%;
+	padding: 6rem;
+	background: #1c1c1f;
+	border: 1px solid #2d2d31;
+	border-radius: 5rem;
+}
+
+.graphDecorationAccentText {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(0, -50%);
+	width: max-content;
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 14rem;
+	line-height: 21.7rem;
+	letter-spacing: -1%;
+	padding: 6rem;
+	background: #1c1c1f;
+	border: 1px solid #2d2d31;
+	border-radius: 5rem;
+}
+
+.graphDecoration {
+	position: absolute;
+	max-width: 353rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
+
+.graphDecoration1 {
+	bottom: 20rem;
+	left: 20rem;
+}
+
+.graphDecoration2 {
+	bottom: 80rem;
+	left: 420rem;
+}
+
+.graphDecoration3 {
+	top: 20rem;
+	right: 20rem;
+}
+
+.graphDecorationYear {
+	width: max-content;
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 14rem;
+	line-height: 21.7rem;
+	letter-spacing: -1%;
+	border: 1px solid #2d2d31;
+	border-radius: 5rem;
+	padding: 6rem;
+}
+
+.graphDecorationNumber {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: 36rem;
+	line-height: 36rem;
+	letter-spacing: 0%;
+}
+
+.graphDecorationText {
+	color: #afaeb5;
+
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.86rem;
+	letter-spacing: -1%;
+}
+
+.graphCat {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	max-width: 520rem;
+	max-height: 520rem;
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.title {
+		font-size: 40rem;
+		line-height: 1;
+		margin-bottom: 20rem;
+	}
+	.text {
+		font-size: 16rem;
+		line-height: 24rem;
+	}
+	.subtitle {
+		font-size: 16rem;
+		line-height: 22rem;
+		margin-bottom: 40rem;
+	}
+
+	.statsBlock {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.statsGrid {
+		width: 100%;
+		grid-template-columns: 1fr;
+	}
+
+	.trafficTitle {
+		font-size: 32rem;
+		line-height: 32rem;
+	}
+
+	.trafficNumber {
+		font-size: 72rem;
+		line-height: 60rem;
+	}
+
+	.trafficDescription {
+		font-size: 14rem;
+		line-height: 18rem;
+	}
+
+	.statsLabel {
+		font-size: 32rem;
+		line-height: 32rem;
+		margin-bottom: 10rem;
+	}
+
+	.statsNumber {
+		font-size: 72rem;
+		line-height: 60rem;
+	}
+
+	.statsGridItem .statsNumber {
+		font-size: 48rem;
+		line-height: 40rem;
+	}
+
+	.statsDescription {
+		font-size: 14rem;
+		line-height: 18rem;
+	}
+
+	.statsFlex {
+		flex-direction: column;
+		gap: 10rem;
+	}
+
+	.graphBlock {
+		padding: 10rem 10rem 205rem 10rem;
+	}
+
+	.graphTitle {
+		font-size: 32rem;
+		line-height: 32rem;
+		margin-bottom: 165rem;
+	}
+
+	.graphContainer {
+		height: 300rem;
+	}
+
+	.chart {
+		display: none;
+	}
+
+	.chartMobile {
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+	}
+
+	.graphDecorationNumber {
+		font-size: 24rem;
+		line-height: 24rem;
+	}
+
+	.graphDecorationText {
+		font-size: 14rem;
+		line-height: 18rem;
+	}
+
+	.graphDecorationYear {
+		font-size: 12rem;
+		line-height: 18rem;
+		padding: 4rem;
+	}
+
+	.graphDecorationAccentTitle,
+	.graphDecorationAccentText {
+		font-size: 10rem;
+		line-height: 1;
+		padding: 4rem;
+	}
+
+	.tapeSingle,
+	.tapeDouble {
+		display: none;
+	}
+
+	.graphCat {
+		max-width: 280rem;
+		max-height: 280rem;
+	}
+
+	.graphDecoration1 {
+		width: 40%;
+		bottom: 24rem;
+		left: 10rem;
+	}
+
+	.graphDecoration2 {
+		width: 40%;
+		bottom: 120rem;
+		left: 170rem;
+	}
+
+	.graphDecoration3 {
+		align-items: flex-end;
+		width: 100%;
+		top: 160rem;
+		right: 10rem;
+
+		.graphDecorationText {
+			text-align: right;
+		}
+	}
+
+	.trafficFlex {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 10rem;
+	}
+
+	.trafficBlockMobile {
+		width: 100%;
+	}
 }

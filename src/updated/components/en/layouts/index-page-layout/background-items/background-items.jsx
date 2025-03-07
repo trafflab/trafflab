@@ -22,19 +22,19 @@ export default function BackgroundItems() {
       <div id='backNet'/>
       <div id='backNet'/>
       <div id='backNet'/>
-      {/* <div id='backNet'/> */}
+      <div id='backNet'/>
       
       <div id='backLine'><AnimatedLine position={offset}/></div>
       <div id='backLine'><AnimatedLine position={offset} isRight={true} /></div>
       <div id='backLine'><AnimatedLine position={offset}/></div>
-      {/* <div id='backLine'><AnimatedLine position={offset} isRight={true} /></div> */}
+      <div id='backLine'><AnimatedLine position={offset} isRight={true} /></div>
       
       <div id='backBubble'/>
       <div id='backBubble'/>
       <div id='backBubble'/>
       <div id='backBubble'/>
       <div id='backBubble'/>
-      {/* <div id='backBubble'/> */}
+      <div id='backBubble'/>
     </div>
   )
 }

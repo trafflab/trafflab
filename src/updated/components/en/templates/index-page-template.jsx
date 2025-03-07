@@ -1,38 +1,34 @@
-import * as React from "react";
-import IndexPageLayout from "../layouts/index-page-layout/index-page-layout";
+import * as React from 'react';
+import IndexPageLayout from '../layouts/index-page-layout/index-page-layout';
 
-import { PartnersMarquee, CountriesMarquee } from '../../common'
 import {
-  // Statistics,
-  WhatWeDo,
-  // Pro,
-  TrafficSources,
-  PageForm,
-  Ecosystem,
-  Blog,
-  Vacancies,
+	Tabs,
+	Statistics,
+	TrafflabCrm,
+	TrustedFeed,
+	JoinTraff,
+	OffersList,
+	TrafficBlog,
+	FAQ,
+	SupportRequest,
 } from '../sections';
 
 export default function IndexPageTemplate() {
+	React.useEffect(() => {
+		localStorage.setItem('lang', 'en');
+	}, []);
 
-  React.useEffect(() => {
-    localStorage.setItem('lang', 'en');
-  }, [])
-
-  return (
-    <IndexPageLayout>
-      <CountriesMarquee />
-      <TrafficSources />
-      <WhatWeDo/>
-      {/* <Ecosystem /> */}
-      <Blog/>
-      <PartnersMarquee />
-      <Vacancies />
-      <PageForm  />
-
-      {/* <Statistics /> */}
-      {/* <Pro /> */}
-      {/* <PageForm isMiddle /> */}
-    </IndexPageLayout>
-  )
+	return (
+		<IndexPageLayout>
+			<Tabs />
+			<Statistics />
+			<TrafflabCrm />
+			<TrustedFeed />
+			<JoinTraff />
+			<OffersList />
+			<TrafficBlog />
+			<FAQ />
+			<SupportRequest />
+		</IndexPageLayout>
+	);
 }

@@ -4,23 +4,34 @@
 
 .list {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 20rem;
   width: 100%;
   align-items: center;
   color: var(--color-gray-2);
 }
 
+.item {
+  display: inline-block;
+}
+
 .link {
   text-decoration: none;
-  transition: var(--link-opacity-transition);
-  color: inherit;
-
+  transition: opacity 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #5A5A61;
+  text-transform: uppercase;
   font-size: var(--font-size-body-big);
-  font-family: var(--font-basic);
-  font-weight: 300;
+  font-family: var(--font-additional);
+  font-weight: 400;
+}
+
+.link.active {
+  color: var(--color-white);
 }
 
 .link:hover {
+  color: var(--color-white);
   opacity: 0.8;
 }
 

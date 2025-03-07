@@ -6,12 +6,11 @@ import { BasicButton} from "../../../common/ui";
 
 export default function PromoPopup({isOpen, closeHandler}) {
 
-    const text_first = `Launched on October 1, participating is easy and the winners will receive <b>100</b>, <b>300</b>, and <b>500 USDT</b>:
-    • Register in our affiliate network.
-    • Hit the conversion cap on any of our offers of your choice.`
-    const text_second = `We have hot offers lined up, ready to bring you profit!
-    Don’t miss the chance to receive a generous gift from <b>TRAFFLAB</b>!
-    Results will be announced at the end of the month.`
+    const text_first = `С <b>1 октября</b> стартует наш конкурс, победители получат <b>100</b>, <b>300</b> и <b>500 USDT</b>, условия максимально просты:
+    • Регистрация в нашей партнерской сети.
+    • Отлить капу по одному из наших офферов на ваш выбор`
+    const text_second = `Мы уже подготовили офферы, готовые приносить вам прибыль!
+    Не упустите шанс выиграть приятный презент от <b>TRAFFLAB</b>! Результаты объявим в конце месяца`
           // if (!data?.title) return null
     const [isForm, setForm] = React.useState(false);
 
@@ -22,7 +21,7 @@ export default function PromoPopup({isOpen, closeHandler}) {
             
                 <div className={styles.content}>
                     <div className={styles.textContainer}>    
-                        <h3>{'Attention, a giveaway for new TRAFFLAB partners is here!'}</h3>
+                        <h3>{'Внимание, конкурс для новых партнеров TRAFFLAB!'}</h3>
                         {'\n'}
                         <p dangerouslySetInnerHTML={{__html:text_first}}></p>
                     </div>
@@ -37,7 +36,7 @@ export default function PromoPopup({isOpen, closeHandler}) {
                 onClick={() => {setForm(true);}}
                 type='button'
                 >
-                    {'CLAIM 500 USDT!'}
+                    {'ЗАБРАТЬ 500 USDT!'}
                 </button>
             </div>
         </div>

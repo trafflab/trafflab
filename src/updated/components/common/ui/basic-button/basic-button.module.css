@@ -1,33 +1,50 @@
 .button {
-  width: 100%;
-  height: 62rem;
-  border-radius: 40rem;
-  border: none;
-  outline: none;
-  margin: 0;
-  padding: 0;
+	position: relative;
+	width: max-content;
+	background-color: #ff6666;
+	transition: background-color 0.35s ease-out;
 
-  background-color: var(--color-red-1);
-  transition: background-color 0.35s ease-out;
+	font-family: var(--font-additional);
+	font-size: var(--font-size-body-big);
+	color: inherit;
+	border-radius: 12rem;
+	border: none;
+	font-weight: 700;
+	padding: 16rem 24rem;
+}
 
-  font-family: var(--font-basic);
-  font-size: var(--font-size-body-big);
-  color: var(--color-white);
-  font-weight: 700;
+.buttonWeb {
+	position: absolute;
+	background-color: #ff6666;
+	border-radius: 20rem;
+}
+
+.buttonAdv.button {
+	width: 100%;
+	height: 121rem;
+	margin: 0;
+	padding: 45rem;
+
+	background-color: var(--color-red-1);
+	transition: background-color 0.35s ease-out;
+
+	font-family: var(--font-additional);
+	font-size: var(--font-size-body-big);
+	color: var(--color-white);
+	font-weight: 700;
+}
+
+.arrow {
+	position: absolute;
+	width: 24rem;
+	height: 24rem;
 }
 
 .button:hover {
-  background-color: var(--color-red-2);
-  cursor: pointer;
+	background-color: var(--color-red-2);
+	cursor: pointer;
 }
 
 .button:active {
-  background-color: var(--color-red-3);
-}
-
-@media screen and (max-width: 480px) {
-  .button {
-    height: 40rem;
-    font-size: var(--font-size-body-middle);
-  }
+	background-color: var(--color-red-3);
 }

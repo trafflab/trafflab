@@ -167,6 +167,7 @@
 }
 
 .submitButton {
+	cursor: pointer;
 	width: 100%;
 	border: none;
 	background-color: var(--color-accent);
@@ -178,6 +179,28 @@
 	letter-spacing: -1%;
 	padding: 10rem 20rem;
 	border-radius: 8rem;
+	transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.submitButton:hover {
+	opacity: 0.8;
+}
+
+.submitButton:active {
+	transform: scale(0.98);
+}
+
+.inputRow {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+.inputColumn {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 
 @media screen and (max-width: 480px) {

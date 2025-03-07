@@ -1,71 +1,74 @@
 .header {
-  width: 100%;
-  background-color: transparent;
-  display: flex;
-  justify-content: center;
-  padding: 25rem 0 25rem;
-  z-index: 2;
-  position: relative;
+	width: 100%;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	padding: 25rem 0 25rem;
+	z-index: 2;
+	position: relative;
 }
 
 .content {
-  width: 1200rem;
-  display: grid;
-  grid-template-columns: max-content 678rem max-content;
-  justify-items: center;
-  align-items: center;
-  justify-content: space-between;
+	width: 1260rem;
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	gap: 36rem;
+	justify-items: center;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .navContainer {
-  width: 80%;
-}
-
-.burgerContainer {
-  
+	width: 100%;
 }
 
 .burgerButton {
-  display: none;
+	display: none;
 }
 
-
 @media screen and (max-width: 480px) {
+	.header {
+		padding: 15rem 0 15rem;
+	}
 
-  .header {
-    padding: 20rem 0 30rem;
-  }
+	.content {
+		width: 300rem;
+		grid-template-columns: max-content max-content;
+		justify-content: space-between;
+		gap: 0;
+		padding: 0 10rem;
+	}
 
-  .content {
-    width: 280rem;
-    grid-template-columns: max-content max-content;
-    justify-content: space-between;
-    gap: 0;
-  }
+	.navContainer {
+		display: none;
+	}
 
-  .navContainer {
-    display: none;
-  }
+	.burgerContainer {
+		margin-left: 0;
+		display: flex;
+		align-items: center;
+	}
 
-  .burgerContainer {
-    margin-left: 0;
-    display: flex;
-    align-items: center;
-  }
+	.burgerButton {
+		display: block;
+		width: 20rem;
+		height: 20rem;
+		background: var(--Dark-Gray, #232326);
+		background-image: url(./burger.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		border: 1px solid #5a5a6166;
 
-  .burgerButton {
-    display: block;
-    width: 24rem;
-    height: 24rem;
-    background-color: transparent;
-    background-size: 100% 100%;
-    background-image: url(./burger.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    outline: none;
-    padding: 0;
-    margin: 0;
-    margin-left: 10rem;
-  }
+		border-radius: 8rem;
+		outline: none;
+		padding: 14rem;
+		margin: 0;
+		margin-left: 10rem;
+		cursor: pointer;
+		transition: transform 0.2s ease;
+	}
+
+	.burgerButton:hover {
+		transform: scale(1.1);
+	}
 }
