@@ -1,0 +1,220 @@
+.faq {
+	width: 100%;
+}
+
+.container {
+	max-width: 1260rem;
+	margin: 0 auto;
+}
+
+.titleContainer {
+	width: 100%;
+	position: relative;
+	margin-bottom: 80rem;
+}
+
+.sticker {
+	position: absolute;
+	bottom: -50rem;
+	right: 60rem;
+	max-width: 120rem;
+	max-height: 120rem;
+	width: 100%;
+}
+
+.title {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 98rem;
+	line-height: 88.2rem;
+	letter-spacing: 0%;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.title span {
+	color: var(--color-accent);
+}
+
+.accordionContainer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20rem;
+	border-radius: 20rem;
+}
+
+.roleAccordion {
+	width: 100%;
+	border-radius: 8rem;
+	overflow: hidden;
+	background: var(--Background-Gray, #1c1c1f);
+	border: 1px solid var(--Gray, #2d2d31);
+	box-shadow: 0px 0px 10px 0px #0000000d;
+	padding: 10rem;
+}
+
+.roleButton {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+	color: var(--color-white);
+	background-color: transparent;
+	border: none;
+	padding: 20rem;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.roleButton span {
+	color: var(--color-accent);
+}
+
+.roleButton.active .accordionIcon {
+	transform: rotate(0);
+}
+
+.accordionIcon {
+	width: 50rem;
+	height: 50rem;
+	transform: rotate(45deg);
+	transition: transform 0.2s ease-in-out;
+}
+
+.questionsContainer {
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+	background-color: transparent;
+	transform-origin: top;
+	opacity: 0;
+	transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+	height: 0;
+}
+
+.questionsContainer.show {
+	opacity: 1;
+	height: auto;
+}
+
+.questionAccordion {
+	display: flex;
+	flex-direction: column;
+	gap: 20rem;
+	padding: 10rem;
+	border: 1px solid var(--Gray, #2d2d31);
+	border-radius: 8rem;
+}
+
+.questionButton {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	font-family: var(--font-base);
+	text-align: left;
+	color: #afaeba;
+	font-weight: 400;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 10rem;
+}
+
+.questionButton.active .accordionIcon {
+	transform: rotate(0);
+}
+
+.answer {
+	transform: scaleY(0);
+	transform-origin: top;
+	opacity: 0;
+	height: 0;
+	color: #afaeba;
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.86rem;
+	letter-spacing: -1%;
+	padding: 0 10rem;
+	transition: transform 0.3s ease-out, opacity 0.3s ease-out,
+		padding 0.3s ease-out, height 0.3s ease-out;
+}
+
+.answer.show {
+	transform: scaleY(1);
+	opacity: 1;
+	height: auto;
+	padding: 10rem;
+}
+
+@media (max-width: 480px) {
+	.faq {
+		padding: 0 20rem;
+	}
+
+	.titleContainer {
+		margin-bottom: 40rem;
+	}
+
+	.sticker {
+		max-width: 80rem;
+		bottom: -30rem;
+		right: 10rem;
+	}
+
+	.title {
+		font-size: 42rem;
+		line-height: 46rem;
+	}
+
+	.accordionContainer {
+		gap: 16rem;
+	}
+
+	.roleAccordion {
+		padding: 8rem;
+	}
+
+	.roleButton {
+		font-size: 28rem;
+		line-height: 32rem;
+		padding: 12rem 8rem;
+	}
+
+	.accordionIcon {
+		width: 30rem;
+		height: 30rem;
+	}
+
+	.questionAccordion {
+		gap: 10rem;
+		padding: 8rem;
+	}
+
+	.questionButton {
+		font-size: 22rem;
+		line-height: 26rem;
+		padding: 8rem;
+	}
+
+	.answer {
+		font-size: 14rem;
+		line-height: 19rem;
+	}
+
+	.answer.show {
+		padding: 8rem;
+	}
+}

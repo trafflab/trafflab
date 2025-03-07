@@ -1,0 +1,122 @@
+.trafflabCrm {
+	padding: 200rem 0;
+}
+
+.container {
+	max-width: 1260rem;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	gap: 12rem;
+}
+
+.content {
+	max-width: 728rem;
+	display: flex;
+	flex-direction: column;
+	gap: 40rem;
+}
+
+.title {
+	text-transform: uppercase;
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 98rem;
+	line-height: 88.2rem;
+	letter-spacing: 0%;
+}
+
+.title span {
+	color: var(--color-accent);
+}
+
+.text {
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 20rem;
+	line-height: 27.32rem;
+	letter-spacing: -1%;
+}
+
+.link {
+	color: var(--color-accent);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 20rem;
+	line-height: 27.32rem;
+	letter-spacing: -1%;
+	text-decoration: none;
+}
+
+.image {
+	max-width: 520rem;
+	width: 100%;
+}
+
+.image img {
+	width: 100%;
+}
+
+.button {
+	text-decoration: none;
+	width: fit-content;
+	background-color: var(--color-accent);
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 700;
+	font-size: 20rem;
+	line-height: 27.32rem;
+	letter-spacing: -1%;
+	text-align: center;
+	padding: 27rem 56rem;
+	border-radius: 12rem;
+	border: none;
+	cursor: pointer;
+}
+
+@media (max-width: 480px) {
+	.trafflabCrm {
+		padding: 80rem 0;
+	}
+
+	.container {
+		flex-direction: column;
+		padding: 0 20rem;
+		gap: 40rem;
+	}
+
+	.content {
+		gap: 24rem;
+		order: 2;
+	}
+
+	.title {
+		font-size: 42rem;
+		line-height: 46rem;
+	}
+
+	.text {
+		font-size: 16rem;
+		line-height: 22rem;
+	}
+
+	.link {
+		font-size: 16rem;
+		line-height: 22rem;
+	}
+
+	.image {
+		max-width: 100%;
+		order: 1;
+	}
+
+	.button {
+		width: 100%;
+		font-size: 16rem;
+		line-height: 22rem;
+		padding: 16rem 24rem;
+		border-radius: 8rem;
+	}
+}

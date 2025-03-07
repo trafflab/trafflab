@@ -1,0 +1,99 @@
+.joinTraff {
+	width: 100%;
+	background-color: var(--color-accent);
+	padding: 60rem 0;
+}
+
+.container {
+	position: relative;
+	max-width: 1260rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40rem;
+}
+
+.title {
+	text-transform: uppercase;
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 98rem;
+	line-height: 88.2rem;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--color-white);
+}
+
+.description {
+	max-width: 830rem;
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 20rem;
+	line-height: 27.32rem;
+	letter-spacing: -1%;
+	text-align: center;
+	color: var(--color-white);
+}
+
+.button {
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: 20rem;
+	line-height: 1.5;
+	letter-spacing: -1%;
+	text-align: center;
+	color: var(--color-accent);
+	background-color: var(--color-white);
+	border-radius: 12rem;
+	padding: 27rem 32rem;
+	cursor: pointer;
+	border: 1px solid #ffffff66;
+	z-index: 2;
+}
+
+.joinBg {
+	position: absolute;
+	top: -50rem;
+	left: 50rem;
+	max-width: 652rem;
+	z-index: 1;
+	width: 100%;
+	object-fit: contain;
+}
+
+@media (max-width: 480px) {
+	.joinTraff {
+		padding: 40rem 0;
+	}
+
+	.container {
+		padding: 0 20rem;
+		gap: 24rem;
+	}
+
+	.title {
+		font-size: 42rem;
+		line-height: 46rem;
+	}
+
+	.description {
+		font-size: 16rem;
+		line-height: 22rem;
+	}
+
+	.button {
+		font-size: 16rem;
+		line-height: 22rem;
+		padding: 16rem 24rem;
+		width: 100%;
+		border-radius: 8rem;
+	}
+
+	.joinBg {
+		top: -20rem;
+		left: 0;
+		max-width: 100%;
+		opacity: 0.5;
+	}
+}

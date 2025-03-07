@@ -1,0 +1,175 @@
+.trustedFeed {
+	padding-bottom: 100rem;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 1260rem;
+	margin: 0 auto;
+}
+
+.title {
+	width: max-content;
+	position: relative;
+	text-transform: uppercase;
+	font-family: var(--font-base);
+	font-weight: 700;
+	font-size: 98rem;
+	line-height: 88.2rem;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--color-white);
+	text-align: center;
+	margin-bottom: 80rem;
+}
+
+.title span {
+	color: var(--color-accent);
+}
+
+.titleTape {
+	max-width: 232rem;
+	width: 100%;
+	position: absolute;
+	top: 30rem;
+	right: -90rem;
+}
+
+.feed {
+	position: relative;
+	display: flex;
+	gap: 20rem;
+	justify-content: space-between;
+}
+
+.item {
+	max-width: 300rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 40rem;
+	background: var(--Background-Gray, #1c1c1f);
+	border: 1px solid var(--Gray, #2d2d31);
+	border-radius: 15rem;
+	box-shadow: 0px 0px 10px 0px #0000000d;
+	padding: 20rem;
+}
+
+.image {
+	width: max-content;
+	object-fit: contain;
+}
+
+.text {
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.86rem;
+	letter-spacing: -1%;
+	margin-bottom: auto;
+}
+
+.author {
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
+
+.name {
+	text-transform: uppercase;
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 600;
+	font-size: 48rem;
+	line-height: 48rem;
+	letter-spacing: 0%;
+}
+
+.description {
+	color: #afaeb5;
+
+	font-family: var(--font-additional);
+	font-weight: 500;
+	font-size: 16rem;
+	line-height: 21.86rem;
+}
+
+.cardTape {
+	max-width: 171rem;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 200rem;
+	transform: translateY(65%);
+}
+
+@media (max-width: 480px) {
+	.trustedFeed {
+		padding-bottom: 60rem;
+	}
+
+	.container {
+		padding: 0 20rem;
+	}
+
+	.title {
+		font-size: 42rem;
+		line-height: 46rem;
+		margin-bottom: 40rem;
+		width: 100%;
+	}
+
+	.titleTape {
+		max-width: 120rem;
+		top: 15rem;
+		right: -30rem;
+	}
+
+	.feed {
+		flex-direction: column;
+		gap: 30rem;
+		width: 100%;
+	}
+
+	.item {
+		box-sizing: border-box;
+		max-width: 100%;
+		padding: 16rem;
+		gap: 20rem;
+	}
+
+	.image {
+		max-width: 80%;
+		height: auto;
+	}
+
+	.text {
+		font-size: 14rem;
+		line-height: 19rem;
+	}
+
+	.author {
+		gap: 5rem;
+	}
+
+	.name {
+		font-size: 28rem;
+		line-height: 32rem;
+	}
+
+	.description {
+		font-size: 14rem;
+		line-height: 19rem;
+	}
+
+	.cardTape {
+		max-width: 100rem;
+		left: 50%;
+		transform: translateX(-50%) translateY(65%);
+	}
+}

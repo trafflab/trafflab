@@ -1,0 +1,250 @@
+.section {
+	padding: 80rem 0;
+	background-color: var(--color-black);
+}
+
+.container {
+	max-width: 1200rem;
+	margin: 0 auto;
+	padding: 0 20rem;
+}
+
+.title {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 750;
+	font-size: 196rem;
+	line-height: 0.7;
+	letter-spacing: 0%;
+	text-align: center;
+	margin-bottom: 40rem;
+}
+
+.title span {
+	color: var(--color-accent);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 80rem;
+}
+
+.partnersBlock,
+.promocodesBlock {
+	margin-bottom: 40rem;
+}
+
+.subtitle {
+	font-family: var(--font-additional);
+	font-size: 36rem;
+	font-weight: 600;
+	color: var(--color-white);
+	margin-bottom: 20rem;
+}
+
+.description {
+	max-width: 620rem;
+	margin: 0 auto;
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-weight: 600;
+	font-size: 20rem;
+	line-height: 150%;
+	letter-spacing: -1%;
+	text-align: center;
+	margin-bottom: 40rem;
+}
+
+.partnersGrid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30rem;
+	max-width: 1000rem;
+	margin: 0 auto;
+}
+
+.partnerCard {
+	background-color: #1e1e1e;
+	border-radius: 15rem;
+	padding: 20rem;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	height: 100%;
+}
+
+.partnerCard:hover {
+	transform: translateY(-5rem);
+	box-shadow: 0 10rem 20rem rgba(0, 0, 0, 0.2);
+}
+
+.partnerLogo {
+	max-height: 60rem;
+	display: flex;
+	margin-bottom: 25rem;
+
+	img {
+		max-height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+}
+
+.partnerName {
+	font-family: var(--font-additional);
+	font-size: 24rem;
+	font-weight: 600;
+	color: var(--color-white);
+	margin-bottom: 10rem;
+}
+
+.partnerDescription {
+	color: var(--color-white);
+	font-family: var(--font-base);
+	font-weight: 400;
+	font-size: 40rem;
+	line-height: 100%;
+	letter-spacing: 0;
+	margin-bottom: 20rem;
+}
+
+.partnerLink {
+	font-family: var(--font-additional);
+	font-size: 16rem;
+	font-weight: 500;
+	color: var(--color-accent);
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+	align-self: flex-start;
+}
+
+.partnerLink:hover {
+	opacity: 0.8;
+}
+
+.promocodeCard {
+	background-color: #1e1e1e;
+	border-radius: 10rem;
+	padding: 30rem;
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease;
+}
+
+.promocodeCard:hover {
+	transform: translateY(-5rem);
+}
+
+.promocodeName {
+	font-family: var(--font-additional);
+	font-size: 24rem;
+	font-weight: 600;
+	color: var(--color-white);
+	margin-bottom: 10rem;
+}
+
+.promocodePartner {
+	font-family: var(--font-main);
+	font-size: 14rem;
+	color: var(--color-gray-2);
+	margin-bottom: 15rem;
+}
+
+.promocodeDescription {
+	font-family: var(--font-main);
+	font-size: 16rem;
+	line-height: 150%;
+	color: var(--color-white);
+	margin-bottom: 20rem;
+}
+
+.promocodeValue {
+	cursor: pointer;
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+	font-size: 20rem;
+	background: #232326;
+	border: 1px solid #5a5a6166;
+	padding: 16rem 32rem;
+	border-radius: 12rem;
+	gap: 10rem;
+}
+
+.promocodeCode {
+	font-family: var(--font-additional);
+	font-size: 18rem;
+	font-weight: 600;
+	color: var(--color-white);
+}
+
+.copyButton {
+	background-color: transparent;
+	border: none;
+	transition: opacity 0.2s ease;
+}
+
+.copyButton:hover {
+	opacity: 0.8;
+}
+
+.promocodeExpiry {
+	font-family: var(--font-main);
+	font-size: 14rem;
+	color: var(--color-gray-2);
+	margin-top: auto;
+}
+
+.connectButton {
+	text-decoration: none;
+	cursor: pointer;
+	margin-top: auto;
+	color: var(--color-white);
+	font-family: var(--font-additional);
+	font-size: 20rem;
+	font-weight: 500;
+	background: #232326;
+	border: 1px solid #5a5a6166;
+	padding: 16rem 32rem;
+	border-radius: 12rem;
+	transition: background-color 0.2s ease;
+}
+
+.connectButton:hover {
+	background-color: var(--color-accent);
+}
+
+@media screen and (max-width: 480px) {
+	.section {
+		padding: 0;
+		padding-top: 40rem;
+	}
+
+	.partnersGrid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.container {
+		padding: 0 15rem;
+	}
+
+	.title {
+		font-size: 70rem;
+		margin-bottom: 15rem;
+	}
+
+	.description {
+		font-size: 16rem;
+	}
+
+	.partnerCard,
+	.promocodeCard {
+		padding: 20rem;
+	}
+
+	.logoPlaceholder {
+		width: 150rem;
+		height: 80rem;
+	}
+}
