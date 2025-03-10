@@ -43,7 +43,7 @@ export default function Footer({ linkPrefix = '' }) {
 						</li>
 						<li className={styles.listEement}>
 							<a
-								href='https://bit.ly/3U6Dvub'
+								href='https://t.me/trafflab_cpa'
 								className={styles.link}
 							>
 								Telegram →

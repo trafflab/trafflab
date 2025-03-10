@@ -177,9 +177,7 @@ export default function FormPopupWeb({ closeHandler, isOpen }) {
 								className={styles.checkboxLabel}
 							>
 								I agree to the processing of{' '}
-								<a href='https://trafflab.ru/privacy-policy'>
-									personal data
-								</a>
+								<a href='/en/privacy-policy'>personal data</a>
 							</label>
 						</div>
 					</div>

@@ -60,6 +60,7 @@
 }
 
 .button {
+	text-transform: uppercase;
 	text-decoration: none;
 	width: fit-content;
 	background-color: var(--color-accent);
@@ -74,6 +75,17 @@
 	border-radius: 12rem;
 	border: none;
 	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+	background-color: #ff4d4d;
+	transform: translateY(-2rem);
+}
+
+.button:active {
+	background-color: #cc0000;
+	transform: translateY(1rem);
 }
 
 @media (max-width: 480px) {

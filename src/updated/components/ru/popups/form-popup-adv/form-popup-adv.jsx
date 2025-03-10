@@ -197,7 +197,7 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 								className={styles.checkboxLabel}
 							>
 								Я согласен на обработку{' '}
-								<a href='https://trafflab.ru/privacy-policy'>
+								<a href='/ru/privacy-policy'>
 									персональных данных
 								</a>
 							</label>
