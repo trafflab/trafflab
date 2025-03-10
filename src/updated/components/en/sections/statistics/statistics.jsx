@@ -27,32 +27,32 @@ export default function Statistics() {
 							</div>
 							<div className={styles.statsFlex}>
 								<div className={styles.statsNumber}>
-									147,421
+									176,905
 								</div>
 								<div className={styles.statsDescription}>
-									FTD, brought by our partners in 2023
+									FTD, brought by our partners in 2024
 								</div>
 							</div>
 						</div>
 						<div className={styles.statsItem}>
 							<div className={styles.statsLabel}>
-								Paid to webmasters over 2 years
+								Paid to webmasters
 							</div>
 							<div className={styles.statsFlex}>
 								<div className={styles.statsGridItem}>
 									<div className={styles.statsNumber}>
-										147,421
+										$16M+
 									</div>
 									<div className={styles.statsDescription}>
-										Total amount paid to webmasters in 2023
+										Total amount paid to webmasters in 2024
 									</div>
 								</div>
 								<div className={styles.statsGridItem}>
 									<div className={styles.statsNumber}>
-										$5.5M+
+										$14M+
 									</div>
 									<div className={styles.statsDescription}>
-										Total amount paid to webmasters in 2022
+										Total amount paid to webmasters in 2023
 									</div>
 								</div>
 							</div>
@@ -63,7 +63,7 @@ export default function Statistics() {
 							</div>
 							<div className={styles.statsFlex}>
 								<div className={styles.statsNumber}>
-									$350,000
+									$486,000
 								</div>
 								<div className={styles.statsDescription}>
 									We guarantee safety and reliability for our
@@ -205,9 +205,7 @@ export default function Statistics() {
 					>
 						<div className={styles.graphDecorationYear}>2022</div>
 
-						<div className={styles.graphDecorationNumber}>
-							0 FTD
-						</div>
+						<div className={styles.graphDecorationNumber}>$ 0</div>
 						<p className={styles.graphDecorationText}>
 							We started from scratch, gradually building
 							relationships and trust with users
@@ -219,20 +217,19 @@ export default function Statistics() {
 						<div className={styles.graphDecorationYear}>2023</div>
 
 						<div className={styles.graphDecorationNumber}>
-							58,626 FTD
+							$5.5M+
 						</div>
 						<p className={styles.graphDecorationText}>
-							We made a big breakthrough in just one year and
-							achieved FTD in 58,626
+							We made a big breakthrough in just one year
 						</p>
 					</div>
 					<div
 						className={`${styles.graphDecoration} ${styles.graphDecoration3}`}
 					>
-						<div className={styles.graphDecorationYear}>2024</div>
+						<div className={styles.graphDecorationYear}>2025</div>
 
 						<div className={styles.graphDecorationNumber}>
-							147,421 FTD
+							$16M+
 						</div>
 						<p className={styles.graphDecorationText}>
 							In two years we have come a long way and created the

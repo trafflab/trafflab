@@ -1,7 +1,58 @@
 import * as React from 'react';
 import * as styles from './styles.module.css';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 export default function TrafficBlog() {
+	// Fetch 4 latest articles using GraphQL query
+	const articlesData = useStaticQuery(graphql`
+		query TrafficBlogEnQuery(
+			$lang: String = "en"
+			$type: String = "article"
+		) {
+			allMarkdownRemark(
+				sort: { order: DESC, fields: [frontmatter___date] }
+				filter: {
+					frontmatter: { lang: { eq: $lang }, type: { eq: $type } }
+				}
+				limit: 4
+			) {
+				edges {
+					node {
+						frontmatter {
+							title
+							cardText
+							cardImage {
+								childImageSharp {
+									gatsbyImageData(
+										quality: 85
+										layout: CONSTRAINED
+									)
+								}
+							}
+						}
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		}
+	`).allMarkdownRemark.edges;
+
+	// Transform data into a format suitable for display
+	const articles =
+		articlesData.map(article => ({
+			title: article.node.frontmatter.title,
+			description: article.node.frontmatter.cardText,
+			image:
+				article.node.frontmatter.cardImage?.childImageSharp
+					?.gatsbyImageData?.images?.fallback?.src ||
+				'/img/traffic-blog/crashgameart.png',
+			alt: article.node.frontmatter.title,
+			slug: article.node.fields.slug,
+		})) || [];
+
 	return (
 		<div className={styles.trafficBlog}>
 			<div className={styles.container}>
@@ -15,78 +66,28 @@ export default function TrafficBlog() {
 					private sources.
 				</p>
 				<div className={styles.articles}>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/crashgameart.png'
-							alt='crashgameart'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Crash Games: Types and Approaches
-							</h3>
-							<p className={styles.articleDescription}>
-								The gambling niche is constantly evolving,
-								offering new entertainment formats for players.
-								Among the latest innovations that have quickly
-								attracted players' attention...
-							</p>
+					{articles.map((article, index) => (
+						<div className={styles.article} key={index}>
+							<Link
+								to={article.slug}
+								className={styles.articleLink}
+								key={index}
+							></Link>
+							<img
+								src={article.image}
+								alt={article.alt}
+								className={styles.articleImage}
+							/>
+							<div className={styles.articleContent}>
+								<h3 className={styles.articleTitle}>
+									{article.title}
+								</h3>
+								<p className={styles.articleDescription}>
+									{article.description}
+								</p>
+							</div>
 						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/lifeisagame.png'
-							alt='lifeisagame'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Popular Slots for AUDIENCES in Different Geos
-							</h3>
-							<p className={styles.articleDescription}>
-								Different Geos — different tastes of the target
-								audience. To increase the effectiveness of
-								advertising campaigns, it's important to
-								consider the preferences of the population. In
-								this article, you...
-							</p>
-						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/myths.png'
-							alt='myths'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								popular myths about traffic arbitrage
-							</h3>
-							<p className={styles.articleDescription}>
-								Traffic arbitrage — a sphere surrounded by myths
-								and misconceptions, which often repel newcomers
-								or, conversely, attract them unrealistic...
-							</p>
-						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/crashgameart.png'
-							alt='crashgameart'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Gamingification in igaming: role, types, offers
-							</h3>
-							<p className={styles.articleDescription}>
-								The gambling industry is developing rapidly:
-								it's not only opening up new opportunities for
-								earning, but also making users more selective
-								and...
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
 				<a href='/en/blog' className={styles.button}>
 					View all articles

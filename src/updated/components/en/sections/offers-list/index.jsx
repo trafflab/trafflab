@@ -12,7 +12,7 @@ export default function OffersList() {
 	};
 
 	return (
-		<div className={styles.offersList}>
+		<div className={styles.offersList} id='top-offers'>
 			<div className={styles.container}>
 				<div className={styles.title}>
 					<span>OFFERS LIST </span>FOR THE LAST MONTH

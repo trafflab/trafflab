@@ -197,6 +197,10 @@
 }
 
 .connectButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
 	text-decoration: none;
 	cursor: pointer;
 	margin-top: auto;

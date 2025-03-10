@@ -234,10 +234,10 @@ export default function Statistics() {
 					<div
 						className={`${styles.graphDecoration} ${styles.graphDecoration3}`}
 					>
-						<div className={styles.graphDecorationYear}>2024</div>
+						<div className={styles.graphDecorationYear}>2025</div>
 
 						<div className={styles.graphDecorationNumber}>
-							$14M+
+							$16M+
 						</div>
 						<p className={styles.graphDecorationText}>
 							За два года мы прошли большой путь и смогли создать

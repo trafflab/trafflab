@@ -1,7 +1,57 @@
 import * as React from 'react';
 import * as styles from './styles.module.css';
+import { useStaticQuery, graphql } from 'gatsby';
+import { Link } from 'gatsby';
 
 export default function TrafficBlog() {
+	const articlesData = useStaticQuery(graphql`
+		query TrafficBlogRuQuery(
+			$lang: String = "ru"
+			$type: String = "article"
+		) {
+			allMarkdownRemark(
+				sort: { order: DESC, fields: [frontmatter___date] }
+				filter: {
+					frontmatter: { lang: { eq: $lang }, type: { eq: $type } }
+				}
+				limit: 4
+			) {
+				edges {
+					node {
+						frontmatter {
+							title
+							cardText
+							cardImage {
+								childImageSharp {
+									gatsbyImageData(
+										quality: 85
+										layout: CONSTRAINED
+									)
+								}
+							}
+						}
+						fields {
+							slug
+						}
+					}
+				}
+			}
+		}
+	`).allMarkdownRemark.edges;
+
+	// Преобразуем данные в формат, удобный для отображения
+	const articles =
+		articlesData.map(article => ({
+			title: article.node.frontmatter.title,
+			description: article.node.frontmatter.cardText,
+			image:
+				article.node.frontmatter.cardImage?.childImageSharp
+					?.gatsbyImageData?.images?.fallback?.src ||
+				'/img/traffic-blog/crashgameart.png',
+			alt: article.node.frontmatter.title,
+			slug: article.node.fields.slug,
+		})) || [];
+
 	return (
 		<div className={styles.trafficBlog}>
 			<div className={styles.container}>
@@ -15,78 +65,30 @@ export default function TrafficBlog() {
 					источников.
 				</p>
 				<div className={styles.articles}>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/crashgameart.png'
-							alt='crashgameart'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Краш-игры: разновидности и подходы
-							</h3>
-							<p className={styles.articleDescription}>
-								Ниша гемблинга постоянно развивается, предлагая
-								всё новые форматы развлечений для игроков. Среди
-								последних новинок, которые быстро привлекли
-								внимание игроков...
-							</p>
+					{articles.map((article, index) => (
+						<div className={styles.article} key={index}>
+							<Link
+								to={article.slug}
+								className={styles.articleLink}
+								key={index}
+							></Link>
+							<div>
+								<img
+									src={article.image}
+									alt={article.alt}
+									className={styles.articleImage}
+								/>
+								<div className={styles.articleContent}>
+									<h3 className={styles.articleTitle}>
+										{article.title}
+									</h3>
+									<p className={styles.articleDescription}>
+										{article.description}
+									</p>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/lifeisagame.png'
-							alt='lifeisagame'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Популярные слоты АУДИТОРИИ в различных гео
-							</h3>
-							<p className={styles.articleDescription}>
-								Разные Гео — разные вкусы целевой аудитории.
-								Чтобы увеличить эффективность рекламных
-								кампаний, важно учитывать предпочтения
-								населения. В данной статье вы...
-							</p>
-						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/myths.png'
-							alt='myths'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								популярные Мифы про АРБИТРАЖ трафика
-							</h3>
-							<p className={styles.articleDescription}>
-								Арбитраж трафика — сфера, окружённая мифами и
-								заблуждениями, которые часто отталкивают
-								новичков или же, наоборот, привлекают их
-								нереалистичными...
-							</p>
-						</div>
-					</div>
-					<div className={styles.article}>
-						<img
-							src='/img/traffic-blog/crashgameart.png'
-							alt='crashgameart'
-							className={styles.articleImage}
-						/>
-						<div className={styles.articleContent}>
-							<h3 className={styles.articleTitle}>
-								Геймификация в igaming: роль, виды, офферы
-							</h3>
-							<p className={styles.articleDescription}>
-								Гемблинг-индустрия стремительно развивается: это
-								не только открывает новые возможности для
-								заработка, но и делает пользователей более
-								избирательными и...
-							</p>
-						</div>
-					</div>
+					))}
 				</div>
 				<a href='/ru/blog' className={styles.button}>
 					Посмотреть все статьи

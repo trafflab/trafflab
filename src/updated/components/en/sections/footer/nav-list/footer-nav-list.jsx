@@ -29,6 +29,14 @@ export default function FooterNavList({ linkPrefix }) {
 					</a>
 				</li>
 				<li>
+					<a
+						href={`${linkPrefix}#top-offers`}
+						className={styles.link}
+					>
+						Top-offers
+					</a>
+				</li>
+				<li>
 					<Link to={`${linkPrefix}blog`} className={styles.link}>
 						Traffic blog
 					</Link>

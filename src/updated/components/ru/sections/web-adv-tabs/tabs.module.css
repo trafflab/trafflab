@@ -57,7 +57,7 @@
 }
 
 .advertisment .tabContentHeaderImage {
-	right: 180rem;
+	right: 60rem;
 }
 
 .tabContentHeader {
@@ -73,6 +73,7 @@
 }
 
 .tabTitle {
+	text-transform: uppercase;
 	max-width: 1200rem;
 	font-family: var(--font-base);
 	font-weight: 700;

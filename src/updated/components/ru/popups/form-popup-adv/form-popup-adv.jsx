@@ -121,7 +121,7 @@ export default function FormPopupAdv({ closeHandler, isOpen }) {
 				</div>
 				<div className={styles.titleContainer}>
 					<p className={styles.title}>
-						Один шаг, чтобы стать лучшим с лучшими
+						Один шаг, чтобы стать лучшим вместе с лучшими
 					</p>
 					<p className={styles.subtitle}>
 						Оставьте заявку на консультацию — менеджер свяжется с

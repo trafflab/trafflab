@@ -9,6 +9,19 @@ export default function FAQ() {
 	const handleRoleSelect = role => {
 		setSelectedRole(role === selectedRole ? null : role);
 		setSelectedQuestion(null);
+
+		// Add smooth scrolling to the selected accordion
+		setTimeout(() => {
+			const accordionElement = document.getElementById(
+				`accordion-${role}`
+			);
+			if (accordionElement && role !== selectedRole) {
+				accordionElement.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start',
+				});
+			}
+		}, 50);
 	};
 
 	const handleQuestionSelect = question => {
@@ -20,7 +33,7 @@ export default function FAQ() {
 			<div className={styles.container}>
 				<div className={styles.titleContainer}>
 					<h2 className={styles.title}>
-						What <span>questions</span> arise most often
+						Most <span>frequently</span> asked questions
 					</h2>
 					<img
 						src='/img/faq/faqsticker.png'
@@ -29,7 +42,10 @@ export default function FAQ() {
 					/>
 				</div>
 				<div className={styles.accordionContainer}>
-					<div className={styles.roleAccordion}>
+					<div
+						className={styles.roleAccordion}
+						id='accordion-webmaster'
+					>
 						<button
 							className={`${styles.roleButton} ${
 								selectedRole === 'webmaster'
@@ -104,7 +120,6 @@ export default function FAQ() {
 								onQuestionSelect={handleQuestionSelect}
 								answer='We offer competitive rates, often exceeding those of our competitors. We are always ready to discuss rate increases with proven partners who demonstrate high volumes of quality traffic. Also, don’t forget to follow the promo codes in our blog and social media'
 							/>
-
 							<AccordionQuestion
 								question='Hold and payments:'
 								questionId='question8'
@@ -130,7 +145,10 @@ export default function FAQ() {
 					</div>
 
 					{/* Advertiser Accordion */}
-					<div className={styles.roleAccordion}>
+					<div
+						className={styles.roleAccordion}
+						id='accordion-advertiser'
+					>
 						<button
 							className={`${styles.roleButton} ${
 								selectedRole === 'advertiser'

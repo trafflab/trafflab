@@ -3,11 +3,11 @@ backend:
     repo: trafflab/trafflab
     branch: main
     commit_messages:
-        create: 'Create {{collection}} “{{slug}}”'
-        update: 'Update {{collection}} “{{slug}}”'
-        delete: 'Delete {{collection}} “{{slug}}”'
-        uploadMedia: '[skip ci] Upload “{{path}}”'
-        deleteMedia: '[skip ci] Delete “{{path}}”'
+        create: 'Create {{collection}} "{{slug}}"'
+        update: 'Update {{collection}} "{{slug}}"'
+        delete: 'Delete {{collection}} "{{slug}}"'
+        uploadMedia: '[skip ci] Upload "{{path}}"'
+        deleteMedia: '[skip ci] Delete "{{path}}"'
 
 local_backend: true
 media_folder: static/img
@@ -60,6 +60,14 @@ collections:
           - { label: 'Card title', name: 'cardTitle', widget: 'string' }
           - { label: 'Card text', name: 'cardText', widget: 'string' }
           - { label: 'Card image', name: 'cardImage', widget: image }
+          - {
+                label: 'Tags',
+                name: 'tags',
+                widget: 'list',
+                required: false,
+                default: [],
+                allow_add: true,
+            }
     - name: 'articlesEn'
       label: 'articlesEn'
       folder: 'src/pages/en/blog'
@@ -106,6 +114,14 @@ collections:
           - { label: 'Card title', name: 'cardTitle', widget: 'string' }
           - { label: 'Card text', name: 'cardText', widget: 'string' }
           - { label: 'Card image', name: 'cardImage', widget: image }
+          - {
+                label: 'Tags',
+                name: 'tags',
+                widget: 'list',
+                required: false,
+                default: [],
+                allow_add: true,
+            }
     - name: 'articlesUa'
       label: 'articlesUa'
       folder: 'src/pages/ua/blog'
@@ -152,3 +168,11 @@ collections:
           - { label: 'Card title', name: 'cardTitle', widget: 'string' }
           - { label: 'Card text', name: 'cardText', widget: 'string' }
           - { label: 'Card image', name: 'cardImage', widget: image }
+          - {
+                label: 'Tags',
+                name: 'tags',
+                widget: 'list',
+                required: false,
+                default: [],
+                allow_add: true,
+            }

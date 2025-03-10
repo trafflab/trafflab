@@ -37,9 +37,10 @@
 }
 
 .button {
+	text-transform: uppercase;
 	text-decoration: none;
-	font-family: var(--font-base);
-	font-weight: 400;
+	font-family: var(--font-additional);
+	font-weight: 700;
 	font-size: 20rem;
 	line-height: 27.32rem;
 	letter-spacing: -1%;
@@ -51,6 +52,20 @@
 	cursor: pointer;
 	border: 1px solid #ffffff66;
 	z-index: 2;
+	transition: background-color 0.3s ease, transform 0.2s ease,
+		border-color 0.3s ease;
+}
+
+.button:hover {
+	background-color: #f5f5f5;
+	transform: translateY(-2rem);
+	border-color: #ffffffaa;
+}
+
+.button:active {
+	background-color: #e0e0e0;
+	transform: translateY(1rem);
+	border-color: #ffffff;
 }
 
 .joinBg {

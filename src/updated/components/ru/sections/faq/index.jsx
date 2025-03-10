@@ -9,6 +9,18 @@ export default function FAQ() {
 	const handleRoleSelect = role => {
 		setSelectedRole(role === selectedRole ? null : role);
 		setSelectedQuestion(null);
+
+		setTimeout(() => {
+			const accordionElement = document.getElementById(
+				`accordion-${role}`
+			);
+			if (accordionElement && role !== selectedRole) {
+				accordionElement.scrollIntoView({
+					behavior: 'smooth',
+					block: 'start',
+				});
+			}
+		}, 50);
 	};
 
 	const handleQuestionSelect = question => {
@@ -29,7 +41,10 @@ export default function FAQ() {
 					/>
 				</div>
 				<div className={styles.accordionContainer}>
-					<div className={styles.roleAccordion}>
+					<div
+						className={styles.roleAccordion}
+						id='accordion-webmaster'
+					>
 						<button
 							className={`${styles.roleButton} ${
 								selectedRole === 'webmaster'
@@ -132,7 +147,10 @@ export default function FAQ() {
 					</div>
 
 					{/* Advertiser Accordion */}
-					<div className={styles.roleAccordion}>
+					<div
+						className={styles.roleAccordion}
+						id='accordion-advertiser'
+					>
 						<button
 							className={`${styles.roleButton} ${
 								selectedRole === 'advertiser'

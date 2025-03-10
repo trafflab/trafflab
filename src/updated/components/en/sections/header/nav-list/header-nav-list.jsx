@@ -38,9 +38,9 @@ export default function HeaderNavList({ linkPrefix }) {
 				</li>
 				<li className={styles.item}>
 					<a
-						href={`${linkPrefix}#statistics`}
+						href={`${linkPrefix}#trafflab-crm`}
 						className={`${styles.link} ${
-							isActive('#statistics') ? styles.active : ''
+							isActive('#trafflab-crm') ? styles.active : ''
 						}`}
 					>
 						TRAFFLAB Platform

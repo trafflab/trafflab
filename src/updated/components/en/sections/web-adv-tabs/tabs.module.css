@@ -57,7 +57,7 @@
 }
 
 .advertisment .tabContentHeaderImage {
-	right: 180rem;
+	right: 230rem;
 }
 
 .tabContentHeader {
@@ -68,12 +68,13 @@
 	width: 100rem;
 	height: 100rem;
 	position: absolute;
-	right: 106rem;
+	right: 325rem;
 	bottom: 25rem;
 }
 
 .tabTitle {
-	max-width: 1200rem;
+	text-transform: uppercase;
+	max-width: 1000rem;
 	font-family: var(--font-base);
 	font-weight: 700;
 	font-size: 98rem;
@@ -85,6 +86,7 @@
 }
 
 .tabListButton {
+	text-transform: uppercase;
 	cursor: pointer;
 	border: 1px solid #ffffff66;
 	border-radius: 12rem;
@@ -102,7 +104,6 @@
 
 .tabListButton:hover {
 	background-color: #f8f8f8;
-	border-color: #ffffff99;
 	transform: translateY(-2rem);
 	box-shadow: 0 4rem 8rem rgba(255, 255, 255, 0.1);
 }
@@ -136,10 +137,6 @@
 	border-radius: 15rem;
 }
 
-.tabContentListItem a {
-	pointer-events: none;
-}
-
 .tabContentListItem img {
 	max-height: 266rem;
 }
@@ -150,6 +147,10 @@
 
 .tabContentListItemPosition p {
 	margin-bottom: auto;
+}
+
+.tabContentListItemPosition .expandedContent {
+	padding-bottom: 20rem;
 }
 
 .tabContentListSticker {
@@ -248,9 +249,11 @@
 }
 
 .tabListImageCentered {
+	display: flex;
+	align-items: center;
 	right: 50%;
 	transform: translateX(50%);
-	bottom: 113rem;
+	bottom: 100rem;
 }
 
 @media (max-width: 480px) {
@@ -382,6 +385,7 @@
 }
 
 .accordionButton {
+	text-decoration: none;
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -413,13 +417,14 @@
 }
 
 .learnMoreButton {
+	text-decoration: none;
 	width: 100%;
 	margin-top: auto;
 	padding: 24rem;
 	background: #232326;
 	border-radius: 8rem;
-	font-weight: 500;
-	font-size: 20rem;
+	font-weight: 400;
+	font-size: 28rem;
 	line-height: 1.3;
 	letter-spacing: -1%;
 	text-align: center;

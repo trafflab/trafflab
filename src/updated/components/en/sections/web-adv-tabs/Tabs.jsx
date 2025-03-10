@@ -122,18 +122,14 @@ export default function Tabs() {
 													Contact our manager —
 													connection in 15 days!
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-1'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -148,7 +144,7 @@ export default function Tabs() {
 													traffic types.
 												</p>
 												<img
-													src='/img/tabs/offers.png'
+													src='/img/tabs/offerseng.png'
 													alt='Offers'
 													className={
 														styles.tabListImage
@@ -211,18 +207,14 @@ export default function Tabs() {
 													advertisers in one payment,
 													which minimizes delays.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-2'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -311,18 +303,14 @@ export default function Tabs() {
 													which minimizes downtime and
 													problems.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-3'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -332,7 +320,7 @@ export default function Tabs() {
 													}
 												>
 													CRM with 99.98% Uptime.
-													We've compensated $117,000:
+													We've compensated $140,400:
 													We're on your side and
 													acknowledge our mistakes!
 												</p>
@@ -359,7 +347,7 @@ export default function Tabs() {
 														src='/img/tabs/arrowicon.svg'
 														alt=''
 													/>
-													$117,000
+													$140,400
 												</div>
 											</>
 										)}
@@ -423,18 +411,14 @@ export default function Tabs() {
 													advertisers, protecting your
 													interests.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-4'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -443,7 +427,7 @@ export default function Tabs() {
 														styles.tabListText
 													}
 												>
-													Protected $390,000 from
+													Protected $486,000 from
 													scams: We guarantee
 													payments, even if the
 													advertiser disappears.
@@ -464,7 +448,7 @@ export default function Tabs() {
 														src='/img/tabs/shieldicon.svg'
 														alt=''
 													/>
-													$390,000
+													$486,000
 												</div>
 											</>
 										)}
@@ -557,18 +541,14 @@ export default function Tabs() {
 													in ads, ensuring traffic
 													safety and quality.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-1'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -639,18 +619,14 @@ export default function Tabs() {
 													from our extensive webmaster
 													database.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-2'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -666,7 +642,7 @@ export default function Tabs() {
 												</p>
 
 												<img
-													src='/img/tabs/timetointegrate.png'
+													src='/img/tabs/houreng.png'
 													alt='Offers'
 													className={
 														styles.tabListImage
@@ -728,18 +704,14 @@ export default function Tabs() {
 													ensures stable reach and
 													profitability.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-3'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -811,18 +783,14 @@ export default function Tabs() {
 													widest possible audience and
 													find exactly your customers.
 												</p>
-												<button
+												<a
+													href='http://t.me/trafflab_cpa'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-4'
-														)
-													}
 												>
 													Learn more
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -837,7 +805,7 @@ export default function Tabs() {
 													reach for your audience!
 												</p>
 												<img
-													src='/img/tabs/sources.png'
+													src='/img/tabs/sourceseng.png'
 													alt='Offers'
 													className={
 														styles.tabListImage
