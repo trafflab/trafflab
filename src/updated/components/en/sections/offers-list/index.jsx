@@ -5,10 +5,10 @@ import { useContext } from 'react';
 import { FormsContexts } from '../../../../utils/contexts';
 
 export default function OffersList() {
-	const { openAdvFormPopup } = useContext(FormsContexts);
+	const { openWebFormPopup } = useContext(FormsContexts);
 
 	const handleSubmitRequest = () => {
-		openAdvFormPopup();
+		openWebFormPopup();
 	};
 
 	return (
