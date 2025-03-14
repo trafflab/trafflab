@@ -302,13 +302,18 @@
 }
 
 .graphDecoration2 {
-	bottom: 80rem;
-	left: 420rem;
+	bottom: 50rem;
+	left: 340rem;
 }
 
 .graphDecoration3 {
+	bottom: 140rem;
+	right: 320rem;
+}
+
+.graphDecoration4 {
 	top: 20rem;
-	right: 20rem;
+	right: 130rem;
 }
 
 .graphDecorationYear {
@@ -334,6 +339,7 @@
 }
 
 .graphDecorationText {
+	max-width: 270rem;
 	color: #afaeb5;
 
 	font-family: var(--font-additional);
@@ -438,7 +444,7 @@
 	}
 
 	.graphContainer {
-		height: 300rem;
+		height: 400rem;
 	}
 
 	.chart {
@@ -459,7 +465,8 @@
 	}
 
 	.graphDecorationText {
-		font-size: 14rem;
+		max-width: 290rem;
+		font-size: 12rem;
 		line-height: 18rem;
 	}
 
@@ -494,11 +501,17 @@
 
 	.graphDecoration2 {
 		width: 40%;
-		bottom: 120rem;
+		bottom: 160rem;
 		left: 170rem;
 	}
 
 	.graphDecoration3 {
+		width: 40%;
+		bottom: 320rem;
+		left: 30rem;
+	}
+
+	.graphDecoration4 {
 		align-items: flex-end;
 		width: 100%;
 		top: 170rem;

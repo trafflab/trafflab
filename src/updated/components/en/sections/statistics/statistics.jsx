@@ -44,7 +44,7 @@ export default function Statistics() {
 										$16M+
 									</div>
 									<div className={styles.statsDescription}>
-										Total amount paid to webmasters in 2024
+										Total payments to webmasters for 2024
 									</div>
 								</div>
 								<div className={styles.statsGridItem}>
@@ -52,14 +52,14 @@ export default function Statistics() {
 										$14M+
 									</div>
 									<div className={styles.statsDescription}>
-										Total amount paid to webmasters in 2023
+										Total payments to webmasters for 2023
 									</div>
 								</div>
 							</div>
 						</div>
 						<div className={styles.statsItem}>
 							<div className={styles.statsLabel}>
-								Trafflab's INSURANCE POOL
+								Trafflab INSURANCE POOL
 							</div>
 							<div className={styles.statsFlex}>
 								<div className={styles.statsNumber}>
@@ -72,9 +72,7 @@ export default function Statistics() {
 							</div>
 						</div>
 						<div className={styles.statsItem}>
-							<div className={styles.statsLabel}>
-								OUR EMPLOYEES
-							</div>
+							<div className={styles.statsLabel}>OUR STAFF</div>
 							<div className={styles.statsFlex}>
 								<div className={styles.statsNumber}>42+</div>
 								<div className={styles.statsDescription}>
@@ -109,7 +107,7 @@ export default function Statistics() {
 							<div className={styles.trafficNumber}>4000+</div>
 						</div>
 						<div className={styles.trafficContent}>
-							<h3 className={styles.trafficTitle}>advertisers</h3>
+							<h3 className={styles.trafficTitle}>Advertisers</h3>
 							<div className={styles.trafficNumber}>500+</div>
 						</div>
 						<div className={styles.trafficContent}>
@@ -118,44 +116,48 @@ export default function Statistics() {
 						</div>
 					</div>
 					<p className={styles.trafficDescription}>
-						More and more professionals trust us, and we constantly
-						expand the range of brands we cooperate with!
+						More and more professionals trust us, and we are
+						constantly expanding the range of brands we work with!
 					</p>
 				</div>
 				<div className={styles.graphBlock}>
 					<div className={styles.graphTitle}>
-						We have come a long way and refined our strategies with
-						verified clients
+						We've come a long way and refined our strategies with
+						proven clients
 					</div>
 					<div className={styles.graphContainer}>
 						<svg
+							width='933'
+							height='292'
+							viewBox='0 0 933 292'
+							fill='none'
+							xmlns='http://www.w3.org/2000/svg'
 							className={styles.chart}
-							viewBox='-10 -10 890 312'
-							preserveAspectRatio='none'
 						>
+							<path
+								d='M1 290C1 290 49.9319 273.112 82.5 268C129.375 260.642 171.5 285 204 268C242.187 248.025 237.5 294.5 311 241C348.392 213.782 464.04 244.46 506 202.5C542.5 166 566.185 148.584 608.5 137.5C687 116.938 691.5 181 721 137.5C748.785 96.5286 839.038 118.041 874.5 83.5C902.473 56.2534 931 1 931 1'
+								stroke='url(#paint0_linear_2564_1102)'
+								stroke-width='3'
+							/>
+							<circle cx='5' cy='285' r='5' fill='#FF6666' />
+							<circle cx='929' cy='5' r='5' fill='white' />
+							<circle cx='310' cy='241' r='5' fill='#FF9999' />
+							<circle cx='630' cy='134' r='5' fill='#FFCCCC' />
 							<defs>
 								<linearGradient
-									id='paint0_linear'
+									id='paint0_linear_2564_1102'
 									x1='868'
-									y1='-6.50005'
+									y1='-6.5'
 									x2='700'
 									y2='137.5'
 									gradientUnits='userSpaceOnUse'
 								>
-									<stop stopColor='white' />
-									<stop offset='1' stopColor='#FF6666' />
+									<stop stop-color='white' />
+									<stop offset='1' stop-color='#FF6666' />
 								</linearGradient>
 							</defs>
-							<path
-								d='M1 290C1 290 70.8237 278.298 113 262.5C154.299 247.031 170.011 218.321 213.5 211C272.392 201.085 312 279.5 385.5 226C422.892 198.782 464.04 244.46 506 202.5C542.5 166 554.185 147.584 596.5 136.5C646 123.534 672 190 701.5 146.5C729.285 105.529 776.038 118.041 811.5 83.5C839.473 56.2534 868 1 868 1'
-								stroke='url(#paint0_linear)'
-								strokeWidth='3'
-								fill='none'
-							/>
-							<circle cx='6' cy='290' r='6' fill='white' />
-							<circle cx='410' cy='217' r='6' fill='white' />
-							<circle cx='866' cy='6' r='6' fill='white' />
 						</svg>
+
 						<svg
 							width='295'
 							height='421'
@@ -165,19 +167,21 @@ export default function Statistics() {
 							className={styles.chartMobile}
 						>
 							<path
-								d='M5 416C5 416 27.9524 399.358 41.8166 376.891C55.3923 354.892 60.5573 314.063 74.8529 303.651C94.212 289.55 107.232 401.067 131.393 324.983C143.684 286.275 157.21 351.236 171.003 291.562C183.002 239.654 186.843 213.464 200.753 197.701C217.024 179.261 225.571 273.785 235.268 211.922C244.402 153.655 259.77 171.45 271.427 122.327C280.623 83.5784 290 5 290 5'
-								stroke='url(#paint0_linear_2003_4218)'
+								d='M5 416C5 416 12.0786 391.984 22.0591 384.713C36.424 374.249 37.0625 408.889 47.0222 384.713C58.7247 356.307 55.705 422.4 78.2292 346.316C89.6881 307.609 146.641 358.173 159.5 298.5C170.685 246.593 176.095 197.782 191 179C202.956 163.934 216.605 180.99 225.645 119.128C234.16 60.8613 261.818 91.455 272.685 42.333C281.258 3.58506 290 5.00664 290 5.00664'
+								stroke='url(#paint0_linear_2555_1570)'
 								stroke-width='3'
 							/>
 							<circle cx='290' cy='5' r='5' fill='white' />
 							<circle cx='5' cy='416' r='5' fill='#FF6666' />
+							<circle cx='90' cy='332' r='5' fill='#FF9999' />
+							<circle cx='190' cy='180' r='5' fill='#FFCCCC' />
 							<defs>
 								<linearGradient
-									id='paint0_linear_2003_4218'
-									x1='290'
-									y1='-5.66616'
-									x2='197.82'
-									y2='12.5968'
+									id='paint0_linear_2555_1570'
+									x1='270.694'
+									y1='-5.65807'
+									x2='184.331'
+									y2='10.2935'
 									gradientUnits='userSpaceOnUse'
 								>
 									<stop stop-color='white' />
@@ -193,7 +197,7 @@ export default function Statistics() {
 								FTD
 							</div>
 							<div className={styles.graphDecorationAccentText}>
-								Total amount brought by our partners
+								Brought by our partners
 							</div>
 						</div>
 						<div className={styles.graphDecorationLine}></div>
@@ -208,7 +212,7 @@ export default function Statistics() {
 						<div className={styles.graphDecorationNumber}>$ 0</div>
 						<p className={styles.graphDecorationText}>
 							We started from scratch, gradually building
-							relationships and trust with users
+							connections and user trust
 						</p>
 					</div>
 					<div
@@ -220,11 +224,25 @@ export default function Statistics() {
 							$5.5M+
 						</div>
 						<p className={styles.graphDecorationText}>
-							We made a big breakthrough in just one year
+							In just one year, we made a big breakthrough and
+							achieved 58,626 FTD
 						</p>
 					</div>
 					<div
 						className={`${styles.graphDecoration} ${styles.graphDecoration3}`}
+					>
+						<div className={styles.graphDecorationYear}>2024</div>
+
+						<div className={styles.graphDecorationNumber}>
+							$14M+
+						</div>
+						<p className={styles.graphDecorationText}>
+							In two years, we've come a long way and created the
+							most transparent platform
+						</p>
+					</div>
+					<div
+						className={`${styles.graphDecoration} ${styles.graphDecoration4}`}
 					>
 						<div className={styles.graphDecorationYear}>2025</div>
 
@@ -232,7 +250,7 @@ export default function Statistics() {
 							$16M+
 						</div>
 						<p className={styles.graphDecorationText}>
-							In two years we have come a long way and created the
+							In two years, we've come a long way and created the
 							most transparent platform
 						</p>
 					</div>

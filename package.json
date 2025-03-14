@@ -38,6 +38,7 @@
     "react-google-recaptcha": "^2.1.0",
     "react-helmet": "^6.0.0",
     "react-yandex-metrika": "^2.6.0",
+    "swiper": "^11.2.5",
     "uuid": "^8.0.0"
   },
   "keywords": [
