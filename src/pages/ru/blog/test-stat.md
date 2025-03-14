@@ -12,8 +12,7 @@ cardTitle: Тестовая статья
 cardText: Проверка связи, о чем эта статья?
 cardImage: /img/247-site-mal.jpg
 tags:
-  - Другое
-  - Гайд
+  - ГЕО
 ---
 
 
