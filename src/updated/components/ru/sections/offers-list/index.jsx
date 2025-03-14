@@ -4,11 +4,11 @@ import { useContext } from 'react';
 import { FormsContexts } from '../../../../utils/contexts';
 
 export default function OffersList() {
-	const { openAdvFormPopup } = useContext(FormsContexts);
+	const { openWebFormPopup } = useContext(FormsContexts);
 
 	const handleButtonClick = () => {
-		if (typeof openAdvFormPopup === 'function') {
-			openAdvFormPopup();
+		if (typeof openWebFormPopup === 'function') {
+			openWebFormPopup();
 		}
 	};
 	return (

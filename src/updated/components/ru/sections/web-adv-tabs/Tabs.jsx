@@ -123,18 +123,16 @@ export default function Tabs() {
 													Свяжитесь с нашим менеджером
 													— подключение за 15 дней!
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-1'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -214,18 +212,16 @@ export default function Tabs() {
 													одном платеже, что позволяет
 													минимизировать задержки.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-2'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -315,18 +311,16 @@ export default function Tabs() {
 													минимизирует простои и
 													проблемы
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-3'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -429,18 +423,16 @@ export default function Tabs() {
 													рекламодателями, защищая
 													ваши интересы.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'webmaster-4'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -565,18 +557,16 @@ export default function Tabs() {
 													безопасность и качество
 													трафика.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-1'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -648,18 +638,16 @@ export default function Tabs() {
 													трафик из нашей обширной
 													базы вебмастеров.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-2'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -741,18 +729,16 @@ export default function Tabs() {
 													стабильные охваты и
 													окупаемость.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-3'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>
@@ -825,18 +811,16 @@ export default function Tabs() {
 													аудиторию и найти именно
 													ваших клиентов.
 												</p>
-												<button
+												<a
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
-													onClick={() =>
-														toggleExpand(
-															'advertiser-4'
-														)
-													}
 												>
 													Узнать больше
-												</button>
+												</a>
 											</div>
 										) : (
 											<>

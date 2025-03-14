@@ -123,7 +123,9 @@ export default function Tabs() {
 													connection in 15 days!
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -208,7 +210,9 @@ export default function Tabs() {
 													which minimizes delays.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -304,7 +308,9 @@ export default function Tabs() {
 													problems.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -412,7 +418,9 @@ export default function Tabs() {
 													interests.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -542,7 +550,9 @@ export default function Tabs() {
 													safety and quality.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -620,7 +630,9 @@ export default function Tabs() {
 													database.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -705,7 +717,9 @@ export default function Tabs() {
 													profitability.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
@@ -784,7 +798,9 @@ export default function Tabs() {
 													find exactly your customers.
 												</p>
 												<a
-													href='http://t.me/trafflab_cpa'
+													href='https://t.me/trafflab_cpa'
+													target='_blank'
+													rel='noopener noreferrer'
 													className={
 														styles.learnMoreButton
 													}
