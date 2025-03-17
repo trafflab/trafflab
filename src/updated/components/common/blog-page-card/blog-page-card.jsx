@@ -4,7 +4,6 @@ import { Link } from 'gatsby';
 import { SiteImage } from '../ui';
 
 export default function BlogPageCard({ url, data }) {
-	console.log('BlogPageCard data:', data); // Отладочный вывод
 	return (
 		<article className={styles.card}>
 			<Link to={url} className={styles.linkTo}></Link>
