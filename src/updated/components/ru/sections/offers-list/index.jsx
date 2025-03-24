@@ -42,7 +42,7 @@ export default function OffersList() {
 					/>
 					<div className={styles.offer}>
 						<img
-							src='/img/offers/offer.png'
+							src='/img/offers/or.jpg'
 							alt='offer'
 							className={styles.offerImg}
 						/>
@@ -79,7 +79,7 @@ export default function OffersList() {
 					</div>
 					<div className={styles.offer}>
 						<img
-							src='/img/offers/offer.png'
+							src='/img/offers/og.jpg'
 							alt='offer'
 							className={styles.offerImg}
 						/>
@@ -116,7 +116,7 @@ export default function OffersList() {
 					</div>
 					<div className={styles.offer}>
 						<img
-							src='/img/offers/offer.png'
+							src='/img/offers/on.jpg'
 							alt='offer'
 							className={styles.offerImg}
 						/>
@@ -153,7 +153,7 @@ export default function OffersList() {
 					</div>
 					<div className={styles.offer}>
 						<img
-							src='/img/offers/offer.png'
+							src='/img/offers/op.jpg'
 							alt='offer'
 							className={styles.offerImg}
 						/>
