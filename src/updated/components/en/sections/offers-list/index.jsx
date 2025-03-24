@@ -50,7 +50,7 @@ export default function OffersList() {
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>Geo</div>
 								<div className={styles.infoItemValue}>
-									Austria
+									Brazil
 								</div>
 							</div>
 							<div className={styles.infoItem}>
@@ -63,17 +63,17 @@ export default function OffersList() {
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Ставка
+									Rate
 								</div>
 								<div className={styles.infoItemValue}>
-									$40,847
+									$25
 								</div>
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Миндеп/бейс
+									Min. deposit
 								</div>
-								<div className={styles.infoItemValue}>-</div>
+								<div className={styles.infoItemValue}>$3</div>
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@ export default function OffersList() {
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>Geo</div>
 								<div className={styles.infoItemValue}>
-									Austria
+									Spain
 								</div>
 							</div>
 							<div className={styles.infoItem}>
@@ -100,17 +100,17 @@ export default function OffersList() {
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Ставка
+									Rate
 								</div>
 								<div className={styles.infoItemValue}>
-									$40,847
+									€140
 								</div>
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Миндеп/бейс
+									Min. deposit
 								</div>
-								<div className={styles.infoItemValue}>-</div>
+								<div className={styles.infoItemValue}>€20</div>
 							</div>
 						</div>
 					</div>
@@ -124,7 +124,7 @@ export default function OffersList() {
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>Geo</div>
 								<div className={styles.infoItemValue}>
-									Austria
+									Spain
 								</div>
 							</div>
 							<div className={styles.infoItem}>
@@ -137,17 +137,17 @@ export default function OffersList() {
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Ставка
+									Rate
 								</div>
 								<div className={styles.infoItemValue}>
-									$40,847
+									€130-140
 								</div>
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Миндеп/бейс
+									Min. deposit
 								</div>
-								<div className={styles.infoItemValue}>-</div>
+								<div className={styles.infoItemValue}>€10</div>
 							</div>
 						</div>
 					</div>
@@ -161,7 +161,7 @@ export default function OffersList() {
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>Geo</div>
 								<div className={styles.infoItemValue}>
-									Austria
+									Italy
 								</div>
 							</div>
 							<div className={styles.infoItem}>
@@ -174,17 +174,17 @@ export default function OffersList() {
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Ставка
+									Rate
 								</div>
 								<div className={styles.infoItemValue}>
-									$40,847
+									€140-150
 								</div>
 							</div>
 							<div className={styles.infoItem}>
 								<div className={styles.infoItemTitle}>
-									Миндеп/бейс
+									Min. deposit
 								</div>
-								<div className={styles.infoItemValue}>-</div>
+								<div className={styles.infoItemValue}>€10</div>
 							</div>
 						</div>
 					</div>
