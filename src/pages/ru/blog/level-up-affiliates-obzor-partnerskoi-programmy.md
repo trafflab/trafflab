@@ -13,6 +13,8 @@ cardTitle: "LevelUp Affiliates: обзор партнерской програм
 cardText: Ваш верный партнер в мире iGaming, предоставляющий лучшие ставки,
   удобные инструменты и гарантированную поддержку на каждом этапе.
 cardImage: /img/level-up-affiliates-reeview.jpg
+tags:
+  - Оффер
 ---
 
 
