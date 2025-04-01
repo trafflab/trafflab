@@ -1,27 +1,28 @@
 ---
-title: '1win partners: обзор партнерской программы'
+title: "1win partners: обзор партнерской программы"
 customSlug: 1win-partners-obzor-partnerskoi-programmy
 lang: ru
 type: article
 date: 2024-10-14T14:02:08.341Z
 headKeywords: партнерская программа, 1win, букмекер, ставки, 1win partners, 1win
-    partners отзывы, 1win partners обзор, 1win partners партнерская программа,
-    1win партнерка, партнерка 1win, партнерская программа 1win, 1вин партнерка,
-    1win affiliate, 1win partners вход, 1win affiliate program, как работать 1win
-    partners, 1win partners арбитраж, 1win partners cpa, как работать с 1win
-    partners
-headTitle: '1win partners: обзор партнерской программы'
+  partners отзывы, 1win partners обзор, 1win partners партнерская программа,
+  1win партнерка, партнерка 1win, партнерская программа 1win, 1вин партнерка,
+  1win affiliate, 1win partners вход, 1win affiliate program, как работать 1win
+  partners, 1win partners арбитраж, 1win partners cpa, как работать с 1win
+  partners
+headTitle: "1win partners: обзор партнерской программы"
 headDescription: Сотрудничество с 1Win — это ваш шанс заработать на
-    раскрученном, известном по всему миру, бренде! Рекламодатель делает все
-    возможное, чтобы обеспечить высокий показатель конверсии от регистрации до
-    депозита (reg2dep)
+  раскрученном, известном по всему миру, бренде! Рекламодатель делает все
+  возможное, чтобы обеспечить высокий показатель конверсии от регистрации до
+  депозита (reg2dep)
 image: /img/1win-сайт-.jpg
-cardTitle: '1win partners: обзор партнерской программы'
-cardText: 'Сотрудничество с 1Win — это ваш шанс заработать на раскрученном,
-    известном по всему миру, бренде! '
+cardTitle: "1win partners: обзор партнерской программы"
+cardText: "Сотрудничество с 1Win — это ваш шанс заработать на раскрученном,
+  известном по всему миру, бренде! "
 cardImage: /img/1вин-мелк-на-сайт.jpg
 tags:
-    - Беттинг
+  - Беттинг
+  - Оффер
 ---
 
 В партнёрской программе 1win вы можете получать до $30, приводя одного нового клиента, который будет привлечён вами в букмекерскую компанию.
