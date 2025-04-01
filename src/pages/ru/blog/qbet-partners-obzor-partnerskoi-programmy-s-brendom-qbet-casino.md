@@ -14,6 +14,8 @@ image: /img/qbet-обзор-партнерской-программы.jpg
 cardTitle: "QBet Partners:"
 cardText: Обзор партнерской программы с брендом QBet Casino
 cardImage: /img/qbet-partners.jpg
+tags:
+  - Оффер
 ---
 
 
