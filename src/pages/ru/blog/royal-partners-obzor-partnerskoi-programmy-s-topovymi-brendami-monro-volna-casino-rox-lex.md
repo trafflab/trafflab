@@ -18,6 +18,8 @@ cardTitle: "Royal Partners: обзор партнерской программы
 cardText: " Обзор партнерской программы с топовыми брендами Monro, Volna
   Casino,  Rox, Lex"
 cardImage: /img/royal-сайт-мелк.jpg
+tags:
+  - Оффер
 ---
 Royal Partners: обзор партнерской программы с топовыми брендами Monro, Volna Casino,  Rox, Lex 
 
