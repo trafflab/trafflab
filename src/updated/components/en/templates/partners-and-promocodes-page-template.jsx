@@ -28,7 +28,7 @@ export default function PartnersAndPromocodesPageTemplate() {
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Decentralized platform for betting on any sports
+								Безлимитные агентские аккаунты для in-app и social сетей
 							</p>
 							<a href='' className={styles.connectButton}>
 								Connect
