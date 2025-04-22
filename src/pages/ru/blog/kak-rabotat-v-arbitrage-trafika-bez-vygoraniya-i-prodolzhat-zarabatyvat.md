@@ -13,11 +13,11 @@ headDescription: "Если ты в арбитраже трафика уже не
   занимаюсь?» В такие моменты важно понимать, что выгорание — это не приговор, а
   лишь сигнал о том, что нужно немного остановиться, выдохнуть и
   перезарядиться."
-image: /img/how-can-an-arbitrageur-avoid-becoming-a-gambling-addict-and-how-can-he-spot-signs-of-gambling-addiction-at-the-very-beginning.jpg
+image: /img/how-to-work-in-traffic-arbitrage-without-burning-out-and-continue-to-earn.jpg
 cardTitle: Как работать в арбитраже трафика без выгорания и продолжать зарабатывать?
 cardText: Выгорание — это не приговор, а лишь сигнал о том, что нужно немного
   остановиться, выдохнуть и перезарядиться.
-cardImage: /img/how-can-an-arbitrageur-avoid-becoming-a-gambling-addict-and-how-can-he-spot-signs-of-gambling-addiction-at-the-beginning.jpg
+cardImage: /img/how-to-work-in-traffic-arbitrage-without-burning-out-and-continue-to-earn-money.jpg
 tags:
   - Гайд
 ---
