@@ -36,8 +36,6 @@ GoldBet includes several popular products, such as:
 * GoldBet Poker: A great platform for poker enthusiasts, with excellent conditions for gaming and large tournaments.
 * GoldBet Mobile: A mobile application that allows users to play their favorite games and place bets directly from their mobile devices.
 
-
-
 ## GoldBet: Brand Features
 
 GoldBet targets high-income, active players. The program offers flexible conditions for affiliates and many benefits:
@@ -74,8 +72,6 @@ Target Audience:
 * Males aged 23-45
 * Active internet users
 * High-paying users
-
-
 
 ## Traffic Sources
 
