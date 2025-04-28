@@ -23,14 +23,13 @@ export default function PartnersAndPromocodesPageTemplate() {
 							<div className={styles.partnerLogo}>
 								<img
 									src='/img/partner-logos/partner-logo-7.png'
-									alt='Логотип 1'
+									alt='Логотип PR'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Децентрализованная платформа для ставок на любые
-								виды спорта
+								Profit Rental — сервис аренды агентских аккаунтов для in-app и социальных сетей. Скидка 15% на первое пополнение по промокоду TRAFF 
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://profit-rental.com/?utm_source=website&utm_content=partners&utm_term=trafflab' target='_blank' className={styles.connectButton}>
 								Подключиться
 							</a>
 						</div>
