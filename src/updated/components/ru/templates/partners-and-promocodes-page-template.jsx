@@ -37,7 +37,7 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-5.png'
+									src='/img/partner-logos/partner-logo-10.png'
 									alt='Логотип Lamanche'
 								/>
 							</div>
