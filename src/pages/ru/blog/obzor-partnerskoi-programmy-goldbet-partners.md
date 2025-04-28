@@ -17,7 +17,7 @@ image: /img/goldbet-partners-affiliate-program-review.jpg
 cardTitle: Обзор партнерской программы GoldBet Partners
 cardText: Официальная программа, которая работает на международную аудиторию и
   предоставляет выгодные условия
-cardImage: /img/goldbet-partners-affiliate-program.jpg
+cardImage: /img/goldbet-partners-affiliate-program-best-review.jpg
 tags:
   - Оффер
 ---
