@@ -22,7 +22,7 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-7.png'
+									src='/img/partner-logos/partner-logo-9.png'
 									alt='Логотип PR'
 								/>
 							</div>
