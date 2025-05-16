@@ -45,7 +45,7 @@ The platform runs under a Curaçao license, built on the 1xBet framework, and of
 
 ## How to Get Started
 
-To join AfroPari Partners, visit the official website and register by selecting the “webmaster” option.
+To join AfroPari Partners, visit [the official website](https://trafflab.io/en/) and register by selecting the “webmaster” option.
 
 Once your application is submitted, it will be reviewed promptly, and a dedicated manager will contact you via Telegram to discuss the details.
 
@@ -152,7 +152,6 @@ All terms and policies are clearly outlined on the site, ensuring full transpare
 To get started:
 
 1. Review the program rules to understand your obligations and benefits.
-
 2. Go to <https://trafflab.io> and complete the short registration form — all you need is your name and Telegram handle.
 
 A manager will reach out via Telegram within 24 hours to help you get started and launch your first campaign.
