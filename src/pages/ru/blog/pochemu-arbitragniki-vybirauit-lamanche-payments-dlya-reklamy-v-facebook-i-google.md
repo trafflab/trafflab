@@ -76,7 +76,7 @@ Lamanche Payments в индустрии более трех лет: за это 
 
 После регистрации попадаем в личный кабинет. Ниже рассмотрим основные разделы в ЛК и разберем, для чего они нужны:
 
-1. #### «Cards» — чтобы выпускать карты
+1. «Cards» — чтобы выпускать карты
 
 Переходим в раздел и нажимаем в правом нижнем углу страницы кнопку **«Add Card»**.
 
@@ -84,9 +84,7 @@ Lamanche Payments в индустрии более трех лет: за это 
 
 Потом выбираем BIN и задаем нужное количество карт, далее нажимаем на кнопку **«Create Order»**.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfppTvXG7FgXCkPcAJPjMsmhWh5LTlPQW-7xfqLd_1RhO9GbzvvOL30epsx99ZA9zuKAEbFJk5G0KvAARP_NKZDJf7kCg5-34cob7JUj-EKSvZw4HZHTJnyMMxeGr3d9A?key=GpfQB9auvrWAlEPmEQ84kA)
-
-2. #### «User management» — чтобы заливать большие спэнды со своей командой
+#### 2. «User management» — чтобы заливать большие спэнды со своей командой
 
 В этом разделе можно настроить функционал для своей команды. 
 
@@ -94,9 +92,7 @@ Lamanche Payments в индустрии более трех лет: за это 
 
 При переходе по кнопке **«Add user»** будет доступен интерфейс для создания субаккаунтов и их доступов.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeq9KykBfuIg1Jv8YPma9iyoP1kL2upVRIfiLsR6CKLLwA-hpYXROqSXHRyq038WezJ7cekWcWezeoeIjrAQ6_05B26L9VDa1HInXSoDT7h2_tx0xMCaHhRZkIbrw2fng?key=GpfQB9auvrWAlEPmEQ84kA)
-
-3. #### «Statements» — чтобы держать средства под контролем
+#### 3. «Statements» — чтобы держать средства под контролем
 
 В этом разделе доступна отчетность по транзакциям: пользователь может выбрать период и карту, данные по которой его интересуют.
 
