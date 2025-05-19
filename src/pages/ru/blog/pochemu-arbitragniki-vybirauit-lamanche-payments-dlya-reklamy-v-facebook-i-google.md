@@ -102,4 +102,4 @@ Lamanche Payments в индустрии более трех лет: за это 
 
 Lamanche Payments использует UK BIN’ы, что положительно сказывается на уровне траста со стороны рекламных площадок по типу Facebook и Google. Сервис также предлагает фиксированные и прозрачные условия, круглосуточную поддержку и расширенный командный функционал. 
 
-[Начинай стабильно заливаться, оставив заявку на сайте и запускай кампании уже сегодня.](https://lamanchepayments.com?utm_medium=cross_promo&utm_campaign=trafflab&utm_source=article)
+Начинай стабильно заливаться, оставив [заявку](https://lamanchepayments.com/?utm_medium=cross_promo&utm_campaign=trafflab&utm_source=article) на сайте и запускай кампании уже сегодня.
