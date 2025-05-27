@@ -12,7 +12,7 @@ headDescription: Facebook — это один из мощнейших источ
   дейтингом.   Однако в большинстве случаев баны можно предотвратить, если
   следовать определённой стратегии.
 image: /img/how-to-avoid-being-banned-on-facebook-a-guide-and-checklist-for-arbitrageurs.jpg
-cardTitle: "Как не получить бан в Facebook: гайд + чек-лист для арбитражников"
+cardTitle: "Как не получить бан в Facebook: "
 cardText: Гайд + чек-лист для арбитражников
 cardImage: /img/how-to-avoid-being-banned-on-facebook-a-guide-and-checklist.png
 tags:
