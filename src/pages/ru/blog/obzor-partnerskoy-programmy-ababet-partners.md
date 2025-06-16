@@ -12,7 +12,7 @@ headDescription: iGaming-рынок Турции переживает актив
   локальной аудитории.   А партнёрская программа abebet partners предлагает
   условия, которые идеально подходят арбитражникам, работающим с беттингом,
   казино и mobile-трафиком.
-image: /img/ababet-partners-affiliate-program-review.jpg
+image: /img/abebet-partners.jpg
 cardTitle: Обзор партнёрской программы AbaBet Partners
 cardText: AbaBet — это не просто оффер. Это партнёрка, которая работает и
   приносит стабильный доход.
