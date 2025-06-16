@@ -95,15 +95,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-8.png'
+									src='/img/partner-logos/partner-logo-11.png'
 									alt='Логотип 4'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Децентрализованная платформа для ставок на любые
-								виды спорта
+								PROXYMA — 60+ миллионов уникальных IP-адресов с круглосуточной поддержкой. По промокоду: TRAFFLAB - 15% скидка!
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://proxyma.io?utm_source=cross-promo&utm_campaign=trafflab' target='_blank' className={styles.connectButton}>
 								Подключиться
 							</a>
 						</div>
