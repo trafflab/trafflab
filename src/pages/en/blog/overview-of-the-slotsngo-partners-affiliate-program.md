@@ -53,11 +53,9 @@ You can leverage a wide range of traffic channels to engage your audience:
 
 • Streamers, Telegram Ads, TikTok Apps, Twitter, UAC Apps
 
-
-
 ## Terms and Rates
 
-
+![](/img/terms-and-rates.jpg)
 
 ## How to Engage Your Audience: Creative Guidelines
 
@@ -71,8 +69,6 @@ To ensure a successful campaign, your creatives should be vibrant, culturally lo
 
 • Don’t forget social proof: real player testimonials and visuals of INR payouts work effectively. Record success stories for YouTube to add credibility and demonstrate that the platform delivers real rewards.
 
-
-
 ## Conclusion
 
 Slots’n’Go Partners is a profitable iGaming affiliate program offering direct payouts, competitive rates, flexible marketing options, and a product fully optimized for mobile audiences. With native UPI/Paytm payment integration and a rich game portfolio, the program provides strong monetization potential. If you’re looking to scale your gambling campaigns in India, Slots’n’Go Partners is a solid choice.
@@ -82,7 +78,6 @@ The affiliate program is hosted on Trafflab — a leading CPA platform for iGami
 To join the program, follow these simple steps:
 
 1. Review the offer terms to gain a clear understanding of the partnership framework.
-
 2. Visit [trafflab.io](https://trafflab.io/en/) and complete the short registration form by entering your name and Telegram handle.
 
 Once registered, a manager will contact you within 24 hours to confirm details and provide your affiliate link.
