@@ -17,7 +17,8 @@ cardText: If you want to try new combinations and get a stable profit, afropari
   partner will be a great choice!
 cardImage: /img/afropari-affiliate-program.jpg
 tags:
-  - Оффер
+  - All
+  - Offer
 ---
 The African online gambling market is experiencing rapid growth, and AfroPari is emerging as one of the leading platforms in the region.
 
