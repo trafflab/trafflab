@@ -21,7 +21,8 @@ cardText: Affiliate Program Overview Featuring Top Brands like Crazyfox,
   Evospin, Infinity, and More
 cardImage: /img/affiliate-program-overview-featuring-alpha-affiliates.jpg
 tags:
-  - Оффер
+  - All
+  - Offer
 ---
 
 
