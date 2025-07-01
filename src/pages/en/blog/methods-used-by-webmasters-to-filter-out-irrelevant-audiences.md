@@ -31,7 +31,7 @@ Any user who, from the outset, did not intend to perform any targeted actions on
 
 By excluding this audience, you will avoid wasting your budget and maintain the transparency of your statistics.
 
-The most common irrelevant users include:
+**The most common irrelevant users include:**
 
 1. Persons who have not yet reached the age of majority. School and university students are often unable to perform targeted actions on certain Internet resources due to restrictions. This audience can be used for a limited number of verticals: information products, gaming, etc.
 2. Users with insufficient funds. People with limited finances carefully study offers, often call customer support, but refuse to subscribe or place orders, and therefore do not generate profit.
@@ -46,7 +46,7 @@ Visitors with high expectations often refuse to make a purchase. To prevent such
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeiHzojkmYJ9UIXzsKfFcL31F1NsIeX3_9wN0gbIvYjcTYZ_2TWnKuuXGaJe0muN77NgeP1_hqAuK3Z08QgSmoDpEbFCyMBRWzF5LCno9-290SaEuFBXvvvMMq_KAwx3g5gLPxoBQ?key=TzK3B847Ni_Nbu2AyUB9vQ)
 
-When setting up [targeting](https://affcommunity.org/en/what-should-a-webmaster-know-about-targeting/), pay special attention to the following indicators:
+**When setting up [targeting](https://affcommunity.org/en/what-should-a-webmaster-know-about-targeting/), pay special attention to the following indicators:**
 
 1. Age, gender. Must meet the requirements set by the advertiser.
 2. Device. iPhone and Macbook owners are usually wealthier and more solvent than other users.
@@ -66,7 +66,7 @@ The [top service](https://affcommunity.org/en/service/money-safe/) for creating 
 
 To bypass local and some other restrictions, some irrelevant users can be disguised as a high-quality audience, as they use fake data or special anonymity programs.
 
-To prevent them from clicking on the ad link, you can use the following methods:
+**To prevent them from clicking on the ad link, you can use the following methods:**
 
 * specify the price in the ad, excluding insolvent visitors;
 * use adult content that is unacceptable to Muslim immigrants from Eastern countries;
