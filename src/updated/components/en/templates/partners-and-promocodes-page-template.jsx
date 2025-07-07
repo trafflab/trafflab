@@ -23,14 +23,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-9.png'
+									src='/img/partner-logos/partner-logo-12.png'
 									alt='Logo 1'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Безлимитные агентские аккаунты для in-app и social сетей
+								Media Resource about Affiliate Marketing
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://affcommunity.org/en/?utm_source=trafflab&utm_medium=partner'  className={styles.connectButton}>
 								Connect
 							</a>
 						</div>
