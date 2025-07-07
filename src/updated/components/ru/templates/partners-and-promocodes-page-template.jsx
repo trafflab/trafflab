@@ -111,15 +111,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-8.png'
+									src='/img/partner-logos/partner-logo-12.png'
 									alt='Логотип 5'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Децентрализованная платформа для ставок на любые
-								виды спорта
+								Медиа ресурс об арбитраже трафика
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://affcommunity.org/?utm_source=trafflab&utm_medium=partner' target='_blank' className={styles.connectButton}>
 								Подключиться
 							</a>
 						</div>
