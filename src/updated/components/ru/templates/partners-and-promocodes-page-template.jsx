@@ -116,7 +116,7 @@ export default function PartnersAndPromocodesPageTemplate() {
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Медиа ресурс об арбитраже трафика
+								AffCommunity - Медиа ресурс об арбитраже трафика
 							</p>
 							<a href='https://affcommunity.org/?utm_source=trafflab&utm_medium=partner' target='_blank' className={styles.connectButton}>
 								Подключиться
@@ -127,15 +127,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-7.png'
+									src='/img/partner-logos/partner-logo-13.png'
 									alt='Логотип 6'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Децентрализованная платформа для ставок на любые
-								виды спорта
+								Pay2.House - виртуальные карты с высокой проходимостью, без скрытых комиссий и ограничений. Промокод - TRAFFLAB - 5$ бонус на выпуск виртуальной карты!
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://pay2.house/?utm_source=trafflab25&utm_medium=referral&utm_campaign=trafflab25' target='_blank' className={styles.connectButton}>
 								Подключиться
 							</a>
 						</div>
