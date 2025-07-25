@@ -138,6 +138,38 @@ export default function PartnersAndPromocodesPageTemplate() {
 								Подключиться
 							</a>
 						</div>
+
+						{/* Карточка 7 */}
+						<div className={styles.partnerCard}>
+							<div className={styles.partnerLogo}>
+								<img
+									src='/img/partner-logos/partner-logo-5.png'
+									alt='Логотип 6'
+								/>
+							</div>
+							<p className={styles.partnerDescription}>
+								Будущий партнер
+							</p>
+							<a href='' target='_blank' className={styles.connectButton}>
+								Подключиться
+							</a>
+						</div>
+
+						{/* Карточка 8 */}
+						<div className={styles.partnerCard}>
+							<div className={styles.partnerLogo}>
+								<img
+									src='/img/partner-logos/partner-logo-5.png'
+									alt='Логотип 6'
+								/>
+							</div>
+							<p className={styles.partnerDescription}>
+								Будущий партнер
+							</p>
+							<a href='' target='_blank' className={styles.connectButton}>
+								Подключиться
+							</a>
+						</div>
 					</div>
 				</div>
 			</section>
