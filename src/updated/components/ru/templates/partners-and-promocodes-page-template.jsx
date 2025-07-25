@@ -143,14 +143,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-5.png'
+									src='/img/partner-logos/logo-phoenix.png'
 									alt='Логотип 6'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Будущий партнер
+								PHOENIX — разработка приложений, конструктор PWA, консоли разработчиков и Push-сервис. Промокод: TRAFFLAB100 - месяц бесплатного доступа к PWA сервису.
 							</p>
-							<a href='' target='_blank' className={styles.connectButton}>
+							<a href='http://phoenix.ink?utm_source=cross_promo&utm_medium=site&utm_campaign=trafflab' target='_blank' className={styles.connectButton}>
 								Подключиться
 							</a>
 						</div>
