@@ -121,14 +121,14 @@ export default function PartnersAndPromocodesPageTemplate() {
 						<div className={styles.partnerCard}>
 							<div className={styles.partnerLogo}>
 								<img
-									src='/img/partner-logos/partner-logo-8.png'
+									src='/img/partner-logos/photo_2025-07-16_18.56.14-removebg-preview.png'
 									alt='Logo 4'
 								/>
 							</div>
 							<p className={styles.partnerDescription}>
-								Decentralized platform for betting on any sports
+								Multi-account management fingerprint browser, window synchronization, RPA + API, permanent free 10 environments
 							</p>
-							<a href='' className={styles.connectButton}>
+							<a href='https://www.bitbrowser.net/?code=5df4f4ec' className={styles.connectButton}>
 								Connect
 							</a>
 						</div>
